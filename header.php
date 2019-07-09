@@ -24,9 +24,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-	<link rel="icon"
-      type="image/png"
-      href="<?php bloginfo('template_directory'); ?>/_i/favicon.ico">
+	<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/_i/favicon.ico">
+	<style>
+		@media(min-width: 768px){
+			.container{
+				width: 960px;
+				margin: auto;
+				/* padding: 0 15px; */
+			}
+		}
+	</style>
 	<?php wp_head(); ?>
 </head>
 
@@ -51,99 +58,103 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<header id="masthead" class="site-header">
 		<button class="nav-close" aria-controls="primary-menu" aria-expanded="false">&times;<span class="assistive-text">Close</span></button>
 		<div class="header-top group">
-			<div class="site-branding">
-				<?php
-				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></p>
-				<?php
-				endif; ?>
-			</div><!-- .site-branding -->
-			<nav class="top-navigation group">
-				<ul>
-					<li>
-						<a href = "<?php echo esc_url( home_url( '/' ) ); ?>campaign/">
-							<?php include(get_template_directory().'/_svg/icon-gavel.php'); ?>
-							Campaigns
-						</a>
-					</li>
-					<?php $issues = get_field('issues', 'option');
-					if( $issues ): ?>
-					<li class="with-sub">
-						<a href = "#">
-							<?php include(get_template_directory().'/_svg/icon-scales.php'); ?>
-							Issues
-						</a>
-						<ul class="top-sub">
-							<?php foreach( $issues as $issue ): ?>
-							<li>
-								<a href = "<?php echo get_term_link( $issue , 'issues'); ?>">
-									<?php echo $issue->name; ?>
-								</a>
-							</li>
-							<?php endforeach; ?>
-						</ul>
-					</li>
-					<?php endif;
-					$regions = get_field('regions', 'option');
-					if( $regions ): ?>
-					<li class="with-sub">
-						<a href = "#">
-							<?php include(get_template_directory().'/_svg/icon-globe.php'); ?>
-							Regions
-						</a>
-						<ul class="top-sub">
-							<?php foreach( $regions as $region ): ?>
-							<li>
-								<a href = "<?php echo get_term_link( $region , 'regions'); ?>">
-									<?php echo $region->name; ?>
-								</a>
-							</li>
-							<?php endforeach; ?>
-						</ul>
-					</li>
-					<?php endif; ?>
-					<li>
-						<a href = "<?php echo esc_url( home_url( '/' ) ); ?>resource/">
-							<?php include(get_template_directory().'/_svg/icon-book.php'); ?>
-							Resources
-						</a>
-					</li>
-					<li>
-						<a href = "<?php echo esc_url( home_url( '/' ) ); ?>donate/">
-							<?php include(get_template_directory().'/_svg/icon-gift.php'); ?>
-							Donate
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<?php if ( have_rows( 'custom_nav' ) ) : ?>
-			<nav class="custom-nav">
-				<ul>
-				<?php while ( have_rows( 'custom_nav' ) ) : the_row(); ?>
-					<li>
-						<a href = "<?php the_sub_field( 'nav_url' ); ?>">
-							<?php the_sub_field( 'nav_text' ); ?>
-						</a>
-					</li>
-				<?php endwhile; ?>
-				</ul>
-			</nav>
-			<?php endif; ?>
+			<div class="container">
+				<div class="site-branding">
+						<?php
+						if ( is_front_page() && is_home() ) : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></h1>
+						<?php else : ?>
+							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></p>
+						<?php
+						endif; ?>
+					</div><!-- .site-branding -->
+				<nav class="top-navigation group">
+					<ul>
+						<li>
+							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>campaign/">
+								<?php include(get_template_directory().'/_svg/icon-gavel.php'); ?>
+								Campaigns
+							</a>
+						</li>
+						<?php $issues = get_field('issues', 'option');
+						if( $issues ): ?>
+						<li class="with-sub">
+							<a href = "#">
+								<?php include(get_template_directory().'/_svg/icon-scales.php'); ?>
+								Issues
+							</a>
+							<ul class="top-sub">
+								<?php foreach( $issues as $issue ): ?>
+								<li>
+									<a href = "<?php echo get_term_link( $issue , 'issues'); ?>">
+										<?php echo $issue->name; ?>
+									</a>
+								</li>
+								<?php endforeach; ?>
+							</ul>
+						</li>
+						<?php endif;
+						$regions = get_field('regions', 'option');
+						if( $regions ): ?>
+						<li class="with-sub">
+							<a href = "#">
+								<?php include(get_template_directory().'/_svg/icon-globe.php'); ?>
+								Regions
+							</a>
+							<ul class="top-sub">
+								<?php foreach( $regions as $region ): ?>
+								<li>
+									<a href = "<?php echo get_term_link( $region , 'regions'); ?>">
+										<?php echo $region->name; ?>
+									</a>
+								</li>
+								<?php endforeach; ?>
+							</ul>
+						</li>
+						<?php endif; ?>
+						<li>
+							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>resource/">
+								<?php include(get_template_directory().'/_svg/icon-book.php'); ?>
+								Resources
+							</a>
+						</li>
+						<li>
+							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>donate/">
+								<?php include(get_template_directory().'/_svg/icon-gift.php'); ?>
+								Donate
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<?php if ( have_rows( 'custom_nav' ) ) : ?>
+				<nav class="custom-nav">
+					<ul>
+					<?php while ( have_rows( 'custom_nav' ) ) : the_row(); ?>
+						<li>
+							<a href = "<?php the_sub_field( 'nav_url' ); ?>">
+								<?php the_sub_field( 'nav_text' ); ?>
+							</a>
+						</li>
+					<?php endwhile; ?>
+					</ul>
+				</nav>
+				<?php endif; ?>
+			</div>
 		</div>
 		<div class="header-bottom group">
-			<nav id="site-navigation" class="main-navigation">
+			<div class="container">
+				<nav id="site-navigation" class="main-navigation">
 
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					) );
-				?>
-			</nav><!-- #site-navigation -->
-			<div class="search-bar">
-				<?php get_search_form(); ?>
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+					?>
+				</nav><!-- #site-navigation -->
+				<div class="search-bar">
+					<?php get_search_form(); ?>
+				</div>
 			</div>
 		</div>
 
