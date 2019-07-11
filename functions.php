@@ -135,7 +135,8 @@ add_action( 'widgets_init', 'adf_intl_widgets_init' );
 function adf_intl_scripts() {
 	$style_ver = filemtime( get_stylesheet_directory() . '/style.css' );
 	wp_enqueue_style( 'adf-intl-style', get_stylesheet_uri(), '', $style_ver );
-	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap'  );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap' );
+	wp_enqueue_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 	wp_enqueue_script( 'functions', get_template_directory_uri() . '/_js/functions-min.js', array('jquery'), '20160606', true );
 
 	wp_enqueue_script( 'sow', get_template_directory_uri() . '/_js/lib/sow.js', array('jquery'), '20190617', true );

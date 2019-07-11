@@ -60,10 +60,12 @@
 							<li class="social">
 								<a href = "https://www.facebook.com/ADFInternational" target="_blank" class="facebook">
 									<img src="<?php bloginfo('template_directory'); ?>/_i/facebook.png" />
+									<!-- <i class="fa fa-facebook"></i> -->
 									<span class="assistive-text">Facebook</span>
 								</a>
 								<a href = "https://twitter.com/ADFIntl" target="_blank" class="twitter">
 									<img src="<?php bloginfo('template_directory'); ?>/_i/twitter.png" />
+									<!-- <i class="fa fa-twitter"></i> -->
 									<span class="assistive-text">Twitter</span>
 								</a>
 							</li>
@@ -132,6 +134,9 @@
 		/* font-size: 25px; */
 		color: #fff;
 	}
+	/* .four-list > li:first-child{
+		margin-left: 40px;
+	} */
 	.single-list > li a:hover{
 		cursor: pointer;
 	}
@@ -154,9 +159,16 @@
 			width: 15%;
 		}
 	}
-	@media(min-width: 425px) or (max-width: 769px){
+	@media only screen and (min-width: 768px) and (max-width: 1023px){
 		.four-list>li:first-child {
-			width: 30% !important;
+			width: 40% !important;
+			margin-left: 60px !important;
+		}
+		.four-list > li{
+			width: 10% !important;
+		}
+		.four-list > li:nth-child(2){
+			margin-right: 25px;
 		}
 	}
 	@media(max-width: 768px){
@@ -166,7 +178,7 @@
 		}
 		.four-list > li{
 			width: 20%;
-			text-align: center;
+			/* text-align: center; */
 			margin: 0;
 			margin-bottom: 5px;
 		}
@@ -220,12 +232,19 @@
 		}
 		.four-list > li:nth-child(4){
 			width: 100%;
+			text-align: center;
 		}
 		.four-list > li:nth-child(2){
 			margin-left: 28px;
 			margin-right: 54px;
 		}
 	}
+	/* .two-social > .social a{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		text-decoration: none;
+	} */
 </style>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5afc78526bb936fd"></script>
