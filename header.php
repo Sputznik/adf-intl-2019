@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<style>
 		@media(min-width: 768px){
 			.container{
-				width: 960px;
+				max-width: 960px;
 				margin: auto;
 				/* padding: 0 15px; */
 			}
