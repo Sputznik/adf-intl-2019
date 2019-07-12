@@ -48,6 +48,13 @@
     width: 33.33%;
   }
 }
+
+.article-list span.content-type{
+  background: #08438c !important;
+}
+.article-list a:hover{
+  border-color: #08438c !important;
+}
 /* 3 column grid */
 
 /* single post */
