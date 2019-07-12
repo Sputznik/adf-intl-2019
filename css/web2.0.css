@@ -99,6 +99,9 @@ h4{
 .article-list a:hover{
   border-color: #08438c !important;
 }
+.article-content strong{
+  color: #999;
+}
 /* 3 column grid */
 
 /* single post */
