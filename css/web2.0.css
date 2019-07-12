@@ -173,4 +173,7 @@ h4{
 .resource-list .resource-item{
   border: 1px solid #ddd;
 }
+.resource-header .two-third p{
+  text-align: justify;
+}
 /* RESOURCES */
