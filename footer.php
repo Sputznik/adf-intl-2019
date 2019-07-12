@@ -27,7 +27,7 @@
 									<img src="<?php bloginfo('template_directory'); ?>/_i/logo-white.png" />
 									<span class="assistive-text"><?php bloginfo( 'name' ); ?></span>
 								</a>
-								<p  style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</li>
 					<li>
 						<!-- <h4>About</h4> -->
@@ -118,7 +118,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		font-size: 12px;
+		font-size: 15px;
 	}
 	.four-list > li{
 		width: 10%;
@@ -141,11 +141,15 @@
 		cursor: pointer;
 	}
 	.four-list > li:first-child{
-		width: 40%;
+		width: 50%;
 		/* background: green; */
 	}
+	.four-list > li:nth-child(2){
+		margin-left: 80px;
+
+	}
 	.four-list > li:nth-child(4){
-		width: 20%;
+		width: 10%;
 	}
 	.single-list,.two-social{
 		list-style-type: none;
