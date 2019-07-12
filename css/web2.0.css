@@ -179,11 +179,11 @@ h4{
 /* RESOURCES */
 
 /* PAGES - DONATE */
-.page .full-image{
+body.page .full-image{
   max-height: 300px;
   overflow: hidden;
 }
-.page .image-overlay{
+body.page .image-overlay{
   background: #08438c;
 }
 /* PAGES - DONATE */
