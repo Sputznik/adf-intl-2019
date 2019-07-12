@@ -225,15 +225,15 @@ jQuery(document).ready(function() {
 	}
 	toTop();
 	smoothscroll();
-	hideCookie();
+	//hideCookie();
 	topDropdowns();
 	navOpen();
 	navClose();
 	dropdowns();
-	jQuery('.fitvids').fitVids();
+	//jQuery('.fitvids').fitVids();
 	tweetButton();
 	catDropdown();
-	jQuery('.tabs').tabslet();
+	//jQuery('.tabs').tabslet();
 	tabSelection();
 	pictureGallery();
 	modalVideo();
