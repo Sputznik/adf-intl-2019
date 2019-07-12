@@ -16,14 +16,17 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-				<div class="page-content" style="max-width:1100px;padding:15px;padding-top:0;margin-left:auto;margin-right:auto;">
-					
-					<?php while ( have_posts() ) : the_post(); the_content(); endwhile; ?>
-				</div>
-			</article>
+
+			<div class="container">
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+					<div class="page-content">
+						<?php while ( have_posts() ) : the_post(); the_content(); endwhile; ?>
+					</div>
+				</article>
+				
+			</div> <!-- .container -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
