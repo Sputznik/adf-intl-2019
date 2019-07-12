@@ -14,9 +14,8 @@
 }
 
 @media (min-width: 44em){
-  .menu > li > a {
-    color: #fff;
-  }
+  .menu > li > a { color: #fff; }
+  .search-bar{ padding-right: 0; }
 }
 
 /* global */
