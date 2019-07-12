@@ -275,11 +275,13 @@ h4{
 /* 3 column grid */
 
 /* single post */
+.single-legal .post-thumbnail,
 .single-news .post-thumbnail,
 .single-commentary .post-thumbnail{
   max-height: 300px;
   overflow: hidden;
 }
+.single-legal .article-header,
 .single-news .article-header,
 .single-commentary .article-header{
   top: 0;
@@ -292,6 +294,7 @@ h4{
   background: #08438c;
   max-width: 42em;
 }
+.single-legal .article-header .entry-title,
 .single-news .article-header .entry-title,
 .single-commentary .article-header .entry-title{
   font-family: "Merriweather";
@@ -303,6 +306,9 @@ h4{
 }
 .single-commentary .article-header{
   background: #d9272d;
+}
+.single-legal .article-header{
+  background: #e6b614;
 }
 
 .summary{
