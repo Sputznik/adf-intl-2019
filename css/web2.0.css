@@ -69,12 +69,14 @@ h4{
   line-height: 1.3;
 }
 
-.article-list.three-list{
+.article-list.three-list,
+.article-list.two-list{
   display: flex;
   flex-wrap: wrap;
 }
 
-.article-list.three-list li{
+.article-list.three-list li,
+.article-list.two-list li{
   float: none;
   margin: 0;
   display: flex;
@@ -89,6 +91,9 @@ h4{
 @media all and (min-width: 60em) {
   .article-list.three-list li{
     width: 33.33%;
+  }
+  .article-list.two-list li{
+    width: 50%;
   }
 }
 
