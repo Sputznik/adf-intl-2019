@@ -177,3 +177,13 @@ h4{
   text-align: justify;
 }
 /* RESOURCES */
+
+/* PAGES - DONATE */
+.page .full-image{
+  max-height: 300px;
+  overflow: hidden;
+}
+.page .image-overlay{
+  background: #08438c;
+}
+/* PAGES - DONATE */
