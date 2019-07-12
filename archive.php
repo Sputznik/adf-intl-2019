@@ -23,26 +23,11 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 			<ul class="article-list three-list group">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<li>
-					<a href = "<?php the_permalink(); ?>">
-						<?php
-						if ( has_post_thumbnail() ) {
-							the_post_thumbnail('large');
-						}
-						?>
-						<span class="content-type"><?php echo get_post_type($post); ?></span>
-						<div class="article-content">
-							<h4><?php the_title(); ?></h4>
-							<p><?php echo excerpt(60); ?></p>
-							<strong class="link">Read more</strong>
-						</div>
-					</a>
-				</li>
-			<?php endwhile; ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+				<li><?php get_template_part( 'template-parts/content', 'article' );?></li>
+				<?php endwhile; wp_reset_postdata();?>
 			</ul>
-			<?php the_posts_navigation(array('prev_text' => __( 'More &raquo;' ),
-    'next_text' => __( '&laquo; Previous' ),));
+			<?php the_posts_navigation(array('prev_text' => __( 'More &raquo;' ), 'next_text' => __( '&laquo; Previous' ),));
 
 		else :
 

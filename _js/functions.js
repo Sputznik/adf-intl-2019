@@ -97,6 +97,7 @@ function hideCookie() {
 	});
 }
 function articleHeights() {
+	/*
 	var currentHeight = 0;
 	var maxHeight = 0;
 	jQuery('.article-list').each(function() {
@@ -110,6 +111,7 @@ function articleHeights() {
 			});
 		jQuery('li a', this).css('height', maxHeight);
 	});
+	*/
 }
 function boxHeight() {
 	var currentHeight = 0;
@@ -223,15 +225,15 @@ jQuery(document).ready(function() {
 	}
 	toTop();
 	smoothscroll();
-	hideCookie();
+	//hideCookie();
 	topDropdowns();
 	navOpen();
 	navClose();
 	dropdowns();
-	jQuery('.fitvids').fitVids();
+	//jQuery('.fitvids').fitVids();
 	tweetButton();
 	catDropdown();
-	jQuery('.tabs').tabslet();
+	//jQuery('.tabs').tabslet();
 	tabSelection();
 	pictureGallery();
 	modalVideo();

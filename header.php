@@ -140,6 +140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
 							'menu_id'        => 'primary-menu',
+							'walker'         => new WPSE_78121_Sublevel_Walker
 						) );
 					?>
 				</nav><!-- #site-navigation -->
