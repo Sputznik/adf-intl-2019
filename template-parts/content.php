@@ -36,7 +36,7 @@ $type = get_post_type($post->ID);
 			<div class="entry-meta">
 				<?php
 
-					echo '<span style="text-transform:capitalize;">'.$type.'| </span>';
+					echo '<span style="text-transform:capitalize;">'.$type.' | </span>';
 
 					$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 					if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
