@@ -20,7 +20,7 @@ $type = get_post_type($post->ID);
 		<div class="article-header">
 			<?php
 			if ( is_singular() ) {
-				echo '<h5>'.$type.'</h5>';
+				//echo '<h5>'.$type.'</h5>';
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
@@ -35,6 +35,9 @@ $type = get_post_type($post->ID);
 			<?php if($type == 'commentary' || $type == 'news') :?>
 			<div class="entry-meta">
 				<?php
+
+					echo '<span style="text-transform:capitalize;">'.$type.'| </span>';
+
 					$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 					if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 						$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
