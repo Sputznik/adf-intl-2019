@@ -86,4 +86,17 @@
 .single-commentary .article-header{
   background: #d9272d;
 }
+
+.summary{
+  padding: 1.5em;
+  background: #efefef;
+  border: 1px solid #efefef;
+}
+.summary h2{
+  font-size: 1.2em;
+  text-transform: none;
+  letter-spacing: none;
+  color: #555;
+  font-family: "Merriweather", serif;
+}
 /* single post */
