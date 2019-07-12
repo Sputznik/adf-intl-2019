@@ -166,22 +166,7 @@ get_header(); ?>
 								<a href = "<?php the_permalink(); ?>">Read more</a>
 							</div>
 							<?php else : ?>
-							<li>
-								<a href = "<?php the_permalink(); ?>">
-									<?php
-										if ( has_post_thumbnail() ) {
-											the_post_thumbnail();
-										}
-									?>
-									<span class="content-type"><?php echo $type; ?></span>
-									<div class="article-content">
-										<?php $title = get_the_title(); ?>
-										<h4><?php echo $title; ?></h4>
-										<p><?php if(strlen($title) > 63) {echo excerpt(16);} elseif(strlen($title) > 32){echo excerpt(20);} else {echo excerpt(30);} ?></p>
-										<strong class="link">Read more</strong>
-									</div>
-								</a>
-							</li>
+							<li><?php get_template_part( 'template-parts/content', 'article' );?></li>
 							<?php endif; ?>
 						<?php wp_reset_postdata(); endwhile; ?>
 						<?php if($count == 1) : ?>
