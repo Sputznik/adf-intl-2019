@@ -154,7 +154,7 @@ h4{
 .tax-issues .banner-content h1,
 .tax-regions .banner-content h1{
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 .tax-issues .banner-content p,
 .tax-regions .banner-content p{
