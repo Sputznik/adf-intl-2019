@@ -290,6 +290,7 @@ h4{
   -webkit-transform: none;
   transform: none;
   background: #08438c;
+  max-width: 42em;
 }
 .single-news .article-header .entry-title,
 .single-commentary .article-header .entry-title{
