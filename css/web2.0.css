@@ -165,7 +165,8 @@ h4{
 /* ISSUES & REGIONS */
 
 /* RESOURCES */
-.resource-header h5{
+.resource-header h5,
+.resource-list .resource-item h5{
   letter-spacing: none;
   font-family: "Roboto", sans-serif;
 }
