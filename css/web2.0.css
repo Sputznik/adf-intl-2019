@@ -170,4 +170,7 @@ h4{
   letter-spacing: none;
   font-family: "Roboto", sans-serif;
 }
+.resource-list .resource-item{
+  border: 1px solid #ddd;
+}
 /* RESOURCES */
