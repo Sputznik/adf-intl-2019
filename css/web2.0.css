@@ -7,17 +7,18 @@
   margin: 0;
 }
 
+
 .menu > li > a {
   text-decoration: none;
-  color: #fff;
   border-bottom: none;
 }
 
-@media(max-width:425px){
+@media (min-width: 44em){
   .menu > li > a {
-    color: #000;
+    color: #fff;
   }
 }
+
 
 /* primary menu */
 @media (min-width: 44em){
