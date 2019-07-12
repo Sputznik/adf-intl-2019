@@ -146,3 +146,9 @@ h4{
   font-family: "Merriweather", serif;
 }
 /* single post */
+
+
+/* ISSUES */
+.tax-issues .full-banner{ max-height: 400px; }
+.tax-issues .banner-content{ background: #08438c; }
+/* ISSUES */
