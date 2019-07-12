@@ -19,6 +19,7 @@
   }
 }
 
+/* 3 column grid */
 .article-content h4{
   font-family: "Merriweather";
   font-size: 1.78em;
@@ -39,7 +40,7 @@
 }
 
 .article-list.three-list li p{
-  display: none;
+  display: none !important;
 }
 
 @media all and (min-width: 60em) {
@@ -47,10 +48,23 @@
     width: 33.33%;
   }
 }
+/* 3 column grid */
 
-
-/*
-.article-content p{
-  display: none;
+/* single post */
+.single-commentary .post-thumbnail{
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 150px;
 }
-*/
+.single-commentary .article-header{
+  top: 60%;
+  padding: 2.25em;
+  -webkit-transform: none;
+  transform: none;
+}
+.single-commentary .article-header .entry-title{
+  font-family: "Merriweather";
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+/* single post */
