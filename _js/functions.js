@@ -97,6 +97,7 @@ function hideCookie() {
 	});
 }
 function articleHeights() {
+	/*
 	var currentHeight = 0;
 	var maxHeight = 0;
 	jQuery('.article-list').each(function() {
@@ -110,6 +111,7 @@ function articleHeights() {
 			});
 		jQuery('li a', this).css('height', maxHeight);
 	});
+	*/
 }
 function boxHeight() {
 	var currentHeight = 0;

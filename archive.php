@@ -34,12 +34,12 @@ get_header(); ?>
 						<span class="content-type"><?php echo get_post_type($post); ?></span>
 						<div class="article-content">
 							<h4><?php the_title(); ?></h4>
-							<p><?php echo excerpt(60); ?></p>
-							<strong class="link">Read more</strong>
+							<!--p><?php echo excerpt(60); ?></p-->
+							<strong class="link">Published on <?php the_date();?></strong>
 						</div>
 					</a>
 				</li>
-			<?php endwhile; ?>
+			<?php endwhile; wp_reset_postdata();?>
 			</ul>
 			<?php the_posts_navigation(array('prev_text' => __( 'More &raquo;' ),
     'next_text' => __( '&laquo; Previous' ),));
