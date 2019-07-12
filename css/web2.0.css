@@ -19,6 +19,17 @@
   }
 }
 
+/* global */
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Merriweather', serif;
+}
+
+h4{
+  font-size: 1.6em;
+}
+
+/* global */
+
 
 /* primary menu */
 @media (min-width: 44em){
@@ -56,7 +67,6 @@
 /* 3 column grid */
 .article-content h4{
   font-family: "Merriweather", serif;
-  font-size: 1.78em;
   line-height: 1.3;
 }
 
