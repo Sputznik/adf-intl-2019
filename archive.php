@@ -17,6 +17,11 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
+
+				<div class='video-lightbox'>
+				<?php _e( do_shortcode('[video_lightbox_youtube video_id="G7z74BvLWUg" width="640" height="480" anchor="http://adfinternation.staging.wpengine.com/wp-content/uploads/2019/01/Tom-Euthanasia.jpg"]') );?>
+				</div>
+
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					//the_archive_description( '<div class="archive-description">', '</div>' );

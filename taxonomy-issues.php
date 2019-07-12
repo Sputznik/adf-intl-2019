@@ -41,16 +41,20 @@ get_header(); ?>
 					<ul class="three-list group">
 						<?php while ( have_rows('videos') ) : the_row(); ?>
 						<li>
-							<a href = "#" data-video="<?php the_sub_field('video_code'); ?>">
-								<div>
-									<?php
+							<!--a href = "#" data-video="<?php the_sub_field('video_code'); ?>"-->
+								<div class='video-lightbox'>
+								<?php
+
+									$video_id = get_sub_field( 'video_code' );
 									$image = get_sub_field('video_thumbnail');
-									if( !empty($image) ): ?>
-										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-									<?php endif; ?>
+
+									if( !empty($image) ){
+										_e( do_shortcode('[video_lightbox_youtube video_id="'.$video_id.'" width="640" height="480" anchor="'.$image['url'].'"]') );
+									}
+								?>
 								</div>
-								<span><?php the_sub_field('video_title'); ?></span>
-							</a>
+								<!--span><?php the_sub_field('video_title'); ?></span-->
+							<!--/a-->
 						</li>
 						<?php endwhile; ?>
 					</ul>
