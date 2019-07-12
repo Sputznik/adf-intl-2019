@@ -10,24 +10,31 @@ Video URI:
 class Sp_Card extends SiteOrigin_Widget{
   function __construct(){
     $form_options = array(
-      'card_icon' => array(
-        'type' => 'icon',
-        'label' => __('Select an icon', 'widget-form-fields-text-domain'),
-      ),
-      'heading_txt'  =>  array(
-        'type'  =>  'text',
-        'label' =>  __('Heading','siteorigin-widgets'),
-        'default' =>  '',
-      ),
-      'heading_color'  =>  array(
-        'type'  =>  'color',
-        'label' =>  __('Heading Color','siteorigin-widgets'),
-        'default' =>  '#000'
-      ),
-      'card_border'  =>  array(
-        'type'  =>  'color',
-        'label' =>  __('Card Border Color','siteorigin-widgets'),
-        'default' =>  '#eee'
+      'card_repeater' => array(
+        'type'      => 'repeater',
+        'label'     => 'Card Repeater',
+        'item_name' =>  __( 'Add Card', 'siteorigin-widgets' ),
+        'fields'    =>  array(
+          'card_icon' => array(
+            'type' => 'icon',
+            'label' => __('Select an icon', 'widget-form-fields-text-domain'),
+          ),
+          'heading_txt'  =>  array(
+            'type'  =>  'text',
+            'label' =>  __('Heading','siteorigin-widgets'),
+            'default' =>  '',
+          ),
+          'heading_color'  =>  array(
+            'type'  =>  'color',
+            'label' =>  __('Heading Color','siteorigin-widgets'),
+            'default' =>  '#000'
+          ),
+          'card_border'  =>  array(
+            'type'  =>  'color',
+            'label' =>  __('Card Border Color','siteorigin-widgets'),
+            'default' =>  '#eee'
+          )
+        )
       )
     );
     parent::__construct(

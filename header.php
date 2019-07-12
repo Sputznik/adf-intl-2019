@@ -25,15 +25,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/_i/favicon.ico">
-	<style>
-		@media(min-width: 768px){
-			.container{
-				max-width: 1100px;
-				margin: auto;
-				/* padding: 0 15px; */
-			}
-		}
-	</style>
 	<?php wp_head(); ?>
 </head>
 

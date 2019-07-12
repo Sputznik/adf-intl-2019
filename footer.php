@@ -95,161 +95,18 @@
 		</div>
 	</footer><!-- #colophon -->
 
-	<?php //if(!isset($_COOKIE["hideBanner"])) : ?>
-	<!-- <div class="cookie-bar">
-		<div class="message"> -->
-			<?php //the_field('cookie_text','option'); ?>
-		<!-- </div> -->
-		<!-- <a href = "#" class="close-cookie">OK</a>
-	</div> -->
-	<?php //endif; ?>
-	<!-- </div> -->
+	<?php if(!isset($_COOKIE["hideBanner"])) : ?>
+	<div class="cookie-bar">
+		<div class="message">
+			<?php the_field('cookie_text','option'); ?>
+		</div>
+		<a href = "#" class="close-cookie">OK</a>
+	</div>
+	<?php endif; ?>
+	</div>
 <!-- #page -->
-<!-- <div class="overlay-content"></div>
-<div class="overlay"></div> -->
-<style>
-	body{
-		font-family: 'Roboto', sans-serif;
-	}
-	.dd{
-		/* background: red; */
-	}
-	.four-list{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		font-size: 15px;
-	}
-	.four-list > li{
-		width: 10%;
-	}
-	.single-list > li > a{
-		border: none;
-		color: #fff;
-	}
-	.two-social > li > a{
-		border: none;
-	}
-	.two-social > li:first-child{
-		/* font-size: 25px; */
-		color: #fff;
-	}
-	/* .four-list > li:first-child{
-		margin-left: 40px;
-	} */
-	.single-list > li a:hover{
-		cursor: pointer;
-	}
-	.four-list > li:first-child{
-		width: 50%;
-		/* background: green; */
-	}
-	.four-list > li:nth-child(2){
-		margin-left: 80px;
-
-	}
-	.four-list > li:nth-child(4){
-		width: 10%;
-	}
-	.single-list,.two-social{
-		list-style-type: none;
-		padding: 0;
-	}
-	@media(min-width: 1024px) or (max-width: 1440px){
-		.four-list>li:first-child {
-			margin-left: 100px;
-		}
-		.four-list > li:nth-child(4) {
-			width: 15%;
-		}
-	}
-	@media only screen and (min-width: 768px) and (max-width: 1023px){
-		.four-list>li:first-child {
-			width: 40% !important;
-			margin-left: 60px !important;
-		}
-		.four-list > li{
-			width: 10% !important;
-		}
-		.four-list > li:nth-child(2){
-			margin-right: 25px;
-		}
-	}
-	@media(max-width: 768px){
-		.dd{
-			padding: 0 30px;
-			/* background: yellow; */
-		}
-		.four-list > li{
-			width: 20%;
-			/* text-align: center; */
-			margin: 0;
-			margin-bottom: 5px;
-		}
-		.four-list > li:nth-child(2){
-			margin-left: 30px;
-		}
-		.four-list > li:nth-child(3){
-			margin-right: 30px;
-		}
-		.four-list > li:first-child{
-			width: 100%;
-			margin: 0;
-			text-align: center;
-		}
-		.four-list > li:nth-child(4){
-			width: 40%;
-		}
-		.two-social > li:first-child{
-			/* font-size: 24px; */
-		}
-		/* .two-social > li:last-child > a img{
-			width: 50px;
-			height: 40px;
-		} */
-	}
-	@media(max-width: 425px){
-		.four-list > li:nth-child(2){
-			margin-left: 50px;
-			margin-right: 40px;
-		}
-		.four-list > li:nth-child(3){
-			margin-right: 22px;
-		}
-		.four-list > li:nth-child(4){
-			width: 20%;
-		}
-	}
-	@media(max-width: 375px){
-		.four-list > li {
-			width: 22%;
-		}
-		.four-list > li:nth-child(2){
-			margin-left: 28px;
-			margin-right: 38px;
-		}
-	}
-	@media(max-width: 320px){
-		.four-list > li:nth-child(2),
-		.four-list > li:nth-child(3){
-			width: 30%;
-		}
-		.four-list > li:nth-child(4){
-			width: 100%;
-			text-align: center;
-		}
-		.four-list > li:nth-child(2){
-			margin-left: 28px;
-			margin-right: 54px;
-		}
-	}
-	/* .two-social > .social a{
-		display: inline-block;
-		height: 40px;
-		width: 40px;
-		text-decoration: none;
-	} */
-</style>
+<div class="overlay-content"></div>
+<div class="overlay"></div>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5afc78526bb936fd"></script>
 <!-- Facebook Pixel Code -->
