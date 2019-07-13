@@ -11,18 +11,18 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'public'	   => true,
 		'supports'	 => array('title', 'editor', 'author', 'thumbnail')
 	);
-	/*
-	$post_types['daily-digest'] = array(
-		'slug' 		=> 'daily-digest',
+
+	$post_types['advocacy-team'] = array(
+		'slug' 		=> 'advocacy-team',
 		'labels'	=> array(
-			'name' 			     => 'Daily Digests',
-			'singular_name'  => 'Daily Digest',
+			'name' 			     => 'Advocacy Team',
+			'singular_name'  => 'Advocacy Member',
 		),
-		'menu_icon'	=> 'dashicons-format-aside',
+		'menu_icon'	=> 'dashicons-buddicons-buddypress-logo',
 		'public'	   => true,
-		'supports'	 => array('title', 'editor', 'author', 'thumbnail')
+		'supports'	 => array('title', 'editor', 'excerpt', 'author', 'thumbnail')
 	);
-	*/
+
 
 	$post_types['alliance-alert'] = array(
 		'slug' 		=> 'alliance-alert',
@@ -38,3 +38,34 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 
 	return $post_types;
 } );
+
+
+/* PUSH INTO THE GLOBAL VARS OF ORBIT TAXNOMIES */
+add_filter( 'orbit_taxonomy_vars', function( $orbit_tax ){
+
+	$orbit_tax[ 'department' ]	= array(
+		'label'			  => 'Department',
+		'slug' 			  => 'department',
+		'post_types'	=> array( 'advocacy-team' )
+	);
+
+  return $orbit_tax;
+
+} );
+
+//Creates a meta field for citation information
+add_filter( 'orbit_meta_box_vars', function( $meta_box ){
+	$meta_box['advocacy-team'] = array(
+		array(
+			'id'			=> 'advocacy-team-meta-fields',
+			'title'		=> 'Additional Fields',
+			'fields'	=> array(
+				'team-position' => array(
+					'type' => 'text',
+					'text' => 'Position'
+				),
+			)
+		)
+	);
+	return $meta_box;
+});
