@@ -20,7 +20,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		),
 		'menu_icon'	=> 'dashicons-buddicons-buddypress-logo',
 		'public'	   => true,
-		'supports'	 => array('title', 'editor', 'excerpt', 'author', 'thumbnail')
+		'supports'	 => array('title', 'editor', 'excerpt', 'thumbnail')
 	);
 
 
