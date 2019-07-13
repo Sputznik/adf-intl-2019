@@ -19,7 +19,7 @@ get_header(); ?>
 					<?php while ( have_posts() ) : the_post();?>
 						<div class='row'>
 							<div class='container col-13'>
-								<div class='col'><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }?></div>
+								<div class='col'><?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); }?></div>
 								<div class='col'>
 									<h5 class='bold text-muted uppercase no-margin-top'><?php _e( do_shortcode('[orbit_terms taxonomy="department" link="0"]') );?></h5>
 									<h1 class='no-margin'><?php the_title();?></h1>
