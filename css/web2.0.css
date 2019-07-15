@@ -374,20 +374,21 @@ h4{
 }
 /* RESOURCES */
 
-/* PAGES - DONATE */
-body.page .full-image{
-  max-height: 300px;
+/* PAGES - DONATE, OLD SINGLE CAMPAIGN */
+body.page .full-image,
+.single-campaign .full-image{
+  max-height: 400px;
   overflow: hidden;
 }
-body.page .image-overlay{
-  background: #08438c;
+body.page .image-overlay,
+.single-campaign .image-overlay{
+  background: #ffffffaa;
+  line-height: 1.35;
+  color: #333;
 }
-body.page .image-overlay h2{
+body.page .image-overlay h2,
+.single-campaign .image-overlay h2{
   margin-bottom: 15px;
-}
-body.page .image-overlay p{
-  line-height: 1.3;
-  color: #ddd;
 }
 /* PAGES - DONATE */
 
