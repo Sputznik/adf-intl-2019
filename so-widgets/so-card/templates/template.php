@@ -48,7 +48,7 @@
   }
   .s-card{
     position: relative;
-    width: 200px;
+    width: 100%;
     /* max-width  : 200px; */
     height: 200px;
     background: #fff;
@@ -78,6 +78,8 @@
     padding:5px 10px;
   }
   .s-card h4{
+    font-family: "Roboto";
+    text-transform: uppercase;
     margin: 0;
     font-weight: 100;
     text-align: center;
@@ -89,6 +91,8 @@
   }
   .s-card-body{
     width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media(max-width: 600px){
     .s-card-body{
@@ -99,20 +103,29 @@
     }
   }
 
-  @media all and (min-width: 40em) {
+  @media all and (min-width: 35em) {
+  .s-card-inner {
+    /* width: 50%; */
+    width: 33.33%;
+  }
+}
+@media all and (min-width: 60em) {
+  /* .s-card-inner {
+    width: 33.33%;
+  } */
+}
+@media only screen and (min-width: 560px) and (max-width: 665px){
   .s-card-inner {
     width: 50%;
   }
 }
-@media all and (min-width: 60em) {
-  .s-card-inner {
-    width: 33.33%;
-  }
-}
 @media only screen and (min-width: 768px) and (max-width: 768px){
   .card-container{
-    width: 60%;
+    width: 100%;
     margin: auto;
+  }
+  .s-card-inner {
+    width: 50%;
   }
 }
 </style>

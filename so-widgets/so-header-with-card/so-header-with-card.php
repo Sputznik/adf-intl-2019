@@ -34,6 +34,11 @@ class Sp_Header_Card extends SiteOrigin_Widget{
         'label' =>  __('Button Text','siteorigin-widgets'),
         'default' => 'Click'
       ),
+      'btn_url' =>  array(
+        'type'  =>  'link',
+        'label' =>  __('Button URL','siteorigin-widgets'),
+        'default' => ''
+      )
     );
     parent::__construct(
       'so-header-with-card',
