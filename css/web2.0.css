@@ -206,7 +206,6 @@ h4{
     top: 100%;
     z-index: 10;
     background: #595959;
-    padding: 0 0 0 1em;
     display: none;
   }
   .main-navigation .menu>li.current-menu-item .sub-menu-wrap,
@@ -273,14 +272,27 @@ h4{
 .article-content strong{
   color: #999;
 }
+
+.team-list a[href], .team-list a[href]:hover{
+  border: none;
+  color: inherit;
+}
+.col-4.team-list .team-excerpt,.col-4.team-list .link{ display: none;}
+.col-4.team-list h4{ margin:0; font-size: 1.3em;}
+.col-4.team-list .picture{ margin-bottom: 20px;}
+@media all and (min-width: 60em) {
+  .col-4.team-list .picture{ max-height: 220px; overflow: hidden; }
+}
 /* 3 column grid */
 
 /* single post */
+.single-legal .post-thumbnail,
 .single-news .post-thumbnail,
 .single-commentary .post-thumbnail{
   max-height: 300px;
   overflow: hidden;
 }
+.single-legal .article-header,
 .single-news .article-header,
 .single-commentary .article-header{
   top: 0;
@@ -291,11 +303,13 @@ h4{
   -webkit-transform: none;
   transform: none;
   background: #08438c;
+  max-width: 42em;
 }
+.single-legal .article-header .entry-title,
 .single-news .article-header .entry-title,
 .single-commentary .article-header .entry-title{
   font-family: "Merriweather";
-  font-size: 2.5em;
+  font-size: 2.25em;
   margin-bottom: 15px;
 }
 .single-news .article-header{
@@ -303,6 +317,13 @@ h4{
 }
 .single-commentary .article-header{
   background: #d9272d;
+}
+.single-legal .article-header{
+  background: #e6b614;
+}
+
+.single-legal .article-header h5{
+  font-family: "Roboto", sans-serif;
 }
 
 .summary{
@@ -366,3 +387,80 @@ body.page .image-overlay p{
   color: #ddd;
 }
 /* PAGES - DONATE */
+
+
+/* VIDEOS */
+.video-lightbox{
+  position: relative;
+}
+.video-lightbox a[href]{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.video-lightbox a[href]:before{
+  content: '\25b6';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 4em;
+  margin: -0.5em 0 0 -0.5em;
+  opacity: 0.7;
+  line-height: 1;
+  color: #fff;
+}
+/* VIDEOS */
+
+/* HELPER CLASSES */
+.row{ padding: 50px 0; }
+.col-2, .col-13, .col-3, .col-4{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col{
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+}
+@media all and (min-width: 44em) {
+  .col-4 .col{
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .col-13 .col:nth-child( odd ){
+    width: 35%;
+  }
+  .col-13 .col:nth-child( even ){
+    width: 65%;
+  }
+  .col-2 .col{
+    width: 50%;
+  }
+  .col-3 .col{
+    width: 33.33%;
+  }
+  .col-4 .col{
+    width: 25%;
+  }
+}
+.text-muted{
+  color: #777;
+}
+.uppercase{
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.no-margin{ margin: 0;}
+.no-margin-top{ margin-top: 0;}
+.border-bottom{
+  padding-bottom: 20px;
+  border-bottom: #DDD solid 1px;
+}
+.bold{
+  font-weight: bold;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* HELPER CLASSES */
