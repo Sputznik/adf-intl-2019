@@ -148,6 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<?php get_search_form(); ?>
 				</div>
 				<div class="wpml-switcher">
+					<h5>Select Language</h5>
 					<?php do_action('icl_language_selector'); ?>
 				</div>
 			</div>
