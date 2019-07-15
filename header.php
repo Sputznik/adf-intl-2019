@@ -145,6 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					?>
 				</nav><!-- #site-navigation -->
 				<div class="search-bar">
+					<?php do_action('icl_language_selector'); ?>
 					<?php get_search_form(); ?>
 				</div>
 			</div>
