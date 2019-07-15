@@ -1,17 +1,24 @@
 <?php
   $card_repeater = $instance['card_repeater'];
-  $card_icon = $instance['card_icon'];
   // echo "<pre>";
   // print_r($instance['card_repeater']);
   ?>
   <div class="card-container">
   <?php
-  foreach ($card_repeater as $key => $value) {?>
+  foreach ($card_repeater as $key => $value) {
+    $bg_image = wp_get_attachment_url( $value['card_bg_img'] );
+    $card_icon = siteorigin_widget_get_icon( $value['card_icon'], array( '' ) );
+    ?>
     <div class="s-card-inner">
       <div class="s-card-body">
-        <div class="s-card" style="border: 20px solid <?php _e( $value['card_border'] ); ?>">
-          <div class="s-card-header">
-            <?php echo siteorigin_widget_get_icon( $value['card_icon'], array( '') );?>
+        <?php if( $bg_image ):?>
+        <div class="s-card" style="background-image:url(<?php _e($bg_image);?>);">
+          <div class="s-card-overlay" style="background-color: <?php _e( $value['card_border'] ); ?>;"></div>
+        <?php else:?>
+          <div class="s-card" style="border: 20px solid <?php _e( $value['card_border'] ); ?>;background-image:url(<?php _e($bg_image);?>);">
+        <?php endif;?>
+          <div class="s-card-header" style="color:<?php _e( $value['icon_color'] );?>">
+            <?php echo $card_icon;?>
             <h4 style="color:<?php _e( $value['heading_color'] );?>"><?php _e( $value['heading_txt'] );?></h4>
           </div>
         </div>
@@ -45,8 +52,16 @@
     /* max-width  : 200px; */
     height: 200px;
     background: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     box-sizing: border-box;
     text-align:center;
+  }
+  .s-card-overlay{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
   }
   .s-card-header{
     position: absolute;

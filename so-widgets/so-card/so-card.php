@@ -15,9 +15,22 @@ class Sp_Card extends SiteOrigin_Widget{
         'label'     => 'Card Repeater',
         'item_name' =>  __( 'Add Card', 'siteorigin-widgets' ),
         'fields'    =>  array(
+          'card_bg_img' => array(
+              'type' => 'media',
+              'label' => __( 'Choose card background ', 'siteorigin-widgets' ),
+              'choose' => __( 'Choose image', 'siteorigin-widgets' ),
+              'update' => __( 'Set image', 'siteorigin-widgets' ),
+              'library' => 'image',
+              'fallback' => true
+          ),
           'card_icon' => array(
             'type' => 'icon',
-            'label' => __('Select an icon', 'widget-form-fields-text-domain'),
+            'label' => __('Select an icon', 'siteorigin-widgets'),
+          ),
+          'icon_color'  =>  array(
+            'type'  =>  'color',
+            'label' =>  __('Icon Color','siteorigin-widgets'),
+            'default' =>  '#000'
           ),
           'heading_txt'  =>  array(
             'type'  =>  'text',
