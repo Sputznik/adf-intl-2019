@@ -147,6 +147,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="search-bar">
 					<?php get_search_form(); ?>
 				</div>
+				<div class="wpml-switcher">
+					<h5 class="uppercase no-margin">Choose Language</h5>
+					<?php do_action('icl_language_selector'); ?>
+				</div>
 			</div>
 		</div>
 
