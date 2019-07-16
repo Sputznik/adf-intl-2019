@@ -351,3 +351,11 @@ body.page .image-overlay h2,
   padding: 0;
 }
 /* HELPER CLASSES */
+
+/* MAP MARKER ICONS */
+.marker-cluster-small{ background-color: #08438c99 !important; }
+.marker-cluster-small div{
+  background-color: #08438c;
+  color: #fff;
+}
+/* MAP MARKER ICONS */
