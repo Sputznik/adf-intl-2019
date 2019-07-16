@@ -333,6 +333,8 @@ body.page .image-overlay h2,
   border-bottom: #DDD solid 1px;
 }
 .bold{ font-weight: bold; }
+
+/* CONTAINER */
 .container{
   padding-left: 15px;
   padding-right: 15px;
