@@ -16,7 +16,8 @@
       <div class="s-card-body">
         <?php if( $bg_image ):?>
         <div class="s-card" style="background-image:url(<?php _e($bg_image);?>);">
-          <div class="s-card-overlay" style="background-color: <?php _e( $value['card_border'] ); ?>;"></div>
+          <div class="s-card-overlay" style="background-color: <?php _e( $value['card_border'] ); ?>;">
+          </div>
         <?php else:?>
           <div class="s-card" style="border: 20px solid <?php _e( $value['card_border'] ); ?>;?>);">
         <?php endif;?>
@@ -24,23 +25,25 @@
             <?php echo $card_icon;?>
             <h4 style="color:<?php _e( $value['heading_color'] );?>"><?php _e( $value['heading_txt'] );?></h4>
           </div>
+          <?php ( $value['card_link'] ) ? _e( '<a class="s-card-link" href="'.$value['card_link'].'";></a>' ) : '' ?>
         </div>
         <div class="s-bottom" style="background:<?php _e( $value['card_border'] ); ?>"></div>
       </div>
     <?php else:?>
     <div class="s-card-inner" style="margin-bottom:0;">
-      <div class="s-card-body" style="height: 94%; margin-bottom: 0;">
+      <div class="s-card-body" style="height: 94%; margin-bottom: 0; position: relative;">
         <div class="s-card" style="background-color: transparent; height: 100%;margin-top: 15px;height: 30px;">
           <div class="s-card-header" style="position: relative; top: 0; left: 0; transform: none;">
             <h4 style="color:<?php _e( $value['heading_color'] );?>"><?php _e( $value['heading_txt'] );?></h4>
           </div>
         </div>
-      <div class="s-bottom" style="background:<?php _e( $value['card_border'] ); ?>; margin-top: 5px;"></div>
-      <div style="color:<?php _e( $value['heading_color'] );?>" >
+        <div class="s-bottom" style="background:<?php _e( $value['card_border'] ); ?>; margin-top: 5px;"></div>
+        <div style="color:<?php _e( $value['heading_color'] );?>" >
         <p style="text-align: center;">
           <strong><?php _e( $value['card_desc'] );?></strong>
         </p>
       </div>
+        <?php ( $value['card_link'] ) ? _e( '<a class="s-card-link" href="'.$value['card_link'].'";></a>' ) : '' ?>
     </div>
     <?php endif;?>
     </div>
@@ -95,6 +98,16 @@
     height:65px;
     font-size:50px;
     padding:5px 10px;
+  }
+  .s-card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display:block;
+    width:100%;
+    height:100%;
+    border: none;
   }
   .s-card h4{
     font-family: "Roboto";

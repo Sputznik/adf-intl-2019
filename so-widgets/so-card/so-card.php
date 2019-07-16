@@ -41,15 +41,10 @@ class Sp_Card extends SiteOrigin_Widget{
             'label' =>  __( 'Icon Color', 'siteorigin-widgets' ),
             'default' =>  '#000'
           ),
-          'heading_txt'  =>  array(
-            'type'  =>  'text',
-            'label' =>  __( 'Heading', 'siteorigin-widgets' ),
-            'default' =>  '',
-          ),
-          'heading_color'  =>  array(
-            'type'  =>  'color',
-            'label' =>  __( 'Heading Color', 'siteorigin-widgets' ),
-            'default' =>  '#000'
+          'card_link'  =>  array(
+            'type'      => 'link',
+            'label'     => __( 'Link', 'siteorigin-widgets' ),
+            'default'   => ''
           ),
           'card_desc'     => array(
             'type'  =>  'text',
@@ -60,7 +55,17 @@ class Sp_Card extends SiteOrigin_Widget{
             'type'  =>  'color',
             'label' =>  __('Card Border Color','siteorigin-widgets'),
             'default' =>  '#eee'
-          )
+          ),
+          'heading_txt'  =>  array(
+            'type'  =>  'text',
+            'label' =>  __( 'Heading', 'siteorigin-widgets' ),
+            'default' =>  '',
+          ),
+          'heading_color'  =>  array(
+            'type'  =>  'color',
+            'label' =>  __( 'Heading Color', 'siteorigin-widgets' ),
+            'default' =>  '#000'
+          ),
         )
       )
     );
