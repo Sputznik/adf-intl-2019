@@ -1,170 +1,42 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-.dd{
-  /* background: red; */
+
+/* WPML IN HEADER */
+.wpml-switcher .wpml-ls-legacy-list-horizontal{ padding: 2px;}
+.wpml-switcher .wpml-ls-legacy-list-horizontal a{ border-bottom: none; }
+.wpml-switcher, .search-bar{ margin-top: 30px; }
+
+@media(min-width: 44em){
+  .wpml-switcher, .search-bar{ margin-top: 0px; }
+  .wpml-switcher h5{ display: none;}
+	.wpml-switcher{ float: right; }
+	.wpml-switcher .wpml-ls-legacy-list-horizontal a{
+  	color: #fff;
+  	font-size: 0.875em;
+	}
 }
-.four-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+/* WPML IN HEADER */
+
+/* FOOTER */
+.prefooter{
+  background: #494545;
+  color: #fff;
+  padding:30px 0;
   font-size: 0.9em;
 }
-.four-list > li{
-  width: 10%;
-}
-.single-list > li > a{
+.prefooter .col{ padding: 0 1em;}
+.prefooter a[href]{
   border: none;
   color: #fff;
 }
-.two-social > li > a{
-  border: none;
+.bottom-footer .copyright{ margin-bottom: 0;}
+@media( max-width: 768px ){
+  .prefooter .col{ padding: 0;}
 }
-.two-social > li:first-child{
-  /* font-size: 25px; */
-  color: #fff;
-}
-/* .four-list > li:first-child{
-  margin-left: 40px;
-} */
-.single-list > li a:hover{
-  cursor: pointer;
-}
-.four-list > li:first-child{
-  width: 50%;
-  /* background: green; */
-}
-.four-list > li:nth-child(2){
-  margin-left: 80px;
-  margin-right: 80px;
-}
-.four-list > li:nth-child(3){
-  margin-right: 32px;
-}
-.four-list > li:nth-child(4){
-  width: 6%;
-}
-.single-list,.two-social{
-  list-style-type: none;
-  padding: 0;
-}
-@media(min-width: 1440px){
-  .four-list > li:nth-child(4) {
-    width: 8%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 768px){
-  .four-list > li{
-    width: 15% !important;
-    /* text-align: center; */
-    margin: 0;
-    margin-bottom: 5px;
-  }
-  .four-list > li:first-child{
-    width: 40% !important;
-    margin: 0;
-    text-align: left;
-  }
-  .four-list > li:nth-child(2){
-    margin-right: 20px !important;
-    margin-left: 75px !important;
-  }
-  .four-list > li:nth-child(3){
-    margin-right: 17px !important;
-  }
-  .four-list > li:nth-child(4){
-    width: 10% !important;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px){
-  .four-list>li:first-child {
-    width: 40% !important;
-    margin-left: 60px !important;
-  }
-  .four-list > li{
-    width: 10% !important;
-  }
-  .four-list > li:nth-child(2){
-    margin-right: 25px;
-  }
-}
-@media(max-width: 768px){
-  .dd{
-    padding: 0 30px;
-    /* background: yellow; */
-  }
-  .four-list > li{
-    width: 20%;
-    /* text-align: center; */
-    margin: 0;
-    margin-bottom: 5px;
-  }
-  .four-list > li:nth-child(2){
-    margin-left: 30px;
-  }
-  .four-list > li:nth-child(3){
-    margin-right: 30px;
-  }
-  .four-list > li:first-child{
-    width: 100%;
-    margin: 0;
-    text-align: center;
-  }
-  .four-list > li:nth-child(4){
-    width: 40%;
-  }
-}
-@media(max-width: 425px){
-  .four-list > li:nth-child(2){
-    margin-left: 50px;
-    margin-right: 40px;
-  }
-  .four-list > li:nth-child(3){
-    margin-right: 22px;
-  }
-  .four-list > li:nth-child(4){
-    width: 20%;
-  }
-}
-@media(max-width: 375px){
-  .four-list > li {
-    width: 22%;
-  }
-  .four-list > li:nth-child(2){
-    margin-left: 28px;
-    margin-right: 38px;
-  }
-}
-@media(max-width: 320px){
-  .mobile-branding a {
-    margin-left: 4em;
-  }
-  .four-list > li:first-child img{
-    width: 100%;
-  }
-  .four-list > li:nth-child(2){
-    width: 40%;
-  }
-  .four-list > li:nth-child(3){
-    width: 35%;
-    margin-right: 0;
-  }
-  .four-list > li:nth-child(4){
-    width: 100%;
-    text-align: center;
-  }
-  .four-list > li:nth-child(2){
-    margin-left: 25px;
-    margin-right: 28px;
-  }
-}
-@media(min-width: 768px){
-  .container{
-    max-width: 1100px;
-    margin: auto;
-    /* padding: 0 15px; */
-  }
-}
+/* FOOTER */
+
+
 .site{
   max-width: 100%;
 }
@@ -460,11 +332,20 @@ body.page .image-overlay h2,
   padding-bottom: 20px;
   border-bottom: #DDD solid 1px;
 }
-.bold{
-  font-weight: bold;
-}
+.bold{ font-weight: bold; }
 .container{
   padding-left: 15px;
   padding-right: 15px;
+  margin: auto;
+}
+@media( min-width: 768px ){
+  .container{ max-width: 1100px; }
+}
+@media( min-width: 1500px ){
+  .container{ max-width: 1600px; }
+}
+.list-unstyled{
+  list-style: none;
+  padding: 0;
 }
 /* HELPER CLASSES */
