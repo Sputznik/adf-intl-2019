@@ -17,11 +17,6 @@
   </div>
 </div>
 <style>
-  .site-content > .content-area > .site-main > .container{
-    padding: 0;
-    max-width: 100%;
-    margin: 0;
-  }
   #content .page-content{
     padding: 0 !important;
     margin: 0 !important;
