@@ -19,10 +19,11 @@ class Sp_Header_Card extends SiteOrigin_Widget{
         'fallback'  =>  true
       ),
       'card_txt'  =>  array(
-        'type'  =>  'textarea',
-        'label' =>  __('Card text','siteorigin-widgets'),
-        'default' =>  '',
-        'rows'    =>  5
+        'type'           =>  'tinymce',
+        'label'          =>  __('Card text','siteorigin-widgets'),
+        'default'        =>  '',
+        'rows'           =>  10,
+        'default-editor' => 'html',
       ),
       'card_bgcolor'  =>  array(
         'type'  =>  'color',
