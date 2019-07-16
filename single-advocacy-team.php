@@ -15,7 +15,7 @@ get_header(); ?>
 <?php
 
 	$staff_description = get_the_content();
-	$staff_excerpt = get_the_excerpt();
+
 
 ?>
 
@@ -31,13 +31,13 @@ get_header(); ?>
 								<div class='col'>
 									<h5 class='bold text-muted uppercase no-margin-top'><?php _e( do_shortcode('[orbit_terms taxonomy="department" link="0"]') );?></h5>
 									<h1 class='no-margin'><?php the_title();?></h1>
-									<h5 class='uppercase text-muted <?php if( $staff_excerpt ):?>border-bottom<?php endif;?>'><?php _e( do_shortcode('[orbit_cf id="team-position"]') );?></h5>
+									<h5 class='uppercase text-muted <?php if( $staff_description ):?>border-bottom<?php endif;?>'><?php _e( do_shortcode('[orbit_cf id="team-position"]') );?></h5>
 									<div class='excerpt text-muted'><?php the_excerpt();?></div>
 								</div>
 							</div>
 						</div>
 						<?php if( $staff_description ): ?>
-						<div class='row gray'><div class='container'><?php	_e( $staff_description );?></div></div>
+						<div class='row gray'><div class='container'><?php the_content();?></div></div>
 						<?php endif;?>
 					<?php endwhile;?>
 					</div>
