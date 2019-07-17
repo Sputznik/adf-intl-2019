@@ -141,8 +141,13 @@ h4{
 .article-list a:hover{
   border-color: #08438c !important;
 }
-.article-content strong{
+.article-content strong, .feature-content strong{
   color: #999;
+}
+
+.feature-content a[href]{
+  border: none;
+  color: inherit;
 }
 
 .team-list a[href], .team-list a[href]:hover{
