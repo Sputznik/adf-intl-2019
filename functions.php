@@ -339,12 +339,16 @@ function excerpt( $limit ) {
 	$orig_excerpt = wp_trim_excerpt();
 	*/
 
-	$orig_excerpt = get_the_content();
-	$orig_excerpt = strip_shortcodes( $orig_excerpt );
-	$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
-	$excerpt = preg_replace($regex,'',$orig_excerpt);
-	$excerpt = strip_tags($excerpt, '<p>');
-	
+	$orig_excerpt = get_the_excerpt();
+
+	if( !count( $orig_excerpt ) ){
+		$orig_excerpt = get_the_content();
+		$orig_excerpt = strip_shortcodes( $orig_excerpt );
+		$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
+		$excerpt = preg_replace($regex,'',$orig_excerpt);
+		$excerpt = strip_tags($excerpt, '<p>');
+	}
+
 	$excerpt = explode(' ', $excerpt, $limit);
 
 	if (count($excerpt) >= $limit) {
