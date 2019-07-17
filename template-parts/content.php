@@ -473,23 +473,9 @@ $type = get_post_type($post->ID);
 							$type = get_post_type($post);
 				?>
 				<?php if($count == 'one') : ?>
-				<a href = "<?php the_permalink(); ?>" class="<?php if($type == 'resource'){echo 'resource-feature';} ?> feature-image">
-					<?php if($type == 'resource'): ?>
-						<img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'large' )[0]; ?>">
-					<?php else : ?>
-					<picture>
-						<source srcset="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'square' )[0]; ?>" media="(max-width: 44em)">
-						<source srcset="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'large' )[0]; ?>" media="(max-width: 62.5em)">
-						<?php echo wp_get_attachment_image(get_post_thumbnail_id( get_the_ID() ), 'square'); ?>
-					</picture>
-					<?php endif; ?>
-				</a>
-				<span class="content-type"><?php echo $type; ?></span>
-				<div class="feature-content">
-					<h3><?php the_title(); ?></h3>
-					<p><?php echo excerpt(60); ?></p>
-					<a href = "<?php the_permalink(); ?>">Read more</a>
-				</div>
+					<div class="secondary-feature group <?php if($type == 'resource'){echo 'resource-feature';} ?>">
+					<?php get_template_part( 'template-parts/content', 'featured' );?>
+					</div>
 				<?php else : ?>
 				<li>
 					<a href = "<?php the_permalink(); ?>">
