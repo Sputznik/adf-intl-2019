@@ -160,6 +160,12 @@ h4{
 @media all and (min-width: 60em) {
   .col-4.team-list .picture{ max-height: 220px; overflow: hidden; }
 }
+
+@media(min-width: 62.5em){
+  .feature-image{ width: 40%; max-height: 250px; overflow: hidden;}
+  .feature-content{ width: 60%; }
+}
+
 /* 3 column grid */
 
 /* single post */
