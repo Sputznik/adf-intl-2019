@@ -339,13 +339,13 @@ function excerpt( $limit ) {
 	$orig_excerpt = wp_trim_excerpt();
 	*/
 
-	$orig_excerpt = get_the_excerpt();
+	$excerpt = get_the_excerpt();
 
-	if( !$orig_excerpt && !strlen( $orig_excerpt ) ){
-		$orig_excerpt = get_the_content();
-		$orig_excerpt = strip_shortcodes( $orig_excerpt );
+	if( !$excerpt && !strlen( $excerpt ) ){
+		$excerpt = get_the_content();
+		$excerpt = strip_shortcodes( $excerpt );
 		$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
-		$excerpt = preg_replace($regex,'',$orig_excerpt);
+		$excerpt = preg_replace( $regex,'', $excerpt );
 		$excerpt = strip_tags($excerpt, '<p>');
 	}
 
