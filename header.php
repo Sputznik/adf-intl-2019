@@ -67,7 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								Campaigns
 							</a>
 						</li>
-						<?php $issues = get_field('issues', 'option');
+						<?php $issues = get_global_option( 'issues' );
 						if( $issues ): ?>
 						<li class="with-sub">
 							<a href = "#">

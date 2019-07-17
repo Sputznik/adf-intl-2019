@@ -452,3 +452,17 @@ class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
         $output .= "$indent</ul></div>\n";
     }
 }
+
+/**
+ * Advanced Custom Fields Options function
+ * Always fetch an Options field value from the default language
+ */
+function cl_acf_set_language() {
+  return acf_get_setting('default_language');
+}
+function get_global_option($name) {
+	add_filter('acf/settings/current_language', 'cl_acf_set_language', 100);
+	$option = get_field($name, 'option');
+	remove_filter('acf/settings/current_language', 'cl_acf_set_language', 100);
+	return $option;
+}
