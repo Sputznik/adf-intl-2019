@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<nav class="top-navigation group">
 					<ul>
 						<li>
-							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>campaign/">
+							<a href = "<?php echo esc_url( site_url( 'campaign' ) ); ?>">
 								<?php include(get_template_directory().'/_svg/icon-gavel.php'); ?>
 								Campaigns
 							</a>
