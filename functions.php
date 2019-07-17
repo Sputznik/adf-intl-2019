@@ -346,6 +346,7 @@ function excerpt( $limit ) {
 		$excerpt = strip_shortcodes( $excerpt );
 		$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
 		$excerpt = preg_replace( $regex,'', $excerpt );
+		$excerpt = preg_replace('/<!--(.|\s)*?-->/', '', $excerpt ); // remove html comments
 		$excerpt = strip_tags($excerpt, '<p>');
 	}
 
