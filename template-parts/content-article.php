@@ -2,8 +2,8 @@
   $title = get_the_title();
   $title_length = strlen( $title );
   $excerpt_length = 0;
-  if( $title_length < 63 ){
-    $excerpt_length = 63 - $title_length;
+  if( $title_length < 50 ){
+    $excerpt_length = 50 - $title_length;
 
     if( $excerpt_length < 25 ){
       $excerpt_length = 25;
