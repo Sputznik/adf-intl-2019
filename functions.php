@@ -341,7 +341,7 @@ function excerpt( $limit ) {
 
 	$orig_excerpt = get_the_excerpt();
 
-	if( !count( $orig_excerpt ) ){
+	if( !$orig_excerpt && !strlen( $orig_excerpt ) ){
 		$orig_excerpt = get_the_content();
 		$orig_excerpt = strip_shortcodes( $orig_excerpt );
 		$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
