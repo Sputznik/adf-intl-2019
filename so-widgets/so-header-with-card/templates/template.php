@@ -38,9 +38,9 @@
   }
   .header-card{
     width: 90%;
-    max-width: 350px;
+    max-width: 400px;
     /* height: 400px; */
-    padding: 20px 35px;
+    padding: 30px;
     color: #fff;
     margin-bottom: 20px;
   }
