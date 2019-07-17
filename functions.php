@@ -329,7 +329,7 @@ if( function_exists('acf_add_options_page') ) {
 }
 //Excerpt
 function excerpt($limit) {
-	$orig_excerpt = get_the_content();
+	$orig_excerpt = wp_trim_excerpt();//get_the_content();
 	$orig_excerpt = strip_shortcodes( $orig_excerpt );
 	$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
 
