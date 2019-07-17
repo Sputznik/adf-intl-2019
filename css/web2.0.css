@@ -341,13 +341,12 @@ body.page .image-overlay h2,
     width: 25%;
   }
 }
-.text-muted{
-  color: #777;
-}
+.text-muted{ color: #777; }
 .uppercase{
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
 }
+.text-center{ text-align: center; }
 .no-margin{ margin: 0;}
 .no-margin-top{ margin-top: 0;}
 .border-bottom{

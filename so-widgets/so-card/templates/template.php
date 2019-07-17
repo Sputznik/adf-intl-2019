@@ -23,7 +23,7 @@
         <?php endif;?>
           <div class="s-card-header" style="color:<?php _e( $value['icon_color'] );?>">
             <?php echo $card_icon;?>
-            <h4 style="color:<?php _e( $value['heading_color'] );?>"><?php _e( $value['heading_txt'] );?></h4>
+            <h4 class="uppercase text-center" style="color:<?php _e( $value['heading_color'] );?>"><?php _e( $value['heading_txt'] );?></h4>
           </div>
           <?php ( $value['card_link'] ) ? _e( '<a class="s-card-link" href="'.$value['card_link'].'";></a>' ) : '' ?>
         </div>
@@ -54,24 +54,17 @@
     width: 100%;
     height: auto;
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
     flex-flow: wrap;
-    /* margin-top: 40px;
-    margin-bottom: 40px; */
   }
   .s-card-inner{
     width: 100%;
     padding: 0.5em;
     margin-bottom: 25px;
   }
-  .s-card-inner:last-child{
-    margin-bottom: 0;
-  }
+  .s-card-inner:last-child{ margin-bottom: 0; }
   .s-card{
     position: relative;
     width: 100%;
-    /* max-width  : 200px; */
     height: 200px;
     background: #fff;
     background-repeat: no-repeat;
@@ -93,7 +86,6 @@
   }
   .s-card span{
     display: inline-block;
-    /* background:green; */
     width:80px;
     height:65px;
     font-size:50px;
@@ -110,11 +102,8 @@
     border: none;
   }
   .s-card h4{
-    font-family: "Roboto";
-    text-transform: uppercase;
     margin: 0;
     font-weight: 100;
-    text-align: center;
   }
   .s-bottom{
     margin-top: 18px;
@@ -137,15 +126,10 @@
 
   @media all and (min-width: 35em) {
   .s-card-inner {
-    /* width: 50%; */
     width: 33.33%;
   }
 }
-@media all and (min-width: 60em) {
-  /* .s-card-inner {
-    width: 33.33%;
-  } */
-}
+@media all and (min-width: 60em) {}
 @media only screen and (min-width: 560px) and (max-width: 665px){
   .s-card-inner {
     width: 50%;
