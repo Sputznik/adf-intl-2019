@@ -1,10 +1,19 @@
+<?php
+  $title = get_the_title();
+  $title_length = strlen( $title );
+  $excerpt_length = 0;
+  if( $title_length < 63 ){
+    $excerpt_length = 63 - $title_length + 15;
+  }
+?>
 <a href = "<?php the_permalink(); ?>">
   <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }?>
   <span class="content-type"><?php _e( do_shortcode('[orbit_post_type]') );?></span>
   <div class="article-content">
-    <?php $title = get_the_title(); ?>
     <h4><?php echo $title; ?></h4>
-    <p><?php if(strlen($title) > 63) {echo excerpt(16);} elseif(strlen($title) > 32){echo excerpt(20);} else {echo excerpt(30);} ?></p>
+    <?php if( $excerpt_length ):?>
+    <p><?php echo excerpt( $excerpt_length ); ?></p>
+    <?php endif;?>
     <strong class="link">Published on <?php echo get_the_date();?></strong>
   </div>
 </a>
