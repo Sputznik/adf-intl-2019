@@ -1,6 +1,6 @@
 <?php
  $image_src =  wp_get_attachment_url( $instance['header_image'] );
- $card_bg = $instance['card_bgcolor']."AA";
+ $card_bg = $instance['card_bgcolor']."CC";
  $card_text = $instance['card_txt'];
  $btn_text = $instance['btn_text'];
  $btn_url = $instance['btn_url']

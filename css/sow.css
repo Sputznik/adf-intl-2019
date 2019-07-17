@@ -178,6 +178,10 @@
 .header-card h1, .header-card h2, .header-card h3, .header-card h4, .header-card h5{
   margin: 0;
 }
+.header-card p{
+  line-height: 1.3;
+  margin: 1em 0;
+}
 .header-card .btn{
   font-size: 18px;
   padding: 5px 30px;
