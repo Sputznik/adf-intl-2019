@@ -1,6 +1,6 @@
 <?php
  $image_src =  wp_get_attachment_url( $instance['header_image'] );
- $card_bg = $instance['card_bgcolor'];
+ $card_bg = $instance['card_bgcolor']."AA";
  $card_text = $instance['card_txt'];
  $btn_text = $instance['btn_text'];
  $btn_url = $instance['btn_url']
@@ -42,9 +42,6 @@
     padding: 20px 35px;
     color: #fff;
     margin-bottom: 20px;
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Merriweather', serif;
-    font-size: 1.5em; */
   }
   .header-card > h4{
     margin: 0;
@@ -65,7 +62,6 @@
     .header-card{
       width: 100%;
       height: 100%;
-      opacity: 0.8;
     }
     .bg-image > .container{
       padding: 0;
