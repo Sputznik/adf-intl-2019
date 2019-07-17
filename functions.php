@@ -328,14 +328,24 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page('Global Options');
 }
 //Excerpt
-function excerpt($limit) {
+function excerpt( $limit ) {
+
+	global $post;
+
+	if( $post->post_excerpt ){
+		$orig_excerpt = $post->post_excerpt;
+	}
+
+	$orig_excerpt = wp_trim_excerpt();
+
+	/*
 	$orig_excerpt = get_the_content();
 	$orig_excerpt = strip_shortcodes( $orig_excerpt );
 	$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
-
 	$excerpt = preg_replace($regex,'',$orig_excerpt);
-
 	$excerpt = strip_tags($excerpt, '<p>');
+	*/
+
 	$excerpt = explode(' ', $excerpt, $limit);
 
 	if (count($excerpt) >= $limit) {
