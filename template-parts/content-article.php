@@ -5,6 +5,6 @@
     <?php $title = get_the_title(); ?>
     <h4><?php echo $title; ?></h4>
     <p><?php if(strlen($title) > 63) {echo excerpt(16);} elseif(strlen($title) > 32){echo excerpt(20);} else {echo excerpt(30);} ?></p>
-    <strong class="link">Published on <?php the_date();?></strong>
+    <strong class="link">Published on <?php echo get_the_date();?></strong>
   </div>
 </a>
