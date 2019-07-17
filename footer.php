@@ -26,7 +26,7 @@
 						<img src="<?php bloginfo('template_directory'); ?>/_i/logo-white.png" />
 						<span class="assistive-text"><?php bloginfo( 'name' ); ?></span>
 					</a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					<p>Faith-based legal advocacy organization that protects fundamental freedoms and promotes the inherent dignity of all people.</p>
 				</div>
 				<div class="col">
 					<ul class="three-list">
