@@ -3,11 +3,15 @@
   $title_length = strlen( $title );
   $excerpt_length = 0;
   if( $title_length < 63 ){
-    $excerpt_length = 63 - $title_length + 15;
+    $excerpt_length = 63 - $title_length;
+
+    if( $excerpt_length < 15 ){
+      $excerpt_length = 15;
+    }
   }
 ?>
 <a href = "<?php the_permalink(); ?>">
-  <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }?>
+  <div class='article-featured-image'><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }?></div>
   <span class="content-type"><?php _e( do_shortcode('[orbit_post_type]') );?></span>
   <div class="article-content">
     <h4><?php echo $title; ?></h4>
