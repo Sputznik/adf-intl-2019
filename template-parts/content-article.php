@@ -5,8 +5,8 @@
   if( $title_length < 63 ){
     $excerpt_length = 63 - $title_length;
 
-    if( $excerpt_length < 15 ){
-      $excerpt_length = 15;
+    if( $excerpt_length < 25 ){
+      $excerpt_length = 25;
     }
   }
 ?>
