@@ -8,7 +8,8 @@
 <div class="adf-header"  style="">
   <div class="bg-image" style="background-image:url(<?php _e( $image_src );?>);">
     <div class="container">
-      <div class="header-card" style="background-color:<?php _e( $card_bg ); ?>";><h4><?php _e( $card_text ); ?></h4>
+      <div class="header-card" style="background-color:<?php _e( $card_bg ); ?>";>
+        <?php _e( $card_text ); ?>
         <?php if( $btn_url ) :?>
           <a type="button" href="<?php _e( $btn_url );?>"class="btn"><?php _e( $btn_text ); ?></a>
         <?php endif;?>
