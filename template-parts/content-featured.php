@@ -18,7 +18,7 @@
 <div class="feature-content">
   <a href="<?php the_permalink(); ?>">
     <h3><?php the_title(); ?></h3>
-    <p><?php echo excerpt(20); ?></p>
+    <p class="text-muted"><?php echo excerpt(20); ?></p>
     <strong class="link">Published on <?php the_date();?></strong>
   </a>
 </div>
