@@ -16,7 +16,7 @@
   <div class="article-content">
     <h4><?php echo $title; ?></h4>
     <?php if( $excerpt_length ):?>
-    <p><?php echo excerpt( $excerpt_length ); ?></p>
+    <p class="text-muted narrow-text"><?php echo excerpt( $excerpt_length ); ?></p>
     <?php endif;?>
     <strong class="link">Published on <?php echo get_the_date();?></strong>
   </div>
