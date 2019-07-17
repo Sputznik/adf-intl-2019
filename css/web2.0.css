@@ -108,7 +108,8 @@ h4{
 }
 
 .article-list.three-list,
-.article-list.two-list{
+.article-list.two-list,
+.secondary-feature{
   display: flex;
   flex-wrap: wrap;
 }
@@ -161,9 +162,19 @@ h4{
   .col-4.team-list .picture{ max-height: 220px; overflow: hidden; }
 }
 
+
+
+.secondary-feature{ margin-bottom: 0; padding: 0.5em; background: none;}
+.secondary-feature .feature-content,
+.secondary-feature .feature-image{
+  float: none;
+  position: relative;
+}
+.secondary-feature .feature-content{ background: #fff; width: 100%; }
+.secondary-feature .feature-image{ max-height: 250px; overflow: hidden;}
 @media(min-width: 62.5em){
-  .feature-image{ width: 40%; max-height: 250px; overflow: hidden;}
-  .feature-content{ width: 60%; }
+  .secondary-feature .feature-image{ width: 40%; }
+  .secondary-feature .feature-content{ width: 60%; }
 }
 
 /* 3 column grid */

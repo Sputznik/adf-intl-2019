@@ -13,8 +13,8 @@
   </picture>
   <?php endif; ?>
   */ ?>
+  <span class="content-type"><?php echo get_post_type($post); ?></span>
 </a>
-<span class="content-type"><?php echo get_post_type($post); ?></span>
 <div class="feature-content">
   <a href="<?php the_permalink(); ?>">
     <h3><?php the_title(); ?></h3>
