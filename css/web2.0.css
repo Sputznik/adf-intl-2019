@@ -121,9 +121,11 @@ h4{
   width: 100%;
 }
 
+/*
 .article-list.three-list li p{
   display: none !important;
 }
+*/
 
 @media all and (min-width: 60em) {
   .article-list.three-list li{
