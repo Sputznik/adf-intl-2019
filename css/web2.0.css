@@ -146,6 +146,11 @@ h4{
   color: #999;
 }
 
+.article-list .article-featured-image{
+  max-height: 160px;
+  overflow: hidden;
+}
+
 .feature-content a[href]{
   border: none;
   color: inherit;
