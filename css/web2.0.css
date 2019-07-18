@@ -293,28 +293,6 @@ body.page .image-overlay h2,
 }
 /* PAGES - DONATE */
 
-
-/* VIDEOS */
-.video-lightbox{
-  position: relative;
-}
-.video-lightbox a[href]{
-  border-bottom: none;
-  padding-bottom: 0;
-}
-.video-lightbox a[href]:before{
-  content: '\25b6';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 4em;
-  margin: -0.5em 0 0 -0.5em;
-  opacity: 0.7;
-  line-height: 1;
-  color: #fff;
-}
-/* VIDEOS */
-
 /* HELPER CLASSES */
 .row{ padding: 50px 0; }
 .col-2, .col-13, .col-3, .col-4{
