@@ -9,6 +9,7 @@ Video URI:
 */
 class Sp_Header_Card extends SiteOrigin_Widget{
   function __construct(){
+
     $form_options = array(
       'header_image'  =>  array(
         'type'  =>  'media',
@@ -39,6 +40,26 @@ class Sp_Header_Card extends SiteOrigin_Widget{
         'type'  =>  'link',
         'label' =>  __('Button URL','siteorigin-widgets'),
         'default' => ''
+      ),
+      // SETTINGS SECTION
+      'settings' => array(
+        'type' => 'section',
+        'label' => __( 'Settings' , 'siteorigin-widgets' ),
+        'hide' => true,
+        'fields' => array(
+          'desktop' => array(
+            'type' => 'section',
+            'label' => __( 'Desktop Styles' , 'siteorigin-widgets' ),
+            'hide' => true,
+            'fields' => $this->get_common_fields(),
+          ),
+          'mobile' => array(
+            'type' => 'section',
+            'label' => __( 'Mobile Styles' , 'siteorigin-widgets' ),
+            'hide' => true,
+            'fields' => $this->get_common_fields()
+          ),
+        )
       )
     );
     parent::__construct(
@@ -53,6 +74,24 @@ class Sp_Header_Card extends SiteOrigin_Widget{
       plugin_dir_path(__FILE__).'/so-widgets/so-header-with-card'
     );
   }//construct function ends here
+
+  function get_common_fields(){
+    $useable_units = array( 'px', 'vh' );
+    return array(
+      'bg_image_height'  => array(
+        'type' => 'multi-measurement',
+        'label' => __( 'Background Image Height','siteorigin-widgets' ),
+        'autofill' => true,
+        'default' => '400px',
+        'measurements' => array(
+          'image_height' => array(
+            'units' => $useable_units,
+          ),
+        ),
+      )
+    );
+  }
+
   function get_template_name($instance){
     return 'template';
   }
@@ -65,4 +104,4 @@ class Sp_Header_Card extends SiteOrigin_Widget{
 }
 siteorigin_widget_register('so-header-with-card',__FILE__,'Sp_Header_Card');
 
-  ?>
+?>
