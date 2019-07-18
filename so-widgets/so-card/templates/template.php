@@ -37,8 +37,8 @@
             <h4 style="color:<?php _e( $value['heading_color'] );?>"><?php _e( $value['heading_txt'] );?></h4>
           </div>
         </div>
-        <div class="s-bottom" style="background:<?php _e( $value['card_border'] ); ?>; margin-top: 5px;margin-bottom: 5px;"></div>
-        <div style="color:<?php _e( $value['heading_color'] );?>" >
+        <div class="s-bottom" style="background:<?php _e( $value['card_border'] ); ?>; margin-top: 7px;margin-bottom: 10px;"></div>
+        <div class="narrow-text" style="color:<?php _e( $value['heading_color'] );?>" >
         <p style="text-align: center;">
           <strong><?php _e( $value['card_desc'] );?></strong>
         </p>
