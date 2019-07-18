@@ -450,12 +450,12 @@ a[href].sp-btn:hover{
   left: 0;
 }
 .video-popup .overlay-text{
-	background-color: rgba(48,210,236,0.5);
+	background-color: #FFFFFFCC;
   display: none;
 }
 .video-popup .overlay-text a{
 	display: block;
-  color: #fff;
+  color: #333;
   padding: 10px 20px;
 }
 .video-popup:hover .overlay-text{ display: block;}
