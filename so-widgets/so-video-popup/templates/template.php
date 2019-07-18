@@ -1,9 +1,3 @@
-<?php
-// UNIQUE ID OF THE WIDGET
-global $sp_sow;
-$widget_id = 'sow-bg-'.$sp_sow->getUniqueID( $instance );
-?>
-
 <div class='video-popup'>
   <?php
   foreach ( $instance['video_repeater'] as $key => $value) {
