@@ -37,7 +37,12 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
             'type'    =>  'color',
             'label'   =>  __('Text Color','siteorigin-widgets'),
             'default' =>  '#000000'
-          )
+          ),
+          'width' =>  array(
+            'type'  =>  'text',
+            'label' =>  __('Max Width','siteorigin-widgets'),
+            'default' => '400px'
+          ),
         )
       ),
       'btn' => array(
