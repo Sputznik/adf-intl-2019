@@ -1,5 +1,6 @@
 <?php
   $card_repeater = $instance['card_repeater'];
+  $card_style = $instance['card_style'];
   // echo "<pre>";
   // print_r($instance['card_repeater']);
   ?>
@@ -8,7 +9,6 @@
   foreach ($card_repeater as $key => $value) {
     $bg_image = wp_get_attachment_url( $value['card_bg_img'] );
     $card_icon = siteorigin_widget_get_icon( $value['card_icon'], array( '' ) );
-    $card_style = $value['card_style'];
     $card_desc = $value['card_desc'];
     ?>
     <?php if( $card_style==='card_with_border' ) :?>

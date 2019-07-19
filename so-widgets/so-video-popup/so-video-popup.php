@@ -1,13 +1,13 @@
 <?php
 /*
-Widget Name: Video Popup Widget
+Widget Name: ADF Video Popup Widget
 Description: Multiple video popup widget
 Author: Stephen Anil, Sputznik
 Author URI: http://www.sputznik.com
 Widget URI:
 Video URI:
 */
-class Sp_Video_Popup extends SiteOrigin_Widget{
+class SP_VIDEO_POPUP extends SiteOrigin_Widget{
   function __construct(){
 
     $form_options = array(
@@ -57,6 +57,6 @@ class Sp_Video_Popup extends SiteOrigin_Widget{
     return '';
     }
 }
-siteorigin_widget_register('so-video-popup',__FILE__,'Sp_Video_Popup');
+siteorigin_widget_register('so-video-popup',__FILE__,'SP_VIDEO_POPUP');
 
   ?>
