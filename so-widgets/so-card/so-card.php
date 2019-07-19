@@ -17,7 +17,7 @@ class SP_CARD extends SiteOrigin_Widget{
         'fields'    =>  array(
           'card_bg_img' => array(
               'type' => 'media',
-              'label' => __( 'Choose card background ', 'siteorigin-widgets' ),
+              'label' => __( 'Choose Card Background Image', 'siteorigin-widgets' ),
               'choose' => __( 'Choose image', 'siteorigin-widgets' ),
               'update' => __( 'Set image', 'siteorigin-widgets' ),
               'library' => 'image',
