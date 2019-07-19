@@ -240,3 +240,32 @@
   color: #fff;
 }
 /* VIDEOS */
+
+/* ADF HEADLINE */
+.adf-sow-headline{
+  max-width: 750px;
+  margin: 50px auto;
+}
+.adf-sow-headline h1{
+  font-size: 30px;
+  font-weight: 900;
+  color: #000;
+}
+.adf-sow-headline h4{
+  font-family: "Roboto", sans-sans-serif;
+  font-weight: 400;
+  color: #838182;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.adf-sow-headline .decoration{
+  width: 300px;
+  margin: 30px auto;
+  border-top: 1px solid #000;
+}
+.adf-sow-headline .text{ font-weight: 900; color: #000; }
+.adf-sow-headline.dark-theme h1, .adf-sow-headline.dark-theme .text{ color: #fff;}
+.adf-sow-headline.dark-theme h4{ color: #ccc  ;}
+.adf-sow-headline.dark-theme .decoration{ border-color: #fff;} 
+/* ADF HEADLINE */
