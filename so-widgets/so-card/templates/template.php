@@ -19,7 +19,7 @@
           <div class="s-card-overlay" style="background-color: <?php _e( $value['card_border'] ); ?>;">
           </div>
         <?php else:?>
-          <div class="s-card" style="border: 20px solid <?php _e( $value['card_border'] ); ?>;?>);">
+          <div class="s-card" style="border: 20px solid <?php _e( $value['card_border'] ); ?>;">
         <?php endif;?>
           <div class="s-card-header" style="color:<?php _e( $value['icon_color'] );?>">
             <?php echo $card_icon;?>
