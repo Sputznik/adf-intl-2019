@@ -1,13 +1,13 @@
 <?php
 /*
-Widget Name: Header with a Single Card
-Description: Header with a Single Card widget
+Widget Name: ADF Hero Image
+Description: ADF Header background image with a some descriptive text
 Author: Stephen Anil, Sputznik
-Author URI: http://www.sputznik.com
+Author URI: https://www.sputznik.com
 Widget URI:
 Video URI:
 */
-class Sp_Header_Card extends SiteOrigin_Widget{
+class SP_HEADER_CARD extends SiteOrigin_Widget{
   function __construct(){
 
     $form_options = array(
@@ -19,27 +19,48 @@ class Sp_Header_Card extends SiteOrigin_Widget{
         'library' =>  'image',
         'fallback'  =>  true
       ),
-      'card_txt'  =>  array(
-        'type'           =>  'tinymce',
-        'label'          =>  __('Card text','siteorigin-widgets'),
-        'default'        =>  '',
-        'rows'           =>  10,
-        'default-editor' => 'html',
+      'card'  => array(
+        'type'    => 'section',
+        'label'   => __( 'Descriptive Information' , 'siteorigin-widgets' ),
+        'fields'  => array(
+          'html'  => array(
+            'type'           =>  'tinymce',
+            'label'          =>  __('Card Text','siteorigin-widgets'),
+            'default-editor' => 'html',
+          ),
+          'bg'    =>  array(
+            'type'    =>  'color',
+            'label'   =>  __('Card Background','siteorigin-widgets'),
+            'default' =>  '#ffffff'
+          ),
+          'color'    =>  array(
+            'type'    =>  'color',
+            'label'   =>  __('Text Color','siteorigin-widgets'),
+            'default' =>  '#000000'
+          ),
+          'width' =>  array(
+            'type'  =>  'text',
+            'label' =>  __('Max Width','siteorigin-widgets'),
+            'default' => '400px'
+          ),
+        )
       ),
-      'card_bgcolor'  =>  array(
-        'type'  =>  'color',
-        'label' =>  __('Card Background','siteorigin-widgets'),
-        'default' =>  '#fff'
-      ),
-      'btn_text' =>  array(
-        'type'  =>  'text',
-        'label' =>  __('Button Text','siteorigin-widgets'),
-        'default' => 'Click'
-      ),
-      'btn_url' =>  array(
-        'type'  =>  'link',
-        'label' =>  __('Button URL','siteorigin-widgets'),
-        'default' => ''
+      'btn' => array(
+        'type'    => 'section',
+        'hide'    => true,
+        'label'   => __( 'Button' , 'siteorigin-widgets' ),
+        'fields'  => array(
+          'text' =>  array(
+            'type'  =>  'text',
+            'label' =>  __('Button Text','siteorigin-widgets'),
+            'default' => 'Click'
+          ),
+          'url' =>  array(
+            'type'  =>  'link',
+            'label' =>  __('Button URL','siteorigin-widgets'),
+            'default' => ''
+          ),
+        )
       ),
       // SETTINGS SECTION
       'settings' => array(
@@ -102,6 +123,4 @@ class Sp_Header_Card extends SiteOrigin_Widget{
     return '';
     }
 }
-siteorigin_widget_register('so-header-with-card',__FILE__,'Sp_Header_Card');
-
-?>
+siteorigin_widget_register('so-header-with-card',__FILE__,'SP_HEADER_CARD');
