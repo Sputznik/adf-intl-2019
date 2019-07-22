@@ -341,7 +341,7 @@ function excerpt( $limit ) {
 
 	global $post;
 
-	$excerpt = $post->post_excerpt();
+	$excerpt = $post->post_excerpt;
 
 	if( !$excerpt && !strlen( $excerpt ) ){
 		/*
