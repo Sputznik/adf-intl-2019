@@ -1,7 +1,3 @@
-<?php
-  //the_title();
-
-?>
 <?php global $post; $type = get_post_type($post); ?>
 <a href = "<?php the_permalink(); ?>" class="feature-image">
   <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
