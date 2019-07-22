@@ -339,6 +339,7 @@ function excerpt( $limit ) {
 	$orig_excerpt = wp_trim_excerpt();
 	*/
 
+
 	$excerpt = get_the_excerpt();
 
 	if( !$excerpt && !strlen( $excerpt ) ){
@@ -364,7 +365,7 @@ function excerpt( $limit ) {
 
 	$excerpt = preg_replace('`\[[^\]]*\]`', '', $excerpt);
 
-	return $excerpt;
+	return ''; //$excerpt;
 }
 
 function content($limit) {
