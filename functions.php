@@ -330,17 +330,18 @@ if( function_exists('acf_add_options_page') ) {
 //Excerpt
 function excerpt( $limit ) {
 	/*
-	global $post;
 
-	if( $post->post_excerpt ){
+
+	if(  ){
 		$orig_excerpt = $post->post_excerpt;
 	}
 
 	$orig_excerpt = wp_trim_excerpt();
 	*/
 
+	global $post;
 
-	$excerpt = get_the_excerpt();
+	$excerpt = $post->post_excerpt();
 
 	if( !$excerpt && !strlen( $excerpt ) ){
 		/*
