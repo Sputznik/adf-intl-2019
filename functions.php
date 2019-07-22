@@ -329,15 +329,6 @@ if( function_exists('acf_add_options_page') ) {
 }
 //Excerpt
 function excerpt( $limit ) {
-	/*
-
-
-	if(  ){
-		$orig_excerpt = $post->post_excerpt;
-	}
-
-	$orig_excerpt = wp_trim_excerpt();
-	*/
 
 	global $post;
 
@@ -351,25 +342,12 @@ function excerpt( $limit ) {
 		$excerpt = str_replace( ']]>', ']]&gt;', $excerpt );
 
 
-		$excerpt = preg_replace( '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#', '', $excerpt );
-		$excerpt = preg_replace('/<!--(.|\s)*?-->/', '', $excerpt ); // remove html comments
-		$excerpt = strip_tags($excerpt, '<p>');
+		//$excerpt = preg_replace( '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#', '', $excerpt );
+		//$excerpt = preg_replace('/<!--(.|\s)*?-->/', '', $excerpt ); // remove html comments
+		//$excerpt = strip_tags($excerpt, '<p>');
 
 		//$excerpt = wp_trim_excerpt();
 	}
-
-	/*
-	$excerpt = explode(' ', $excerpt, $limit);
-
-	if (count($excerpt) >= $limit) {
-		array_pop($excerpt);
-		$excerpt = implode(" ", $excerpt) . '...';
-	} else {
-		$excerpt = implode(" ", $excerpt);
-	}
-
-	$excerpt = preg_replace('`\[[^\]]*\]`', '', $excerpt);
-	*/
 
 	$excerpt = wp_trim_words( $excerpt, $limit, '...' );
 
