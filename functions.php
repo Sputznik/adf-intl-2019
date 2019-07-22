@@ -346,6 +346,11 @@ function excerpt( $limit ) {
 	if( !$excerpt && !strlen( $excerpt ) ){
 		$excerpt = $post->post_content;
 		$excerpt = strip_shortcodes( $excerpt );
+		$excerpt = excerpt_remove_blocks( $excerpt );
+
+		$excerpt = str_replace( ']]>', ']]&gt;', $excerpt );
+
+
 		$excerpt = preg_replace( '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#', '', $excerpt );
 		$excerpt = preg_replace('/<!--(.|\s)*?-->/', '', $excerpt ); // remove html comments
 		$excerpt = strip_tags($excerpt, '<p>');
@@ -353,6 +358,7 @@ function excerpt( $limit ) {
 		//$excerpt = wp_trim_excerpt();
 	}
 
+	/*
 	$excerpt = explode(' ', $excerpt, $limit);
 
 	if (count($excerpt) >= $limit) {
@@ -363,6 +369,9 @@ function excerpt( $limit ) {
 	}
 
 	$excerpt = preg_replace('`\[[^\]]*\]`', '', $excerpt);
+	*/
+
+	$excerpt = wp_trim_words( $excerpt, $limit, '...' );
 
 	return $excerpt;
 }
