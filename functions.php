@@ -365,7 +365,7 @@ function excerpt( $limit ) {
 
 	$excerpt = preg_replace('`\[[^\]]*\]`', '', $excerpt);
 
-	return ''; //$excerpt;
+	return $excerpt;
 }
 
 function content($limit) {
