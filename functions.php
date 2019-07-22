@@ -344,15 +344,13 @@ function excerpt( $limit ) {
 	$excerpt = $post->post_excerpt;
 
 	if( !$excerpt && !strlen( $excerpt ) ){
-		/*
-		$excerpt = get_the_content();
+		$excerpt = $post->post_content;
 		$excerpt = strip_shortcodes( $excerpt );
-		$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
-		$excerpt = preg_replace( $regex,'', $excerpt );
+		$excerpt = preg_replace( '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#', '', $excerpt );
 		$excerpt = preg_replace('/<!--(.|\s)*?-->/', '', $excerpt ); // remove html comments
 		$excerpt = strip_tags($excerpt, '<p>');
-		*/
-		$excerpt = wp_trim_excerpt();
+
+		//$excerpt = wp_trim_excerpt();
 	}
 
 	$excerpt = explode(' ', $excerpt, $limit);
