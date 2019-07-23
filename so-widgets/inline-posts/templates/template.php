@@ -16,15 +16,15 @@
 
 
 <!-- MODALS FROM THE INLINE POSTS -->
-<?php foreach( $instance['posts'] as $post ): if( function_exists( 'siteorigin_panels_render' ) ): $post_id = getUniqueID( $post ); ?>
-	<div id="<?php _e( 'inline-modal'.$post_id );?>" class="inline-modal" data-behaviour="inline-modal">
-		<div class="inline-overlay"></div>
-		<button type="button" class="close">&times;</button>
-		<div class="inline-modal-dialog" role="document">
-			<?php echo siteorigin_panels_render( 'w'.$post_id, true, $post['content'] );?>
-		</div>
-	</div>
-<?php endif; endforeach;?>
+<?php
+ 	global $sp_sow;
+	foreach( $instance['posts'] as $post ){
+		if( function_exists( 'siteorigin_panels_render' ) ){
+			$post_id = getUniqueID( $post );
+			$sp_sow->modal( 'inline-modal'.$post_id, siteorigin_panels_render( 'w'.$post_id, true, $post['content'] ) );
+		}
+	}
+?>
 <!-- END OF MODALS -->
 <style>
 	.inline-post{
