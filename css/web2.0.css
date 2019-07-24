@@ -377,6 +377,9 @@ a[href].sp-btn{
 a[href].sp-btn:hover{
 	color: #4b6cb7;
 }
+@media( max-width:768px ){
+  a[href].sp-btn{ font-size: 17px; }
+}
 /* SOW BUTTONS OVERRIDDEN HERE */
 
 /* Affirm Dignity Newsletter Form*/

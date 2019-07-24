@@ -139,12 +139,14 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media(max-width: 600px){
+@media(max-width: 768px){
   .card-container .card-body{
     width: 200px;
-    height: 240px;
     margin: auto;
     margin-bottom: 10px;
+  }
+  .card-container .card-inner.card_with_border .card-body{
+    height: 240px;
   }
 }
 
