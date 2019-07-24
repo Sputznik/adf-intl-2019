@@ -470,3 +470,8 @@ function get_global_option($name) {
 	remove_filter('acf/settings/current_language', 'cl_acf_set_language', 100);
 	return $option;
 }
+
+
+add_filter( 'sputznik-sow-json-url', function( $json_url ){
+	return get_stylesheet_directory_uri()."/_js/map.geojson";
+} );
