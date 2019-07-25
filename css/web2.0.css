@@ -3,6 +3,11 @@ body{
   max-width: none;
 }
 
+@media( max-width:768px ){
+  .header-top.group .container{ padding-right: 0;}
+  .top-navigation{ font-size: 0.95em;}
+}
+
 /* WPML IN HEADER */
 .wpml-switcher .wpml-ls-legacy-list-horizontal{ padding: 2px;}
 .wpml-switcher .wpml-ls-legacy-list-horizontal a{ border-bottom: none; }
