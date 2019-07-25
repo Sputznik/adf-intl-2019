@@ -333,7 +333,9 @@ $type = get_post_type($post->ID);
 		?>
 		<div class="home-articles <?php the_sub_field('feat_back'); ?>" id="section<?php echo $i; ?>">
 			<div class="wrap">
-				<?php get_template_part( 'template-parts/content', 'featured' );?>
+				<div class="secondary-feature group <?php if($type == 'resource'){echo 'resource-feature';} ?>">
+					<?php get_template_part( 'template-parts/content', 'featured' );?>
+				</div>
 			</div>
 		</div>
 		<?php wp_reset_postdata(); endif; ?>
