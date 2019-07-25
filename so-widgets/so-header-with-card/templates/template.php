@@ -38,24 +38,28 @@
     border-color: <?php _e( $instance['card']['color'] );?>;
     color:        <?php _e( $instance['card']['color'] );?>;
   }
-  /* Header Card Alignment */
-  <?php _e( "#".$widget_id );?> .header-card.left-align{
-    left: 0;
-    margin-left: 20px;
-  }
 
-  <?php _e( "#".$widget_id );?> .header-card.right-align{
-    right: 0;
-    margin-right: 20px;
-  }
-
-  <?php _e( "#".$widget_id );?> .header-card.center-align{
-    left: 50%;
-    transform: translate( -50%, -50% ) !important;
-  }
   @media( max-width: 768px ){
     <?php _e( "#".$widget_id );?>{
       height: <?php _e( $instance['settings']['mobile']['bg_image_height'] );?>;
+    }
+  }
+
+  @media( min-width:769px ){
+    /* Header Card Alignment for Desktop only */
+    <?php _e( "#".$widget_id );?> .header-card.left-align{
+      left: 0;
+      margin-left: 20px;
+    }
+
+    <?php _e( "#".$widget_id );?> .header-card.right-align{
+      right: 0;
+      margin-right: 20px;
+    }
+
+    <?php _e( "#".$widget_id );?> .header-card.center-align{
+      left: 50%;
+      transform: translate( -50%, -50% ) !important;
     }
   }
 </style>
