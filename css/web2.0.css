@@ -294,7 +294,7 @@ body.page .image-overlay h2,
 
 /* HELPER CLASSES */
 .row{ padding: 50px 0; }
-.col-2, .col-13, .col-3, .col-4{
+.col-2, .col-13, .col-3, .col-4, .col-31{
   display: flex;
   flex-wrap: wrap;
 }
@@ -309,21 +309,11 @@ body.page .image-overlay h2,
   }
 }
 @media all and (min-width: 60em) {
-  .col-13 .col:nth-child( odd ){
-    width: 35%;
-  }
-  .col-13 .col:nth-child( even ){
-    width: 65%;
-  }
-  .col-2 .col{
-    width: 50%;
-  }
-  .col-3 .col{
-    width: 33.33%;
-  }
-  .col-4 .col{
-    width: 25%;
-  }
+  .col-13 .col:nth-child( odd ), .col-31 .col:nth-child( even ){ width: 35%; }
+  .col-13 .col:nth-child( even ), .col-31 .col:nth-child( odd ){ width: 65%; }
+  .col-2 .col{ width: 50%; }
+  .col-3 .col{ width: 33.33%; }
+  .col-4 .col{ width: 25%;}
 }
 .text-muted{ color: #777; }
 .uppercase{
