@@ -121,7 +121,7 @@ get_header(); ?>
 					<div class="article-display <?php echo $type.'-display'; ?>">
 						<header>
 							<h3>Recent <?php echo $type; ?></h3>
-							<a href = "<?php echo home_url( $wp->request.'/?post_type='.$type ); ?>">View All ></a>
+							<a href = "<?php echo home_url( $wp->request.'/?post_type='.$type ); ?>">View All »</a>
 						</header>
 						<?php if($count == 1) : ?>
 						<div class="secondary-feature group <?php if($type == 'resource'){echo 'resource-feature';} ?>">
