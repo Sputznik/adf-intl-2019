@@ -269,7 +269,7 @@ h4{
 
 /* ISSUES & REGIONS */
 .tax-issues .full-banner,.tax-regions .full-banner{ max-height: 400px; }
-.tax-issues .banner-content, .tax-regions .banner-content{ background: #08438c; }
+.tax-issues .banner-content, .tax-regions .banner-content{ background: #08438cDD; }
 .tax-issues .banner-content h1,
 .tax-regions .banner-content h1{
   margin-top: 0;

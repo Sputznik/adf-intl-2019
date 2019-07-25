@@ -477,10 +477,7 @@ $type = get_post_type($post->ID);
 					<?php get_template_part( 'template-parts/content', 'featured' );?>
 					</div>
 				<?php else : ?>
-				<li>
-					<?php get_template_part( 'template-parts/content', 'article' );?>
-					
-				</li>
+				<li><?php get_template_part( 'template-parts/content', 'article' );?></li>
 				<?php endif; wp_reset_postdata(); endif; endwhile; ?>
 				<?php if($count == 'one') : ?>
 				</div>
