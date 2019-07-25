@@ -342,8 +342,9 @@ body.page .image-overlay h2,
 }
 
 @media( min-width: 1600px ){
-  .container{ max-width: 1800px; }
+  .container{ max-width: 1600px; }
 }
+
 
 .list-unstyled{
   list-style: none;
