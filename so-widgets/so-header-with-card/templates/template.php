@@ -20,6 +20,9 @@
     </div>
     <?php endif;?>
   </div><!-- .container -->
+  <?php if( $instance['btn']['url'] ) :?>
+  <a href="<?php _e( $instance['btn']['url'] );?>" class="hidden-link"></a>
+  <?php endif;?>
 </div>
 <style>
   <?php _e( "#".$widget_id );?>{
@@ -36,22 +39,20 @@
     color:        <?php _e( $instance['card']['color'] );?>;
   }
   /* Header Card Alignment */
-  <?php _e( "#".$widget_id );?> .header-card.left_align{
+  <?php _e( "#".$widget_id );?> .header-card.left-align{
     left: 0;
     margin-left: 20px;
   }
 
-  <?php _e( "#".$widget_id );?> .header-card.right_align{
+  <?php _e( "#".$widget_id );?> .header-card.right-align{
     right: 0;
     margin-right: 20px;
   }
 
-  <?php _e( "#".$widget_id );?> .header-card.center_align{
+  <?php _e( "#".$widget_id );?> .header-card.center-align{
     left: 50%;
     transform: translate( -50%, -50% ) !important;
   }
-
-
   @media( max-width: 768px ){
     <?php _e( "#".$widget_id );?>{
       height: <?php _e( $instance['settings']['mobile']['bg_image_height'] );?>;

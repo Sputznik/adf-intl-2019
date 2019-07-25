@@ -31,11 +31,11 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
           'header_card_alignment' => array(
               'type' => 'select',
               'label' => __( 'Card Alignment', 'widget-form-fields-text-domain' ),
-              'default' => 'left_align',
+              'default' => 'left-align',
               'options' => array(
-                  'left_align'   => __( 'Left', 'siteorigin-widgets' ),
-                  'right_align'  => __( 'Right', 'siteorigin-widgets' ),
-                  'center_align' => __( 'Center', 'siteorigin-widgets' ),
+                  'left-align'   => __( 'Left', 'siteorigin-widgets' ),
+                  'right-align'  => __( 'Right', 'siteorigin-widgets' ),
+                  'center-align' => __( 'Center', 'siteorigin-widgets' ),
               )
           ),
           'bg'    =>  array(
