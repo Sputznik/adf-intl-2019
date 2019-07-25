@@ -233,25 +233,20 @@ h4{
   max-width: 42em;
 }
 */
-.single-campaign .article-header .entry-title,
-.single-legal .article-header .entry-title,
-.single-news .article-header .entry-title,
-.single-commentary .article-header .entry-title{
+.single .article-header .entry-title{
   font-family: "Merriweather";
   font-size: 2.25em;
   margin-bottom: 15px;
 }
 
-.single-campaign .article-header, .single-news .article-header{
+.article-header{
   background: #08438cDD;
 }
-.single-commentary .article-header{
-  background: #d9272dDD;
-}
-.single-legal .article-header{
-  background: #e6b614DD;
-}
 
+/*
+.single-commentary .article-header{ background: #d9272dDD; }
+.single-legal .article-header{ background: #e6b614DD; }
+*/
 
 .single-legal .article-header h5{
   font-family: "Roboto", sans-serif;
@@ -472,3 +467,7 @@ a[href].sp-btn:hover{
 }
 .video-popup:hover .overlay-text{ display: block;}
 /* VIDEO POPUP */
+
+#trigger-top{
+  background-color: #08438c;
+}
