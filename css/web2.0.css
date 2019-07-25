@@ -300,11 +300,11 @@ h4{
 .resource-header .two-third p{
   text-align: justify;
 }
-.more-resources a .link{
+.more-resources a .link, .resource-actions a{
   background: #08438c;
   border-color: #08438c;
 }
-.more-resources a .link:hover{
+.more-resources a .link:hover, .resource-actions a:hover{
   background: #FFF;
   border-color: #08438c;
   color: #08438c;
