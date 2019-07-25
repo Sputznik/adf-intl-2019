@@ -5,11 +5,11 @@ body{
 
 .site-branding{ padding: 1em 0;}
 
-.btn{
+.btn, .form-container input[type="submit"]{
   background-color: #08438c;
   border-color: #08438c;
 }
-.btn:hover{
+.btn:hover, .form-container input[type="submit"]:hover{
   background-color: #FFF;
   border-color: #08438c;
   color: #08438c;
