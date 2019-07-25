@@ -6,13 +6,13 @@
 
   $image_src =  wp_get_attachment_url( $instance['header_image'] );
   $card_bg = $instance['card']['bg']."CC";
-
+  $card_align = $instance['card']['header_card_alignment'];
 
 ?>
 <div id=<?php _e( $widget_id );?> class="sow-bg-image">
   <div class="container">
     <?php if( $instance['card']['html'] ):?>
-    <div class="header-card" style="">
+    <div class="header-card <?php _e( $card_align );?>" style="">
       <?php _e( $instance['card']['html'] );?>
       <?php if( $instance['btn']['url'] ) :?>
       <a type="button" href="<?php _e( $instance['btn']['url'] );?>" class="btn"><?php _e( $instance['btn']['text'] );?></a>
@@ -35,6 +35,23 @@
     border-color: <?php _e( $instance['card']['color'] );?>;
     color:        <?php _e( $instance['card']['color'] );?>;
   }
+  /* Header Card Alignment */
+  <?php _e( "#".$widget_id );?> .header-card.left_align{
+    left: 0;
+    margin-left: 20px;
+  }
+
+  <?php _e( "#".$widget_id );?> .header-card.right_align{
+    right: 0;
+    margin-right: 20px;
+  }
+
+  <?php _e( "#".$widget_id );?> .header-card.center_align{
+    left: 50%;
+    transform: translate( -50%, -50% ) !important;
+  }
+
+
   @media( max-width: 768px ){
     <?php _e( "#".$widget_id );?>{
       height: <?php _e( $instance['settings']['mobile']['bg_image_height'] );?>;

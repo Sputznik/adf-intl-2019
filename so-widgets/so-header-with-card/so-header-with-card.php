@@ -28,6 +28,16 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
             'label'          =>  __('Card Text','siteorigin-widgets'),
             'default-editor' => 'html',
           ),
+          'header_card_alignment' => array(
+              'type' => 'select',
+              'label' => __( 'Card Alignment', 'widget-form-fields-text-domain' ),
+              'default' => 'left_align',
+              'options' => array(
+                  'left_align'   => __( 'Left', 'siteorigin-widgets' ),
+                  'right_align'  => __( 'Right', 'siteorigin-widgets' ),
+                  'center_align' => __( 'Center', 'siteorigin-widgets' ),
+              )
+          ),
           'bg'    =>  array(
             'type'    =>  'color',
             'label'   =>  __('Card Background','siteorigin-widgets'),
