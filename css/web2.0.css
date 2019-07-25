@@ -155,9 +155,7 @@ h4{
   }
 }
 
-.article-list span.content-type{
-  background: #08438c !important;
-}
+span.content-type{ background: #08438c;}
 .article-list a:hover{
   border-color: #08438c !important;
 }
