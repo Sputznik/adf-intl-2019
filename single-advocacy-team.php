@@ -44,8 +44,14 @@ get_header(); ?>
 						</div>
 					</div>
 					<?php if( $staff_description ): ?>
-					<div class='row gray'><div class='container'><?php the_content();?></div></div>
+					<div class='row gray'><div class='container'><?php _e( $staff_description );?></div></div>
 					<?php endif;?>
+					<div class='row'>
+						<div class='container'>
+							<h4>Advocacy Team</h4>
+							<?php global $post;_e( do_shortcode( '[orbit_query post_type="advocacy-team" post__not_in="'.$post->ID.'" style="team-small" posts_per_page="20" orderby="rand"]' ) );?>
+						</div>
+					</div>
 					<?php endwhile;?>
 				</div>
 			</article>
