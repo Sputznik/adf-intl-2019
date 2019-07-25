@@ -76,6 +76,8 @@
   height: auto;
   display: flex;
   flex-flow: wrap;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .card-container .card-inner{
   width: 100%;
