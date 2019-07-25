@@ -478,19 +478,8 @@ $type = get_post_type($post->ID);
 					</div>
 				<?php else : ?>
 				<li>
-					<a href = "<?php the_permalink(); ?>">
-						<?php
-							if ( has_post_thumbnail() ) {
-								the_post_thumbnail('large');
-							}
-						?>
-						<span class="content-type"><?php echo get_post_type($post); ?></span>
-						<div class="article-content">
-							<h4><?php the_title(); ?></h4>
-							<p><?php echo excerpt(30); ?></p>
-							<strong class="link">Read more</strong>
-						</div>
-					</a>
+					<?php get_template_part( 'template-parts/content', 'article' );?>
+					
 				</li>
 				<?php endif; wp_reset_postdata(); endif; endwhile; ?>
 				<?php if($count == 'one') : ?>
