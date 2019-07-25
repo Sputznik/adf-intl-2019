@@ -163,10 +163,9 @@ h4{
 }
 .col-4.team-list .team-excerpt,.col-4.team-list .link{ display: none;}
 .col-4.team-list h4{ margin:0; font-size: 1.3em;}
-.col-4.team-list .picture{ margin-bottom: 20px;}
-@media all and (min-width: 60em) {
-  .col-4.team-list .picture{ max-height: 220px; overflow: hidden; }
-}
+.col-4.team-list .picture, .col-4.team-list .team-content{ max-height: 200px; max-width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;}
+.col-4.team-list .picture{ margin-bottom: 20px;  border-radius: 100px;}
+
 
 
 
@@ -295,7 +294,7 @@ body.page .image-overlay h2,
 
 /* HELPER CLASSES */
 .row{ padding: 50px 0; }
-.col-2, .col-13, .col-3, .col-4{
+.col-2, .col-13, .col-3, .col-4, .col-31{
   display: flex;
   flex-wrap: wrap;
 }
@@ -310,21 +309,11 @@ body.page .image-overlay h2,
   }
 }
 @media all and (min-width: 60em) {
-  .col-13 .col:nth-child( odd ){
-    width: 35%;
-  }
-  .col-13 .col:nth-child( even ){
-    width: 65%;
-  }
-  .col-2 .col{
-    width: 50%;
-  }
-  .col-3 .col{
-    width: 33.33%;
-  }
-  .col-4 .col{
-    width: 25%;
-  }
+  .col-13 .col:nth-child( odd ), .col-31 .col:nth-child( even ){ width: 35%; }
+  .col-13 .col:nth-child( even ), .col-31 .col:nth-child( odd ){ width: 65%; }
+  .col-2 .col{ width: 50%; }
+  .col-3 .col{ width: 33.33%; }
+  .col-4 .col{ width: 25%;}
 }
 .text-muted{ color: #777; }
 .uppercase{
@@ -376,6 +365,9 @@ a[href].sp-btn{
 }
 a[href].sp-btn:hover{
 	color: #4b6cb7;
+}
+@media( max-width:768px ){
+  a[href].sp-btn{ font-size: 17px; }
 }
 /* SOW BUTTONS OVERRIDDEN HERE */
 

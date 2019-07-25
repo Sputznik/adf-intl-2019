@@ -27,11 +27,7 @@ class SP_CARD extends SiteOrigin_Widget{
             'type' => 'icon',
             'label' => __( 'Select an icon', 'siteorigin-widgets' ),
           ),
-          'icon_color'  =>  array(
-            'type'  =>  'color',
-            'label' =>  __( 'Icon Color', 'siteorigin-widgets' ),
-            'default' =>  '#000'
-          ),
+          
           'card_link'  =>  array(
             'type'      => 'link',
             'label'     => __( 'Link', 'siteorigin-widgets' ),

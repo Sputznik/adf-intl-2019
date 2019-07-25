@@ -329,40 +329,27 @@ if( function_exists('acf_add_options_page') ) {
 }
 //Excerpt
 function excerpt( $limit ) {
-	/*
+
 	global $post;
 
-	if( $post->post_excerpt ){
-		$orig_excerpt = $post->post_excerpt;
-	}
-
-	$orig_excerpt = wp_trim_excerpt();
-	*/
-
-	$excerpt = get_the_excerpt();
+	$excerpt = $post->post_excerpt;
 
 	if( !$excerpt && !strlen( $excerpt ) ){
-		/*
-		$excerpt = get_the_content();
+		$excerpt = $post->post_content;
 		$excerpt = strip_shortcodes( $excerpt );
-		$regex = '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#';
-		$excerpt = preg_replace( $regex,'', $excerpt );
-		$excerpt = preg_replace('/<!--(.|\s)*?-->/', '', $excerpt ); // remove html comments
-		$excerpt = strip_tags($excerpt, '<p>');
-		*/
-		$excerpt = wp_trim_excerpt();
+		$excerpt = excerpt_remove_blocks( $excerpt );
+
+		$excerpt = str_replace( ']]>', ']]&gt;', $excerpt );
+
+
+		//$excerpt = preg_replace( '#(<h([1-6])[^>]*>)\s?(.*)?\s?(<\/h\2>)#', '', $excerpt );
+		//$excerpt = preg_replace('/<!--(.|\s)*?-->/', '', $excerpt ); // remove html comments
+		//$excerpt = strip_tags($excerpt, '<p>');
+
+		//$excerpt = wp_trim_excerpt();
 	}
 
-	$excerpt = explode(' ', $excerpt, $limit);
-
-	if (count($excerpt) >= $limit) {
-		array_pop($excerpt);
-		$excerpt = implode(" ", $excerpt) . '...';
-	} else {
-		$excerpt = implode(" ", $excerpt);
-	}
-
-	$excerpt = preg_replace('`\[[^\]]*\]`', '', $excerpt);
+	$excerpt = wp_trim_words( $excerpt, $limit, '...' );
 
 	return $excerpt;
 }
@@ -483,3 +470,8 @@ function get_global_option($name) {
 	remove_filter('acf/settings/current_language', 'cl_acf_set_language', 100);
 	return $option;
 }
+
+
+add_filter( 'sputznik-sow-json-url', function( $json_url ){
+	return get_stylesheet_directory_uri()."/_js/map.geojson";
+} );

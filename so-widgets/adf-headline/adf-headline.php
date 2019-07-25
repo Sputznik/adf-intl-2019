@@ -24,6 +24,11 @@ class ADF_SO_HEADLINE extends SiteOrigin_Widget{
         'label'          =>  __('Description Text','siteorigin-widgets'),
         'default-editor' => 'html',
       ),
+      'hide_decoration' => array(
+        'type'     => 'checkbox',
+        'label'    => __( 'Hide Decoration Line', 'siteorigin-widgets' ),
+        'default'  => false,
+      ),
       'theme'  => array(
         'type'    => 'select',
         'label'   => 'Choose Theme',
