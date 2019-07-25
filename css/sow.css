@@ -113,7 +113,8 @@
   font-size:50px;
   padding:5px 10px;
 }
-.card-container .card-link{
+.card-container .card-link,
+ .hidden-link{
   position: absolute;
   top: 0;
   left: 0;
@@ -173,6 +174,7 @@
 
 /* HEADER IMAGE */
 .sow-bg-image{
+  position: relative;
   padding: 20px 0;
   background-size: cover;
   background-repeat: no-repeat;
