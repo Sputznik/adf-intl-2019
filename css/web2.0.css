@@ -207,6 +207,7 @@ h4{
   max-height: 300px;
   overflow: hidden;
 }
+/*
 .single-campaign .article-header,
 .single-legal .article-header,
 .single-news .article-header,
@@ -221,6 +222,7 @@ h4{
   background: #08438c;
   max-width: 42em;
 }
+*/
 .single-campaign .article-header .entry-title,
 .single-legal .article-header .entry-title,
 .single-news .article-header .entry-title,
@@ -229,15 +231,17 @@ h4{
   font-size: 2.25em;
   margin-bottom: 15px;
 }
+
 .single-campaign .article-header, .single-news .article-header{
-  background: #08438c;
+  background: #08438cDD;
 }
 .single-commentary .article-header{
-  background: #d9272d;
+  background: #d9272dDD;
 }
 .single-legal .article-header{
-  background: #e6b614;
+  background: #e6b614DD;
 }
+
 
 .single-legal .article-header h5{
   font-family: "Roboto", sans-serif;
