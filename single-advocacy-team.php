@@ -33,7 +33,7 @@ get_header(); ?>
 									<h5 class='bold text-muted uppercase no-margin-top'><?php _e( do_shortcode('[orbit_terms taxonomy="department" link="0"]') );?></h5>
 									<h1 class='no-margin'><?php the_title();?></h1>
 								</div>
-								<h5 class='uppercase text-muted <?php if( $staff_description ):?>border-bottom<?php endif;?>'><?php _e( do_shortcode('[orbit_cf id="team-position"]') );?></h5>
+								<h5 class='uppercase text-muted'><?php _e( do_shortcode('[orbit_cf id="team-position"]') );?></h5>
 								<div class='excerpt text-muted'><?php the_excerpt();?></div>
 								<a class="sp-btn" href="#modal-interview" data-toggle="modal">Request An Interview</a>
 								<?php
