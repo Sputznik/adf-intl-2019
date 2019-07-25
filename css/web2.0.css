@@ -163,10 +163,9 @@ h4{
 }
 .col-4.team-list .team-excerpt,.col-4.team-list .link{ display: none;}
 .col-4.team-list h4{ margin:0; font-size: 1.3em;}
-.col-4.team-list .picture{ margin-bottom: 20px;}
-@media all and (min-width: 60em) {
-  .col-4.team-list .picture{ max-height: 220px; overflow: hidden; }
-}
+.col-4.team-list .picture, .col-4.team-list .team-content{ max-height: 200px; max-width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;}
+.col-4.team-list .picture{ margin-bottom: 20px;  border-radius: 100px;}
+
 
 
 
