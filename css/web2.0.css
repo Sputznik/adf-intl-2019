@@ -3,6 +3,8 @@ body{
   max-width: none;
 }
 
+.site-branding{ padding: 1em 0;}
+
 @media( max-width:768px ){
   .header-top.group .container{ padding-right: 0;}
   .top-navigation{ font-size: 0.95em;}
