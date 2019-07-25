@@ -160,6 +160,12 @@ h4{
   overflow: hidden;
 }
 
+@media( max-width:768px ){
+  .article-list .article-featured-image{
+    max-height: 250px;
+  }
+}
+
 .feature-content a[href]{
   border: none;
   color: inherit;
