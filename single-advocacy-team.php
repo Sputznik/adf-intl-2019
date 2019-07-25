@@ -49,7 +49,7 @@ get_header(); ?>
 					<div class='row'>
 						<div class='container'>
 							<h4>Advocacy Team</h4>
-							<?php global $post;_e( do_shortcode( '[orbit_query post_type="advocacy-team" post__not_in="'.$post->ID.'" style="team-small" posts_per_page="20" orderby="rand"]' ) );?>
+							<?php global $post;_e( do_shortcode( '[orbit_query post_type="advocacy-team" post__not_in="'.$post->ID.'" style="team-small" posts_per_page="4" orderby="rand"]' ) );?>
 						</div>
 					</div>
 					<?php endwhile;?>
