@@ -398,14 +398,14 @@ body.page .image-overlay h2,
 
 /* SOW BUTTONS OVERRIDDEN HERE */
 a[href].sp-btn{
-	background: #4b6cb7;
-  border-color: #4b6cb7;
+	background: #08438c;
+  border-color: #08438c;
   font-size: 20px;
   font-family: 'Roboto Condensed', Arial, sans-serif;
   text-transform: uppercase;
 }
 a[href].sp-btn:hover{
-	color: #4b6cb7;
+	color: #08438c;
 }
 @media( max-width:768px ){
   a[href].sp-btn{ font-size: 17px; }
