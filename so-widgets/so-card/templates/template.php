@@ -30,7 +30,6 @@
           <?php echo $card_icon;?>
           <h4 class="uppercase text-center"><?php _e( $value['heading_txt'] );?></h4>
         </div>
-        <?php ( $value['card_link'] ) ? _e( '<a class="card-link" href="'.$value['card_link'].'";></a>' ) : '' ?>
       </div>
       <div class="bottom" style="background:<?php _e( $value['card_border'] ); ?>"></div>
       <?php if( $value['card_desc'] ):?>
@@ -38,6 +37,7 @@
         <p style="text-align: center;"><strong><?php _e( $value['card_desc'] );?></strong></p>
       </div>
       <?php endif;?>
+      <?php ( $value['card_link'] ) ? _e( '<a class="card-link" href="'.$value['card_link'].'";></a>' ) : '' ?>
     </div>
   </div>
   <?php endforeach; ?>

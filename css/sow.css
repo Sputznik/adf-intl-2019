@@ -135,6 +135,7 @@
 }
 .card-container .card-inner.card_with_border .bottom{ margin-top: 18px; }
 .card-container .card-body{
+  position: relative;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
