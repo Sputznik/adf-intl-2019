@@ -206,10 +206,12 @@
 }
 .header-card .btn{
   font-size: 18px;
-  padding: 5px 30px;
+  padding: 5px 20px;
   background: transparent;
   border: 1px solid #fff;
   margin: 20px 0;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  text-transform: uppercase;
 }
 .header-card .btn:hover{
   color: #e6b614;

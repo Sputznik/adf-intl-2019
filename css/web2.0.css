@@ -5,6 +5,16 @@ body{
 
 .site-branding{ padding: 1em 0;}
 
+.btn, .form-container input[type="submit"]{
+  background-color: #08438c;
+  border-color: #08438c;
+}
+.btn:hover, .form-container input[type="submit"]:hover{
+  background-color: #FFF;
+  border-color: #08438c;
+  color: #08438c;
+}
+
 @media( max-width:768px ){
   .header-top.group .container{ padding-right: 0;}
   .top-navigation{ font-size: 0.95em;}
@@ -145,9 +155,7 @@ h4{
   }
 }
 
-.article-list span.content-type{
-  background: #08438c !important;
-}
+span.content-type{ background: #08438c;}
 .article-list a:hover{
   border-color: #08438c !important;
 }
@@ -204,9 +212,10 @@ h4{
 .single-legal .post-thumbnail,
 .single-news .post-thumbnail,
 .single-commentary .post-thumbnail{
-  max-height: 300px;
+  max-height: 400px;
   overflow: hidden;
 }
+/*
 .single-campaign .article-header,
 .single-legal .article-header,
 .single-news .article-header,
@@ -221,23 +230,21 @@ h4{
   background: #08438c;
   max-width: 42em;
 }
-.single-campaign .article-header .entry-title,
-.single-legal .article-header .entry-title,
-.single-news .article-header .entry-title,
-.single-commentary .article-header .entry-title{
+*/
+.single .article-header .entry-title{
   font-family: "Merriweather";
   font-size: 2.25em;
   margin-bottom: 15px;
 }
-.single-campaign .article-header, .single-news .article-header{
-  background: #08438c;
+
+.article-header{
+  background: #08438cDD;
 }
-.single-commentary .article-header{
-  background: #d9272d;
-}
-.single-legal .article-header{
-  background: #e6b614;
-}
+
+/*
+.single-commentary .article-header{ background: #d9272dDD; }
+.single-legal .article-header{ background: #e6b614DD; }
+*/
 
 .single-legal .article-header h5{
   font-family: "Roboto", sans-serif;
@@ -260,7 +267,7 @@ h4{
 
 /* ISSUES & REGIONS */
 .tax-issues .full-banner,.tax-regions .full-banner{ max-height: 400px; }
-.tax-issues .banner-content, .tax-regions .banner-content{ background: #08438c; }
+.tax-issues .banner-content, .tax-regions .banner-content{ background: #08438cDD; }
 .tax-issues .banner-content h1,
 .tax-regions .banner-content h1{
   margin-top: 0;
@@ -285,6 +292,15 @@ h4{
 }
 .resource-header .two-third p{
   text-align: justify;
+}
+.more-resources a .link, .resource-actions a{
+  background: #08438c;
+  border-color: #08438c;
+}
+.more-resources a .link:hover, .resource-actions a:hover{
+  background: #FFF;
+  border-color: #08438c;
+  color: #08438c;
 }
 /* RESOURCES */
 
@@ -375,13 +391,15 @@ body.page .image-overlay h2,
 
 /* SOW BUTTONS OVERRIDDEN HERE */
 a[href].sp-btn{
-	background: #4b6cb7;
-  border-color: #4b6cb7;
+	background: #08438c;
+  border-color: #08438c;
   font-size: 20px;
-  font-family: "Merriweather", serif;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 2px;
 }
 a[href].sp-btn:hover{
-	color: #4b6cb7;
+	color: #08438c;
 }
 @media( max-width:768px ){
   a[href].sp-btn{ font-size: 17px; }
@@ -459,4 +477,7 @@ a[href].sp-btn:hover{
 }
 .social a img {
     max-width: 100%;
+}
+#trigger-top{
+  background-color: #08438c;
 }

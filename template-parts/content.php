@@ -333,7 +333,9 @@ $type = get_post_type($post->ID);
 		?>
 		<div class="home-articles <?php the_sub_field('feat_back'); ?>" id="section<?php echo $i; ?>">
 			<div class="wrap">
-				<?php get_template_part( 'template-parts/content', 'featured' );?>
+				<div class="secondary-feature group <?php if($type == 'resource'){echo 'resource-feature';} ?>">
+					<?php get_template_part( 'template-parts/content', 'featured' );?>
+				</div>
 			</div>
 		</div>
 		<?php wp_reset_postdata(); endif; ?>
@@ -477,21 +479,7 @@ $type = get_post_type($post->ID);
 					<?php get_template_part( 'template-parts/content', 'featured' );?>
 					</div>
 				<?php else : ?>
-				<li>
-					<a href = "<?php the_permalink(); ?>">
-						<?php
-							if ( has_post_thumbnail() ) {
-								the_post_thumbnail('large');
-							}
-						?>
-						<span class="content-type"><?php echo get_post_type($post); ?></span>
-						<div class="article-content">
-							<h4><?php the_title(); ?></h4>
-							<p><?php echo excerpt(30); ?></p>
-							<strong class="link">Read more</strong>
-						</div>
-					</a>
-				</li>
+				<li><?php get_template_part( 'template-parts/content', 'article' );?></li>
 				<?php endif; wp_reset_postdata(); endif; endwhile; ?>
 				<?php if($count == 'one') : ?>
 				</div>
