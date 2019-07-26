@@ -67,22 +67,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								Campaigns
 							</a>
 						</li>
-						<?php $issues = get_global_option( 'issues' );
-						if( has_nav_menu( 'issues' ) ): ?>
+						<?php if( has_nav_menu( 'issues' ) ): ?>
 						<li class="with-sub">
 							<a href = "#">
 								<?php include(get_template_directory().'/_svg/icon-scales.php'); ?>
 								Issues
 							</a>
-							<!-- <ul class="top-sub">
-								<?php //foreach( $issues as $issue ): ?>
-								<li>
-									<a href = "<?php //echo get_term_link( $issue , 'issues'); ?>">
-										<?php //echo $issue->name; ?>
-									</a>
-								</li>
-								<?php //endforeach; ?>
-							</ul> -->
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'issues',
@@ -91,22 +81,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							?>
 						</li>
 						<?php endif;
-						$regions = get_field('regions', 'option');
 						if( has_nav_menu( 'regions' ) ): ?>
 						<li class="with-sub">
 							<a href = "#">
 								<?php include(get_template_directory().'/_svg/icon-globe.php'); ?>
 								Regions
 							</a>
-							<!-- <ul class="top-sub">
-								<?php //foreach( $regions as $region ): ?>
-								<li>
-									<a href = "<?php //echo get_term_link( $region , 'regions'); ?>">
-										<?php //echo $region->name; ?>
-									</a>
-								</li>
-								<?php //endforeach; ?>
-							</ul> -->
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'regions',
