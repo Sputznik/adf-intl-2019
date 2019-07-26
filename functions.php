@@ -48,6 +48,8 @@ if ( ! function_exists( 'adf_intl_setup' ) ) :
 			'about' => esc_html__( 'About', 'adf-intl' ),
 			'work' => esc_html__( 'Our Work', 'adf-intl' ),
 			'connect' => esc_html__( 'Connect', 'adf-intl' ),
+			'issues' => esc_html__( 'Issues', 'adf-intl' ),
+			'regions' => esc_html__( 'Regions', 'adf-intl' ),
 			'bottom' => esc_html__( 'Footer Bottom', 'adf-intl' ),
 		) );
 

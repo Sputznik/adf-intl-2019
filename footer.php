@@ -51,12 +51,17 @@
 								<li>Follow Us</li>
 								<li class="social">
 									<a href = "https://www.facebook.com/ADFInternational" target="_blank" class="facebook">
-										<img src="<?php bloginfo('template_directory'); ?>/_i/facebook.png" />
+										<img src="<?php bloginfo('template_directory'); ?>/_i/fb.png" />
 										<!-- <i class="fa fa-facebook"></i> -->
 										<span class="assistive-text">Facebook</span>
 									</a>
-									<a href = "https://twitter.com/ADFIntl" target="_blank" class="twitter">
-										<img src="<?php bloginfo('template_directory'); ?>/_i/twitter.png" />
+									<a href = "https://twitter.com/ADFIntl" target="_blank" class="twitterr">
+										<img src="<?php bloginfo('template_directory'); ?>/_i/twitterr.png" />
+										<!-- <i class="fa fa-twitter"></i> -->
+										<span class="assistive-text">Twitter</span>
+									</a>
+									<a href = "https://twitter.com/ADFIntl" target="_blank" class="in">
+										<img src="<?php bloginfo('template_directory'); ?>/_i/in.png" />
 										<!-- <i class="fa fa-twitter"></i> -->
 										<span class="assistive-text">Twitter</span>
 									</a>

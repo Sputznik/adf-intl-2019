@@ -36,6 +36,18 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 	);
 
 
+	$post_types['videos'] = array(
+		'slug' 		=> 'videos',
+		'labels'	=> array(
+			'name' 					=> 'Videos',
+			'singular_name' => 'Video',
+		),
+		//'rewrite'		=> array('slug' => 'incidents', 'with_front' => false ),
+		'public'		=> true,
+		'supports'	=> array( 'title', 'editor','thumbnail' )
+	);
+
+
 	return $post_types;
 } );
 
@@ -67,6 +79,19 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 				'twitter-handle' => array(
 					'type' => 'text',
 					'text' => 'Twitter Handle'
+				),
+			)
+		)
+	);
+
+	$meta_box['videos'] = array(
+		array(
+			'id'			=> 'video-url-field',
+			'title'		=> 'Video URL',
+			'fields'	=> array(
+				'video-url' => array(
+					'type' => 'text',
+					'text' => 'Youtube Video URL'
 				),
 			)
 		)
