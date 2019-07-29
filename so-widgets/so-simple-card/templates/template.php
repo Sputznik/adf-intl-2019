@@ -1,4 +1,4 @@
-<div class="card-container">
+<div class="card-container" style="max-width: 1000px;">
 <?php foreach ( $instance['simple_card_repeater'] as $key => $value) :?>
   <div class="card-simple-inner" style="background-color:#fff;">
     <div class="simple-card-body">

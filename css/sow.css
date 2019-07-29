@@ -173,7 +173,11 @@
     width: 100%;
     margin: auto;
   }
+  .card-container .card-simple-inner{
+    margin-right: 20px !important;
+  }
 }
+
 
 .card-container .card-inner.has-link:hover .card-header{
   color: #08438c !important;
@@ -191,11 +195,13 @@
 .simple-card-body .bottom{
   height:10px;
 }
+
+.card-container >  .card-simple-inner:nth-child(3n){margin-right: 0 !important;}
 @media( min-width: 35em  ){
   .card-container .card-simple-inner{
-    margin-right: 6px;
-    margin-left: 9px;
-    width: 31.33%;
+    margin-right: 27px;
+    /* margin-left: 9px; */
+    width: 31.49%;
     /* width: 28.33%; */
   }
 }
