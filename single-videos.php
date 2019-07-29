@@ -39,24 +39,26 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
   <style media="screen">
-
+.center-frame .col{
+	text-align: center;
+}
 @media( max-width: 768px ){
-.col iframe{
-width: 100%;
-height: 300px;
+.center-frame .col iframe{
+width: 100% !important;
+height: auto;
 }
 }
 @media only screen and ( min-width: 768px ) and ( max-width: 768px ){
-.col iframe{
-width: 90%;
+.center-frame .col iframe{
+width: 90% !important;
 height: 300px;
 margin-left: auto;
 margin-right: auto;
 }
 }
 
-.col iframe{
-width: 60%;
+.center-frame .col iframe{
+width: 90%;
 }
 .center-frame{
   max-width: 900px;
