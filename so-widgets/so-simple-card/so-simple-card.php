@@ -20,11 +20,6 @@ class SP_SIMPLE_CARD extends SiteOrigin_Widget{
             'label' =>  __( 'Title', 'siteorigin-widgets' ),
             'default' =>  '',
           ),
-          'heading_color'  =>  array(
-            'type'  =>  'color',
-            'label' =>  __( 'Heading Color', 'siteorigin-widgets' ),
-            'default' =>  '#000'
-          ),
           'card_desc'     => array(
             'type'  =>  'text',
             'label' =>  __( 'Small Description', 'siteorigin-widgets' ),
@@ -32,6 +27,21 @@ class SP_SIMPLE_CARD extends SiteOrigin_Widget{
           ),
         )
       ),
+      'title_color'  =>  array(
+        'type'  =>  'color',
+        'label' =>  __( 'Heading Color', 'siteorigin-widgets' ),
+        'default' =>  '#000'
+      ),
+      'desc_color'  =>  array(
+        'type'  =>  'color',
+        'label' =>  __( 'Description Color', 'siteorigin-widgets' ),
+        'default' =>  '#000'
+      ),
+      // 'card_bg_color'  =>  array(
+      //   'type'  =>  'color',
+      //   'label' =>  __( 'Card Background Color', 'siteorigin-widgets' ),
+      //   'default' =>  '#000'
+      // ),
     );
     parent::__construct(
       'so-simple-card',
