@@ -48,6 +48,8 @@ if ( ! function_exists( 'adf_intl_setup' ) ) :
 			'about' => esc_html__( 'About', 'adf-intl' ),
 			'work' => esc_html__( 'Our Work', 'adf-intl' ),
 			'connect' => esc_html__( 'Connect', 'adf-intl' ),
+			'issues' => esc_html__( 'Issues', 'adf-intl' ),
+			'regions' => esc_html__( 'Regions', 'adf-intl' ),
 			'bottom' => esc_html__( 'Footer Bottom', 'adf-intl' ),
 		) );
 
@@ -299,7 +301,7 @@ add_action( 'init', 'create_post_type' );
 function create_taxonomy() {
 	register_taxonomy(
 		'issues',
-		array('news','commentary','legal','campaign','resource'),
+		array('news','commentary','legal','campaign','resource', 'videos' ),
 		array(
 			'label' => __( 'Issues' ),
 			'hierarchical' => true,
@@ -307,7 +309,7 @@ function create_taxonomy() {
 	);
 	register_taxonomy(
 		'regions',
-		array('news','commentary','legal','campaign','resource'),
+		array('news','commentary','legal','campaign','resource', 'videos' ),
 		array(
 			'label' => __( 'Regions' ),
 			'hierarchical' => true,

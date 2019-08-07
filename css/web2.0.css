@@ -125,6 +125,7 @@ h4{
 }
 
 .article-list.three-list,
+.video-list.three-list,
 .article-list.two-list,
 .secondary-feature{
   display: flex;
@@ -132,6 +133,7 @@ h4{
 }
 
 .article-list.three-list li,
+.video-list.three-list li,
 .article-list.two-list li{
   float: none;
   margin: 0;
@@ -147,7 +149,8 @@ h4{
 */
 
 @media all and (min-width: 60em) {
-  .article-list.three-list li{
+  .article-list.three-list li,
+  .video-list.three-list li{
     width: 33.33%;
   }
   .article-list.two-list li{
@@ -156,7 +159,8 @@ h4{
 }
 
 span.content-type{ background: #08438c;}
-.article-list a:hover{
+.article-list a:hover,
+.video-list a:hover{
   border-color: #08438c !important;
 }
 .article-content strong, .feature-content strong{
@@ -457,6 +461,7 @@ a[href].sp-btn:hover{
 }
 .video-popup .overlay-text{
 	background-color: #FFFFFFCC;
+  /* opacity: 0.2; */
   display: none;
 }
 .video-popup .overlay-text a{
@@ -467,6 +472,33 @@ a[href].sp-btn:hover{
 .video-popup:hover .overlay-text{ display: block;}
 /* VIDEO POPUP */
 
+/* Social Icons */
+.social a{
+  display: inline-block;
+  width: 32px !important;
+  height: 32px !important;
+  margin-right: 0;
+}
+.social a img {
+    max-width: 100%;
+}
 #trigger-top{
   background-color: #08438c;
+}
+/* Video List Template */
+.video-list a{
+  background: none;
+}
+.video-list .video-popup .video {
+  max-height: 210px;
+  overflow: hidden;
+  width: 100%;
+}
+.video-list .video img{
+  width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 768px){
+  .video-list.three-list li{
+    width: 33.33% !important;
+  }
 }

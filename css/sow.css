@@ -84,6 +84,9 @@
   padding: 0.5em;
   margin-bottom: 25px;
 }
+.card-container .card-simple-inner{
+  margin-bottom: 25px;
+}
 .card-container .card-inner:last-child{ margin-bottom: 0; }
 .card-container .card{
   position: relative;
@@ -154,6 +157,10 @@
   }
 }
 
+@media( max-width: 767px ){
+  .card-container .card-simple-inner:last-child{ margin-bottom: 0; }
+}
+
 @media all and (min-width: 35em) {
   .card-container .card-inner{ width: 33.33%; }
 }
@@ -166,12 +173,39 @@
     width: 100%;
     margin: auto;
   }
+  .card-container .card-simple-inner{
+    margin-right: 20px !important;
+  }
 }
+
 
 .card-container .card-inner.has-link:hover .card-header{
   color: #08438c !important;
 }
 /* CARD */
+
+/* ADF SIMPLE CARD */
+.card-simple-inner{
+    padding: 0 20px;
+    box-shadow: 4px 2px 4px 0 #ccc;
+}
+.simple-card-header h4{
+  font-size: 1.45em;
+}
+.simple-card-body .bottom{
+  height:10px;
+}
+
+.card-container >  .card-simple-inner:nth-child(3n){margin-right: 0 !important;}
+@media( min-width: 35em  ){
+  .card-container .card-simple-inner{
+    margin-right: 27px;
+    /* margin-left: 9px; */
+    width: 31.49%;
+    /* width: 28.33%; */
+  }
+}
+/* ADF SIMPLE CARD */
 
 /* HEADER IMAGE */
 .sow-bg-image{
