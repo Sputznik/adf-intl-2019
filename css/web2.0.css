@@ -513,4 +513,11 @@ a[href].sp-btn:hover{
 .social-icons li{
   display: inline-block;
 }
+.social-icons{
+  margin-bottom: 30px;
+}
+.social-icons img{
+  max-width: 50px;
+  height: auto;
+}
 /* SOCIAL MEDIA ICONS USED IN NEWS AND STATISTICS */
