@@ -119,6 +119,7 @@ $type = get_post_type($post->ID);
 			}
 
 			if( is_singular('news') ){
+				echo "<h5>Share</h5>"
 				get_template_part( 'template-parts/share', 'socialmedia' );
 			}
 
