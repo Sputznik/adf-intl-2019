@@ -117,6 +117,11 @@ $type = get_post_type($post->ID);
 			if(is_singular('news') && !empty($summary)) {
 				echo '<div class="summary"><h2>Summary</h2>'.$summary.'</div>';
 			}
+
+			if( is_singular('news') ){
+				get_template_part( 'template-parts/share', 'socialmedia' );
+			}
+
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
