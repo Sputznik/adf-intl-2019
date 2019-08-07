@@ -215,7 +215,8 @@ span.content-type{ background: #08438c;}
 .single-campaign .post-thumbnail,
 .single-legal .post-thumbnail,
 .single-news .post-thumbnail,
-.single-commentary .post-thumbnail{
+.single-commentary .post-thumbnail,
+.single-alliance-alert .post-thumbnail{
   max-height: 400px;
   overflow: hidden;
 }
