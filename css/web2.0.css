@@ -502,3 +502,15 @@ a[href].sp-btn:hover{
     width: 33.33% !important;
   }
 }
+
+
+/* SOCIAL MEDIA ICONS USED IN NEWS AND STATISTICS */
+.list-inline{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-icons li{
+  display: inline-block;
+}
+/* SOCIAL MEDIA ICONS USED IN NEWS AND STATISTICS */

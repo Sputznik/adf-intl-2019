@@ -8,12 +8,7 @@
   <?php endwhile;?>
 </ul>
 <style>
-  .list-inline{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-  }
+  
   /*
   .orbit-stat{
     display: grid;
@@ -33,9 +28,7 @@
     max-width: 50px;
     height: auto;
   }
-  .social-icons li{
-    display: inline-block;
-  }
+
   .orbit-stat .orbit-excerpt p{
     color: #404040 !important;
     font-size: 0.875em !important;
