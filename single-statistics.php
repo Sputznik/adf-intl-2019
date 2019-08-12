@@ -13,8 +13,9 @@ get_header(); ?>
 
 <?php
 
-	$staff_description = get_the_content();
+	$description = get_the_content();
 
+	$related_articles = do_shortcode( '[orbit_related_query style="stat" posts_per_page="3"]' );
 
 ?>
 
@@ -33,9 +34,17 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<?php if( $staff_description ): ?>
+						<?php if( $description ): ?>
 						<div class='row gray'><div class='container'><?php the_content();?></div></div>
 						<?php endif;?>
+						<?php if( $related_articles ):?>
+						<div class='row'>
+							<div class='container' style="min-height: 500px;">
+								<h4>Related</h4>
+								<?php _e( $related_articles );?>
+							</div>
+						</div>
+					<?php endif;?>
 					<?php endwhile;?>
 					</div>
 				</article>
