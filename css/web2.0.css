@@ -589,3 +589,7 @@ h5.social-media-heading::before{
     display: block;
   }
 }
+/*map*/
+.leaflet-popup-content{
+  max-width: 280px !important;
+}
