@@ -501,7 +501,7 @@ function download_ajax_handler(){
 		readfile($file);
 		// Exit script. So that no useless data is output.
 	}
-	
+
 	exit;
 }
 add_action( 'wp_ajax_download', 'download_ajax_handler' );
