@@ -395,6 +395,6 @@ a.pp_close{
 }
 @media only screen and (min-width: 768px) and (max-width: 768px){
   .image-grid-container{
-    grid-template-columns: repeat( 3, 1fr );
+    grid-template-columns: repeat( 2, 1fr );
   }
 }
