@@ -368,6 +368,7 @@ a.pp_close{
 .grid-modals-container a.grid_btn{
   display: inline-block;
   text-decoration: none;
+  text-align: center;
   border: none;
   padding: 5px 10px;
   background: #000;
@@ -386,4 +387,14 @@ a.pp_close{
   padding: 0;
   overflow: hidden;
   background-color: transparent;
+}
+@media(max-width: 767px){
+  .image-grid-container{
+    grid-template-columns: repeat( 1, 1fr );
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 768px){
+  .image-grid-container{
+    grid-template-columns: repeat( 3, 1fr );
+  }
 }
