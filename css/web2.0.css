@@ -596,11 +596,14 @@ h5.social-media-heading::before{
 
 /* STYLES FOR LARGE SCREEN */
 @media( min-width:1600px ){
+  .article-list.three-list li, .video-list.three-list li, .article-list.two-list li{
+    padding: 1.0em;
+  }
   .article-list .article-featured-image{
     max-height: 300px;
   }
   .article-content{
-    min-height: 300px;
+    min-height: 320px;
   }
   .article-content h4{
     font-size: 1.75em;
