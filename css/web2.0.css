@@ -26,6 +26,7 @@ body{
 .wpml-switcher, .search-bar{ margin-top: 30px; }
 
 @media(min-width: 44em){
+  .header-bottom{ padding: 10px 0;}
   .wpml-switcher, .search-bar{ margin-top: 0px; }
   .wpml-switcher h5{ display: none;}
 	.wpml-switcher{ float: right; }
@@ -624,3 +625,11 @@ h5.social-media-heading::before{
   }
 }
 /* STYLES FOR LARGE SCREEN */
+
+
+/* QUICK FIXES */
+.header-card h4{
+  font-size: 1.8em;
+  line-height: 1.7;
+}
+/* QUICK FIXES */
