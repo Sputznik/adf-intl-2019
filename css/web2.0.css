@@ -599,6 +599,7 @@ h5.social-media-heading::before{
   .article-list.three-list li, .video-list.three-list li, .article-list.two-list li{
     padding: 1.0em;
   }
+  .three-list.space li{ padding: 0;}
   .article-list .article-featured-image{
     max-height: 300px;
   }
