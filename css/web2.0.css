@@ -633,9 +633,12 @@ h5.social-media-heading::before{
   line-height: 1.7;
 }
 .adf-sow-headline{ max-width: none; }
-.adf-sow-headline h4{ font-size: 24px; }
+.adf-sow-headline h4{ font-size: 24px; font-family: 'Merriweather', serif; line-height: 1.4;}
 body.home .secondary-feature .feature-content{ background: transparent; padding:1.5em;}
 body.home .secondary-feature .feature-content h2{ color: #eee; }
 body.home .secondary-feature .feature-content p.text-muted{ color: #aaa; }
 .article-list .content-type{ display: none; }
+.card-container{ max-width: 750px; }
+.card-container h4{ text-transform: none; font-family: "Roboto Condensed"; font-weight: 500; }
+.card-container .card span{ font-size: 35px; }
 /* QUICK FIXES */
