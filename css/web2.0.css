@@ -634,4 +634,8 @@ h5.social-media-heading::before{
 }
 .adf-sow-headline{ max-width: none; }
 .adf-sow-headline h4{ font-size: 24px; }
+body.home .secondary-feature .feature-content{ background: transparent; padding:1.5em;}
+body.home .secondary-feature .feature-content h2{ color: #eee; }
+body.home .secondary-feature .feature-content p.text-muted{ color: #aaa; }
+.article-list .content-type{ display: none; }
 /* QUICK FIXES */
