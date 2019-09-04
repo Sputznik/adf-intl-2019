@@ -477,3 +477,32 @@ function get_global_option($name) {
 add_filter( 'sputznik-sow-json-url', function( $json_url ){
 	return get_stylesheet_directory_uri()."/_js/map.geojson";
 } );
+
+
+function download_ajax_handler(){
+
+	if( isset( $_GET['f'] ) ){
+		$file = $_GET['f'];
+
+		header("Expires: 0");
+		header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+		header("Cache-Control: no-store, no-cache, must-revalidate");
+		header("Cache-Control: post-check=0, pre-check=0", false);
+		header("Pragma: no-cache");
+
+		$ext = pathinfo($file, PATHINFO_EXTENSION);
+		$basename = pathinfo($file, PATHINFO_BASENAME);
+
+		header("Content-type: application/".$ext);
+		// tell file size
+		header('Content-length: '.filesize($file));
+		// set file name
+		header("Content-Disposition: attachment; filename=\"$basename\"");
+		readfile($file);
+		// Exit script. So that no useless data is output.
+	}
+
+	exit;
+}
+add_action( 'wp_ajax_download', 'download_ajax_handler' );
+add_action( 'wp_ajax_noprov_download', 'download_ajax_handler' );

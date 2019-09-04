@@ -48,6 +48,14 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
             'label'   =>  __('Text Color','siteorigin-widgets'),
             'default' =>  '#000000'
           ),
+          'opacity'    =>  array(
+            'type'    =>  'slider',
+            'label'   =>  __('Card Opacity','siteorigin-widgets'),
+            'default' => 6,
+            'min' => 0,
+            'max' => 10,
+            'integer' => true
+          ),
           'width' =>  array(
             'type'  =>  'text',
             'label' =>  __('Max Width','siteorigin-widgets'),

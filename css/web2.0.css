@@ -540,3 +540,56 @@ h5.social-media-heading::before{
   top: 50%;
 }
 /* SOCIAL MEDIA ICONS USED IN NEWS AND STATISTICS */
+
+/* Campaigns section */
+.three-list.space li{
+  padding: 0;
+  height: 260px;
+}
+.three-list.space li > a{
+  width: 100%;
+  border: none;
+}
+.three-list.space li > a > .article-featured-image{
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.three-list.space li > a .article-content{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9,67,141,0.6);
+  color: #fff;
+}
+.three-list.space li > a:hover .article-content{
+  display: block;
+}
+.three-list.space li > a .article-content strong{
+  color: #fff !important;
+}
+.three-list.space li img{
+  width: 100%;
+  height: 100%;
+}
+@media( max-width: 768px ){
+  .three-list.space li:nth-child(2n+2) > a .article-content{
+    background-color: rgba(231,183,21,0.6);
+  }
+  .three-list.space li:nth-child(5n+1) > a .article-content{
+    background-color: rgba(185,35,47,0.6);
+  }
+  .three-list.space li > a .article-content{
+    display: block;
+  }
+}
+/*map*/
+.leaflet-popup-content{
+  max-width: 280px !important;
+}

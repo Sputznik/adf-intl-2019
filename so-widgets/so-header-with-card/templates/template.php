@@ -5,7 +5,8 @@
   $widget_id = 'sow-bg-'.$sp_sow->getUniqueID( $instance );
 
   $image_src =  wp_get_attachment_url( $instance['header_image'] );
-  $card_bg = $instance['card']['bg']."CC";
+  $card_bg = $instance['card']['bg'];
+  $card_opacity = $instance['card']['opacity']/10;
   $card_align = $instance['card']['header_card_alignment'];
 
 ?>
@@ -32,6 +33,7 @@
   <?php _e( "#".$widget_id );?> .header-card{
     background-color: <?php _e( $card_bg ); ?>;
     color           : <?php _e( $instance['card']['color']);?>;
+    opacity         : <?php _e( $card_opacity ); ?>;
     max-width       : <?php _e( $instance['card']['width']);?>;
   }
   <?php _e( "#".$widget_id );?> .header-card a[href].btn{
