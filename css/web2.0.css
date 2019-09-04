@@ -376,7 +376,7 @@ body.page .image-overlay h2,
 }
 
 @media( min-width: 1600px ){
-  .container{ max-width: 1260px; }
+  .container{ max-width: 1900px; }
 }
 
 
@@ -593,3 +593,14 @@ h5.social-media-heading::before{
 .leaflet-popup-content{
   max-width: 280px !important;
 }
+
+/* STYLES FOR LARGE SCREEN */
+@media( min-width:1600px ){
+  .article-list .article-featured-image{
+    max-height: 300px;
+  }
+  .article-content{
+    min-height: 300px;
+  }
+}
+/* STYLES FOR LARGE SCREEN */
