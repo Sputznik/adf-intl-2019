@@ -1,4 +1,7 @@
 <?php
+
+  global $post;
+
   $title = get_the_title();
   $title_length = strlen( $title );
   $excerpt_length = 0;
@@ -9,10 +12,12 @@
       $excerpt_length = 25;
     }
   }
+
+  $post_type = get_post_type( $post );
 ?>
-<a href = "<?php the_permalink(); ?>">
+<a href = "<?php the_permalink(); ?>" class="<?php _e( $post_type );?>">
   <div class='article-featured-image'><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }?></div>
-  <span class="content-type"><?php _e( do_shortcode('[orbit_post_type]') );?></span>
+  <span class="content-type"><?php _e( $post_type );?></span>
   <div class="article-content">
     <h4><?php echo $title; ?></h4>
     <?php if( $excerpt_length ):?>
