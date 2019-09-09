@@ -1,7 +1,7 @@
-<?php global $post; $type = get_post_type($post); ?>
-<a href = "<?php the_permalink(); ?>" class="feature-image">
+<?php global $post; $post_type = get_post_type($post); ?>
+<a href = "<?php the_permalink(); ?>" class="feature-image <?php echo $post_type; ?>">
   <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
-  <span class="content-type"><?php echo get_post_type($post); ?></span>
+  <span class="content-type"><?php echo $post_type; ?></span>
 </a>
 <div class="feature-content">
   <a href="<?php the_permalink(); ?>">

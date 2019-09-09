@@ -160,7 +160,13 @@ h4{
 }
 
 .article-list a.news:hover{ border-color: #e7b715; }
-.article-list a.news span.content-type{ background: #e7b715; }
+
+
+a.news span.content-type{ background: #e7b715; }
+
+
+.secondary-feature span.content-type{ left: auto; right: 0;}
+
 /*
 span.content-type{ background: #08438c;}
 .article-list a:hover,
