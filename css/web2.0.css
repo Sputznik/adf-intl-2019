@@ -173,12 +173,14 @@ h4{
   }
 }
 
+.article-list a:hover{ border-color: #09438d; }
 .article-list a.news:hover{ border-color: #e7b715; }
+.article-list a.commentary:hover{ border-color: #333; }
 
 .content-type{ background: #09438d; }
 
 a.news span.content-type{ background: #e7b715; }
-a.commentary span.content-type{ background: #fff; }
+a.commentary span.content-type{ background: #fff; color: #333; }
 
 
 .secondary-feature span.content-type{ left: auto; right: 0;}
