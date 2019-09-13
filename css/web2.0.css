@@ -254,9 +254,8 @@ span.content-type{ background: #08438c;}
   margin-bottom: 15px;
 }
 
-.article-header{
-  background: #08438cDD;
-}
+.article-header{ background: #08438cDD;}
+article.news .article-header{ background: #e7b715; }
 
 /*
 .single-commentary .article-header{ background: #d9272dDD; }

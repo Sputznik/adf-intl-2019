@@ -446,9 +446,9 @@ a.pp_close{
 .btn-card-container .btn-card-body .btn-card-content{ min-height: 160px; }
 .btn-card-container .btn-card-body .btn-card-content{
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  color: #6f6f6f;
+  color: #555;
   font-family: 'Roboto Condensed', sans-serif;
 }
 .btn-card-container .btn-card-body .btn-card-btn{
@@ -461,11 +461,11 @@ a.pp_close{
   background: #09438d;
   color: #fff;
   border: none;
-  padding: 5px 8px;
+  padding: 5px 10px;
   display: inline-block;
   text-align: center;
-  width: 190px;
-  font-size: 14px;
+  width: 200px;
+  font-size: 16px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 .btn-card-container .btn-card-body .btn-card-btn > a:hover{ background-color: #0a4897; }
