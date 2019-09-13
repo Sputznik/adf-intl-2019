@@ -661,4 +661,10 @@ body.home .secondary-feature .feature-content p.text-muted{ color: #aaa; }
 
 .newsletter{ text-align: left; margin-bottom: 0;}
 .newsletter .gform_wrapper .gform_footer{ background: #09438d !important; }
+
+.white-btn a[href].sp-btn{
+  background: #fff;
+  color: #333;
+  border-color: #fff;
+}
 /* QUICK FIXES */
