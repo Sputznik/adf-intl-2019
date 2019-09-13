@@ -577,7 +577,7 @@ h5.social-media-heading::before{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(9,67,141,0.6);
+  background-color: #09438dCC;
   color: #fff;
 }
 .three-list.space li > a:hover .article-content{
