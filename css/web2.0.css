@@ -173,6 +173,7 @@ h4{
   }
 }
 
+.article-list a:hover{ border-color: #09438d; }
 .article-list a.news:hover{ border-color: #e7b715; }
 
 .content-type{ background: #09438d; }
