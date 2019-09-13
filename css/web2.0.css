@@ -655,4 +655,6 @@ body.home .secondary-feature .feature-content p.text-muted{ color: #aaa; }
 .card-container h4{ text-transform: none; font-family: "Roboto Condensed"; font-weight: 500; }
 .card-container .card span{ font-size: 35px; }
 .card-container .card-inner.card_with_border .card-overlay{ opacity:0.8;}
+
+.article-images li{ border: #eee solid 1px;}
 /* QUICK FIXES */
