@@ -7,9 +7,15 @@
       <div class="btn-card-title"><h4 class="uppercase text-center"><?php _e( $value['heading_txt'] );?></h4></div>
       <div class="btn-card-content"><p class="text-center"><?php _e( $value['card_desc'] );?></p></div>
       <div class="btn-card-btn">
-        <?php ( $value['card_link'] ) ? _e( '<a class="" href="'.$value['card_link'].'";>'.$value['card_btn_txt'].'</a>' ) : '' ?>
+        <?php ( $value['card_link'] ) ? _e( '<a href="'.$value['card_link'].'">'.$value['card_btn_txt'].'</a>' ) : '' ?>
       </div>
+      <?php ( $value['card_link'] ) ? _e( '<a class="btn-link" href="'.$value['card_link'].'"></a>' ) : '' ?>
     </div>
   </div>
   <?php endforeach; ?>
 </div><!-- .btn-card-container -->
+<style>
+  .btn-card-container .btn-card-body .btn-card-content {
+      min-height: <?php _e( $instance['card_height'] ); ?>;
+  }
+</style>

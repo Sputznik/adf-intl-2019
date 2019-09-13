@@ -41,6 +41,17 @@ class SP_BUTTON_CARD extends SiteOrigin_Widget{
           ),
         )
       ),
+      'card_height'  => array(
+        'type' => 'multi-measurement',
+        'label' => __( 'Card Height','siteorigin-widgets' ),
+        'autofill' => true,
+        'default' => '160px',
+        'measurements' => array(
+            'image_height' => array(
+            'units' => array( 'px', '%' ),
+            ),
+        ),
+      ),
     );
     parent::__construct(
       'so-btn-card',

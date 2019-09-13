@@ -443,7 +443,9 @@ a.pp_close{
   font-size: 22px;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 .btn-card-container .btn-card-body .btn-card-content{ min-height: 160px; }
+
 .btn-card-container .btn-card-body .btn-card-content{
   line-height: 1.4;
   font-weight: 500;
@@ -451,16 +453,19 @@ a.pp_close{
   color: #555;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 .btn-card-container .btn-card-body .btn-card-btn{
   position: absolute;
   bottom: -16px;
   left: 50%;
   transform: translatex(-50%);
+  z-index: 2;
 }
+
 .btn-card-container .btn-card-body .btn-card-btn > a{
   background: #09438d;
   color: #fff;
-  border: none;
+  border: 1px solid #0a4897;
   padding: 5px 10px;
   display: inline-block;
   text-align: center;
@@ -468,7 +473,26 @@ a.pp_close{
   font-size: 16px;
   font-family: 'Roboto Condensed', sans-serif;
 }
-.btn-card-container .btn-card-body .btn-card-btn > a:hover{ background-color: #0a4897; }
+
+.btn-card-container .btn-card-body .btn-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+}
+
+.btn-card-container .btn-card-body .btn-link:focus{ outline: none; }
+
+@media( min-width: 769px ){
+  .btn-card-container .btn-card-body:hover .btn-card-btn > a,
+  .btn-card-container .btn-card-body .btn-card-btn > a:hover{
+    background-color: #fff;
+    color: #0a4897;
+   }
+}
 
 @media( max-width: 768px ){
   .btn-card-container .btn-card{ width: 100%; }
