@@ -23,10 +23,14 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
         'type'    => 'section',
         'label'   => __( 'Descriptive Information' , 'siteorigin-widgets' ),
         'fields'  => array(
+          'heading' => array(
+            'type'  => 'text',
+            'label' => 'Heading'
+          ),
           'html'  => array(
-            'type'           =>  'tinymce',
+            'type'           =>  'textarea',
             'label'          =>  __('Card Text','siteorigin-widgets'),
-            'default-editor' => 'html',
+            //'default-editor' => 'html',
           ),
           'header_card_alignment' => array(
               'type' => 'select',

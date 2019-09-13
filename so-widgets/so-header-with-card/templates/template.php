@@ -14,7 +14,8 @@
   <div class="container">
     <?php if( $instance['card']['html'] ):?>
     <div class="header-card <?php _e( $card_align );?>" style="">
-      <?php _e( $instance['card']['html'] );?>
+      <?php if( $instance['card']['heading'] ):?><h4><?php _e( $instance['card']['heading'] );?></h4><?php endif;?>
+      <?php if( $instance['card']['html'] ):?><p><?php _e( $instance['card']['html'] );?></p><?php endif;?>
       <?php if( $instance['btn']['url'] ) :?>
       <a type="button" href="<?php _e( $instance['btn']['url'] );?>" class="btn"><?php _e( $instance['btn']['text'] );?></a>
       <?php endif;?>
