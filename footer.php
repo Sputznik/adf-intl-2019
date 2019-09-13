@@ -66,6 +66,9 @@
 										<span class="assistive-text">Twitter</span>
 									</a>
 								</li>
+								<li>
+									<a href="https://adfinternational.org/donate/" class="footer-donate-btn">Donate</a>
+								</li>
 							</ul>
 						</li>
 					</ul>
