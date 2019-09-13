@@ -12,7 +12,7 @@
 ?>
 <div id=<?php _e( $widget_id );?> class="sow-bg-image">
   <div class="container">
-    <?php if( $instance['card']['html'] ):?>
+    <?php if( $instance['card']['html'] || $instance['card']['heading'] ):?>
     <div class="header-card <?php _e( $card_align );?>" style="">
       <?php if( $instance['card']['heading'] ):?><h4><?php _e( $instance['card']['heading'] );?></h4><?php endif;?>
       <?php if( $instance['card']['html'] ):?><p><?php _e( $instance['card']['html'] );?></p><?php endif;?>
