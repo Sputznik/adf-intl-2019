@@ -362,7 +362,7 @@ body.page .image-overlay h2,
   .col-3 .col{ width: 33.33%; }
   .col-4 .col{ width: 25%;}
 }
-.text-muted{ color: #777; }
+.text-muted{ opacity: 0.7; }
 .uppercase{
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -658,4 +658,7 @@ body.home .secondary-feature .feature-content p.text-muted{ color: #aaa; }
 .card-container .card-inner.card_with_border .card-overlay{ opacity:0.8;}
 
 .article-images li{ border: #eee solid 1px;}
+
+.newsletter{ text-align: left; }
+.newsletter .gform_wrapper .gform_footer{ background: #09438d !important; }
 /* QUICK FIXES */
