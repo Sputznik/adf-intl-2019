@@ -175,6 +175,7 @@ h4{
 
 .article-list a:hover{ border-color: #09438d; }
 .article-list a.news:hover{ border-color: #e7b715; }
+.article-list a.commentary:hover{ border-color: #333; }
 
 .content-type{ background: #09438d; }
 
