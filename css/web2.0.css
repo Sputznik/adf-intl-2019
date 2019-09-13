@@ -164,6 +164,7 @@ h4{
 .content-type{ background: #09438d; }
 
 a.news span.content-type{ background: #e7b715; }
+a.commentary span.content-type{ background: #fff; }
 
 
 .secondary-feature span.content-type{ left: auto; right: 0;}
@@ -659,7 +660,7 @@ body.home .secondary-feature .feature-content p.text-muted{ color: #aaa; }
 
 .article-images li{ border: #eee solid 1px;}
 
-.newsletter{ text-align: left; margin-bottom: 0;}
+.newsletter{ text-align: left; margin-bottom: 0; max-width: none;}
 .newsletter .gform_wrapper .gform_footer{ background: #09438d !important; }
 
 .white-btn a[href].sp-btn{
