@@ -6,7 +6,8 @@
 
   $image_src =  wp_get_attachment_url( $instance['header_image'] );
   $card_bg = $instance['card']['bg'];
-  $card_opacity = $instance['card']['opacity']/10;
+  $card_opacity_desktop = $instance['settings']['desktop']['opacity']/10;
+  $card_opacity_mobile = $instance['settings']['mobile']['opacity']/10;
   $card_align = $instance['card']['header_card_alignment'];
 
 ?>
@@ -34,7 +35,7 @@
   <?php _e( "#".$widget_id );?> .header-card{
     background-color: <?php _e( $card_bg ); ?>;
     color           : <?php _e( $instance['card']['color']);?>;
-    opacity         : <?php _e( $card_opacity ); ?>;
+    opacity         : <?php _e( $card_opacity_desktop );?>;
     max-width       : <?php _e( $instance['card']['width']);?>;
   }
   <?php _e( "#".$widget_id );?> .header-card a[href].btn{
@@ -45,6 +46,9 @@
   @media( max-width: 768px ){
     <?php _e( "#".$widget_id );?>{
       height: <?php _e( $instance['settings']['mobile']['bg_image_height'] );?>;
+    }
+    <?php _e( "#".$widget_id );?> .header-card{
+      opacity: <?php _e( $card_opacity_mobile );?>;
     }
   }
 

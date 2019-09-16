@@ -52,14 +52,14 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
             'label'   =>  __('Text Color','siteorigin-widgets'),
             'default' =>  '#000000'
           ),
-          'opacity'    =>  array(
-            'type'    =>  'slider',
-            'label'   =>  __('Card Opacity','siteorigin-widgets'),
-            'default' => 6,
-            'min' => 0,
-            'max' => 10,
-            'integer' => true
-          ),
+          // 'opacity'    =>  array(
+          //   'type'    =>  'slider',
+          //   'label'   =>  __('Card Opacity','siteorigin-widgets'),
+          //   'default' => 6,
+          //   'min' => 0,
+          //   'max' => 10,
+          //   'integer' => true
+          // ),
           'width' =>  array(
             'type'  =>  'text',
             'label' =>  __('Max Width','siteorigin-widgets'),
@@ -94,13 +94,13 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
             'type' => 'section',
             'label' => __( 'Desktop Styles' , 'siteorigin-widgets' ),
             'hide' => true,
-            'fields' => $this->get_common_fields(),
+            'fields' => $this->get_common_fields( 'desktop' ),
           ),
           'mobile' => array(
             'type' => 'section',
             'label' => __( 'Mobile Styles' , 'siteorigin-widgets' ),
             'hide' => true,
-            'fields' => $this->get_common_fields()
+            'fields' => $this->get_common_fields( 'mobile' )
           ),
         )
       )
@@ -118,21 +118,29 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
     );
   }//construct function ends here
 
-  function get_common_fields(){
+  function get_common_fields( $screen ){
     $useable_units = array( 'px', 'vh' );
-    return array(
-      'bg_image_height'  => array(
-        'type' => 'multi-measurement',
-        'label' => __( 'Background Image Height','siteorigin-widgets' ),
-        'autofill' => true,
-        'default' => '400px',
-        'measurements' => array(
-          'image_height' => array(
-            'units' => $useable_units,
+      return array(
+        'bg_image_height'  => array(
+          'type' => 'multi-measurement',
+          'label' => __( 'Background Image Height','siteorigin-widgets' ),
+          'autofill' => true,
+          'default' => '400px',
+          'measurements' => array(
+            'image_height' => array(
+              'units' => $useable_units,
+            ),
           ),
         ),
-      )
-    );
+        'opacity'    =>  array(
+          'type'    =>  'slider',
+          'label'   =>  __('Card Opacity','siteorigin-widgets'),
+          'default' => ( $screen == 'desktop' ) ? '10' : '8',
+          'min' => 0,
+          'max' => 10,
+          'integer' => true
+        ),
+      );
   }
 
   function get_template_name($instance){
