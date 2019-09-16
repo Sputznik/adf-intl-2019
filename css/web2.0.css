@@ -686,3 +686,31 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
 }
 
 /* QUICK FIXES */
+
+
+/* CUSTOM NAV FOR LANDING PAGE */
+.custom-nav{ display: none; }
+.custom-nav>ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.custom-nav>ul>li>a{
+  text-align: center;
+  font-size: 0.875em;
+  border: 0;
+  color: #404040;
+  padding: 0 1em;
+  text-transform: uppercase;
+}
+@media (min-width: 44em){
+  .custom-nav{
+    display: block;
+    float: right;
+    padding: 1em;
+  }
+  .custom-nav>ul>li{ float:left; }
+}
+
+
+/* CUSTOM NAV FOR LANDING PAGE */
