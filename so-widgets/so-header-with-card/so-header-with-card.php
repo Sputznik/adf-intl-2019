@@ -135,7 +135,7 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
         'opacity'    =>  array(
           'type'    =>  'slider',
           'label'   =>  __('Card Opacity','siteorigin-widgets'),
-          'default' => ( $screen == 'desktop' ) ? '10' : '8',
+          'default' => ( $screen == 'desktop' ) ? '10' : '9',
           'min' => 0,
           'max' => 10,
           'integer' => true
