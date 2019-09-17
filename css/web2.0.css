@@ -676,7 +676,16 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
 .card-container .card span{ font-size: 35px; }
 .card-container .card-inner.card_with_border .card-overlay{ opacity:0.8;}
 
+.orbit-stat{ text-align: center; }
 .orbit-stat .social-icons{ margin-bottom: 0; }
+.orbit-stat .orbit-article {
+  border: #eee solid 1px;
+  padding: 20px;
+  float: none;
+  display: inline-block;
+  width: 350px;
+  margin-right: 30px;
+}
 
 .article-images li{ border: #eee solid 1px;}
 
