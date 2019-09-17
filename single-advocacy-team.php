@@ -39,6 +39,7 @@ get_header(); ?>
 								<div class='excerpt text-muted'><?php the_excerpt();?></div>
 								<a class="sp-btn" href="#modal-interview" data-toggle="modal">Request An Interview</a>
 								<?php
+									//
 									global $sp_sow;
 									$sp_sow->modal( 'modal-interview', do_shortcode( '[gravity_form id="1"]' ) );
 								?>
