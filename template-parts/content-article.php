@@ -11,6 +11,9 @@
     if( $excerpt_length < 25 ){
       $excerpt_length = 25;
     }
+    if( $excerpt_length > 50 ){
+      $excerpt_length = 50;
+    }
   }
 
   $post_type = get_post_type( $post );
