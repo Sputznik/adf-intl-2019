@@ -735,3 +735,9 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
 
 
 /* CUSTOM NAV FOR LANDING PAGE */
+
+
+/*Meteor amount section*/
+@media( max-width: 768px ){
+  form[data-behaviour~=meteor-slides] .meteor-list li{ margin-bottom: 15px; }
+}
