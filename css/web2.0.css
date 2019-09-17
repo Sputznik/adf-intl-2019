@@ -708,7 +708,7 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
 
 body.search .secondary-feature{ padding: 0; margin-bottom: 30px; }
 body.search .secondary-feature .feature-content{ background: transparent; padding-top: 0; }
-
+body.search .secondary-feature span.content-type{ left: 0; right: auto; }
 body.search .secondary-feature .feature-content p,
 body.search .secondary-feature .feature-content a{
   opacity: 0.7;
