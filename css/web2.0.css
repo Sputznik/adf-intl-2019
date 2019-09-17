@@ -707,6 +707,8 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
 }
 
 body.search .secondary-feature{ padding: 0; margin-bottom: 30px; }
+body.search .secondary-feature picture{ background: #fff; }
+body.search article.resource .secondary-feature picture img{ max-width: 200px; margin-left: auto; margin-right: auto;}
 body.search .secondary-feature .feature-content{ background: transparent; padding-top: 0; }
 body.search .secondary-feature span.content-type{ left: 0; right: auto; }
 body.search .secondary-feature .feature-content p,
