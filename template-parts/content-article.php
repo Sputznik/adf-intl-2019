@@ -8,11 +8,11 @@
   if( $title_length < 120 ){
     $excerpt_length = 120 - $title_length;
 
-    if( $excerpt_length < 25 ){
-      $excerpt_length = 25;
+    if( $excerpt_length < 15 ){
+      $excerpt_length = 15;
     }
-    if( $excerpt_length > 40 ){
-      $excerpt_length = 40;
+    if( $excerpt_length > 30 ){
+      $excerpt_length = 30;
     }
   }
 
