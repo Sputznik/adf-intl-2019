@@ -29,6 +29,11 @@ class ADF_SO_HEADLINE extends SiteOrigin_Widget{
         'label'    => __( 'Hide Decoration Line', 'siteorigin-widgets' ),
         'default'  => false,
       ),
+      'no_margins' => array(
+        'type'     => 'checkbox',
+        'label'    => __( 'No Top Or Bottom Margins', 'siteorigin-widgets' ),
+        'default'  => false,
+      ),
       'theme'  => array(
         'type'    => 'select',
         'label'   => 'Choose Theme',

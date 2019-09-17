@@ -11,7 +11,7 @@
   $card_align = $instance['card']['header_card_alignment'];
 
 ?>
-<div id=<?php _e( $widget_id );?> class="sow-bg-image">
+<div id="<?php _e( $widget_id );?>" class="sow-bg-image">
   <div class="container">
     <?php if( $instance['card']['html'] || $instance['card']['heading'] ):?>
     <div class="header-card <?php _e( $card_align );?>" style="">
