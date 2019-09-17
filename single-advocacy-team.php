@@ -14,6 +14,8 @@ get_header(); ?>
 
 <?php
 
+	$staff_title = get_the_title();
+
 
 
 
@@ -31,7 +33,7 @@ get_header(); ?>
 							<div class='col'>
 								<div class="staff-header">
 									<h5 class='bold text-muted uppercase no-margin-top'><?php _e( do_shortcode('[orbit_terms taxonomy="department" link="0"]') );?></h5>
-									<h1 class='no-margin'><?php the_title();?></h1>
+									<h1 class='no-margin'><?php _e( $staff_title );?></h1>
 								</div>
 								<h5 class='uppercase text-muted'><?php _e( do_shortcode('[orbit_cf id="team-position"]') );?></h5>
 								<div class='excerpt text-muted'><?php the_excerpt();?></div>
@@ -76,6 +78,9 @@ get_header(); ?>
 	.staff-header{
 		min-height: 140px;
 	}
+}
+.staff-header h1{
+	font-size: 2.35em;
 }
 a[href].sp-btn{ margin-top: 20px; display: inline-block;}
 </style>
