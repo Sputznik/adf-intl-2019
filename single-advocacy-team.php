@@ -80,6 +80,9 @@ get_header(); ?>
 		min-height: 140px;
 	}
 }
+
+.inline-modal-dialog{ background: #eee; }
+
 .staff-header h1{
 	font-size: 2.35em;
 }
