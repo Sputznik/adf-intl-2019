@@ -198,6 +198,7 @@ span.content-type{ background: #08438c;}
 .article-list .article-featured-image{
   max-height: 160px;
   overflow: hidden;
+  background: #eee;
 }
 
 @media( max-width:768px ){
