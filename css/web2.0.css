@@ -698,6 +698,13 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
   border-color: #fff;
 }
 
+.article-list .resource .article-featured-image img{
+  max-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* QUICK FIXES */
 
 
