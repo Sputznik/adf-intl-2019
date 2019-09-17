@@ -40,7 +40,7 @@ get_header(); ?>
 								<a class="sp-btn" href="#modal-interview" data-toggle="modal">Request An Interview</a>
 								<?php
 									global $sp_sow;
-									$sp_sow->modal( 'modal-interview', 'Gravity form will come here' );
+									$sp_sow->modal( 'modal-interview', do_shortcode( '[gravity_form id="11"]' ) );
 								?>
 							</div>
 						</div>
