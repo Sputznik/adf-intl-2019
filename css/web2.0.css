@@ -177,8 +177,8 @@ h4{ font-size: 1.45em; }
 
 .content-type{ background: #09438d; }
 
-a.news span.content-type{ background: #e7b715; }
-a.commentary span.content-type{ background: #fff; color: #333; }
+.news span.content-type{ background: #e7b715; }
+.commentary span.content-type{ background: #fff; color: #333; }
 
 
 .secondary-feature span.content-type{ left: auto; right: 0;}
