@@ -92,6 +92,54 @@ if ( ! function_exists( 'adf_intl_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'adf_intl_setup' );
 
+
+// Gets all the custom post types
+function get_types(){
+	$types = array();
+	$post_types = get_post_types( array(
+        'public'   => true,
+        '_builtin' => false,
+    ), 'object' );
+	foreach ( $post_types as $type ) {
+		$types[ $type->name ] = $type->label;
+	}
+	unset( $types['orbit-fep'] );
+	asort( $types );
+	return $types;
+}
+
+// Customizer settings for archives
+function adf_customize_register( $wp_customize ) {
+
+	$wp_customize->add_section( 'adf_archive_settings', array(
+			'title'					=>	__( 'Archive Settings', 'adf-intl' ),
+	));
+
+	$types = get_types();
+	$template = array(
+		'default' 			=> 	'Default',
+		'lazy-loading'	=>	'Lazy Loading'
+	);
+
+    //Check if there are custom post types.
+    if ( ! empty( $types ) ) {
+			foreach ( $types as $slug => $type ) {
+				$wp_customize->add_setting( $slug, array(
+					'default'	=>	'default',
+				));
+				$wp_customize->add_control( $slug , array(
+				'label'	=>	$type,
+				'type'	=>	'select',
+				'choices'     => $template,
+				'section'	=>	'adf_archive_settings',
+				'settings'	=> $slug
+				));
+			}
+		}
+}
+add_action( 'customize_register', 'adf_customize_register' );
+
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

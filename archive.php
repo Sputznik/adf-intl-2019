@@ -20,19 +20,24 @@ get_header(); ?>
 						//the_archive_description( '<div class="archive-description">', '</div>' );
 					?>
 					</header><!-- .page-header -->
-					<!-- <ul id="news" class="article-list three-list group"> -->
 					<ul id="news-oq-list" class="article-list three-list group" data-target="li.article-list-item" data-url="">
 						<?php while ( have_posts() ) : the_post(); ?>
 						<li class="article-list-item"><?php get_template_part( 'template-parts/content', 'article' );?></li>
 						<?php endwhile; wp_reset_postdata();?>
 					</ul>
-					<?php //the_posts_navigation(array('prev_text' => __( 'More &raquo;' ), 'next_text' => __( '&laquo; Previous' ),));?>
-					<div data-behaviour="orbit-lazy-loading" data-list="#news-oq-list" data-offset="100"></div>
-				<?php
-					else :
-						get_template_part( 'template-parts/content', 'none' );
-					endif;
-				?>
+					<?php
+						$type = get_post_type();
+
+						// Check if the theme mod is default or lazy-loading
+						if( get_theme_mod( $type ) && get_theme_mod( $type ) == 'lazy-loading' ):?>
+							<div data-behaviour="orbit-lazy-loading" data-list="#news-oq-list" data-offset="100"></div>
+						<?php else:
+							the_posts_navigation(array('prev_text' => __( 'More &raquo;' ), 'next_text' => __( '&laquo; Previous' ),));?>
+						<?php endif;?>
+						<?php
+						else :
+							get_template_part( 'template-parts/content', 'none' );
+						endif;?>
 				</div>
 			</div>
 		</main><!-- #main -->
