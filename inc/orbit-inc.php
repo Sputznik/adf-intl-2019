@@ -9,7 +9,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 			'singular_name'  => 'Statistic',
 		),
 		'public'	   => true,
-		'supports'	 => array('title', 'excerpt', 'author', 'thumbnail')
+		'supports'	 => array('title', 'editor', 'excerpt', 'author', 'thumbnail')
 	);
 
 	$post_types['advocacy-team'] = array(
