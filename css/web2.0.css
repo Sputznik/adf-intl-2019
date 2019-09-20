@@ -685,7 +685,7 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
   float: none;
   display: inline-block;
   width: 350px;
-  margin-right: 30px;
+  margin-right: 30px !important;
 }
 
 .article-images li{ border: #eee solid 1px;}
