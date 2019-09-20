@@ -758,8 +758,11 @@ body.search .secondary-feature .feature-content a{
 .orbit-stat.three-list .orbit-excerpt{
   white-space: pre-wrap;
   margin-bottom: 10px;
+  margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
+  line-height: 1.2;
+  min-height: 40px;
 }
 .orbit-stat .orbit-article{
   border: #eee solid 1px;
