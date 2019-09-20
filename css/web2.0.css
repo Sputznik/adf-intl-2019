@@ -752,3 +752,6 @@ body.search .secondary-feature .feature-content a{
 @media( max-width: 768px ){
   form[data-behaviour~=meteor-slides] .meteor-list li{ margin-bottom: 15px; }
 }
+
+/*Orbit excerpt*/
+.orbit-stat.three-list .orbit-excerpt{ white-space: pre-wrap;}
