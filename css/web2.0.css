@@ -754,5 +754,31 @@ body.search .secondary-feature .feature-content a{
 }
 
 
-/*Orbit excerpt*/
-.orbit-stat.three-list .orbit-excerpt{ white-space: pre-wrap;}
+/* Orbit STATISTICS */
+.orbit-stat.three-list .orbit-excerpt{
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+.orbit-stat .orbit-article{
+  border: #eee solid 1px;
+  padding: 20px;
+}
+
+.orbit-stat a[href]{ border-bottom: none; }
+.orbit-stat a[href] img{
+  max-width: 40px;
+  height: auto;
+}
+
+.orbit-stat .orbit-excerpt p{
+  color: #404040 !important;
+  font-size: 0.875em !important;
+  text-shadow: none !important;
+}
+
+@media( max-width: 768px ){
+  .orbit-stat a[href] img{ max-width: 30px; }
+  .orbit-stat .orbit-article{ padding: 10px; }
+}
