@@ -766,6 +766,11 @@ body.search .secondary-feature .feature-content a{
   padding: 20px;
 }
 
+.orbit-stat .orbit-article .orbit-article-thumbnail{
+  max-height: 300px;
+  overflow: hidden;
+}
+
 .orbit-stat a[href]{ border-bottom: none; }
 .orbit-stat a[href] img{
   max-width: 40px;
