@@ -764,10 +764,7 @@ body.search .secondary-feature .feature-content a{
   line-height: 1.2;
   min-height: 40px;
 }
-.orbit-stat .orbit-article{
-  border: #eee solid 1px;
-  padding: 20px;
-}
+
 
 .orbit-stat .orbit-article .orbit-article-thumbnail{
   max-height: 300px;
