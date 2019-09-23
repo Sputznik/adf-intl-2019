@@ -9,10 +9,11 @@
   $card_opacity_desktop = $instance['settings']['desktop']['opacity']/10;
   $card_opacity_mobile = $instance['settings']['mobile']['opacity']/10;
   $card_align = $instance['card']['header_card_alignment'];
-
+  $font_family = ( $instance['card']['font_family'] ) ? 'Roboto Condensed' : 'Merriweather';
 ?>
 <div id="<?php _e( $widget_id );?>" class="sow-bg-image">
   <div class="container">
+    <?php //echo $font_family; ?>
     <?php if( $instance['card']['html'] || $instance['card']['heading'] ):?>
     <div class="header-card <?php _e( $card_align );?>" style="">
       <?php if( $instance['card']['heading'] ):?><h4><?php _e( $instance['card']['heading'] );?></h4><?php endif;?>
@@ -37,6 +38,9 @@
     color           : <?php _e( $instance['card']['color']);?>;
     opacity         : <?php _e( $card_opacity_desktop );?>;
     max-width       : <?php _e( $instance['card']['width']);?>;
+  }
+  <?php _e( "#".$widget_id );?> .header-card h4{
+    font-family: <?php _e( $font_family );?>;
   }
   <?php _e( "#".$widget_id );?> .header-card a[href].btn{
     border-color: <?php _e( $instance['card']['color'] );?>;
