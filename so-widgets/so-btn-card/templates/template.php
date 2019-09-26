@@ -1,4 +1,4 @@
-<div class="btn-card-container">
+<div class="btn-card-container" data-behaviour="sow-btn-cards">
   <?php foreach ( $instance['card_btn_repeater'] as $key => $value) :?>
   <?php $card_icon = siteorigin_widget_get_icon( $value['card_icon'], array( '' ) ); ?>
   <div class="btn-card">
