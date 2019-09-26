@@ -32,6 +32,11 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
             'label'          =>  __('Card Text','siteorigin-widgets'),
             //'default-editor' => 'html',
           ),
+          'font_family' => array(
+              'type' => 'checkbox',
+              'label' => __( 'Use Roboto Condensed in the Heading font?', 'siteorigin-widgets' ),
+              'default' => false
+          ),
           'header_card_alignment' => array(
               'type' => 'select',
               'label' => __( 'Card Alignment', 'widget-form-fields-text-domain' ),
