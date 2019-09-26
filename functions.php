@@ -526,6 +526,16 @@ add_filter( 'sputznik-sow-json-url', function( $json_url ){
 	return get_stylesheet_directory_uri()."/_js/map.geojson";
 } );
 
+add_filter( 'sputznik-sow-jsons', function( $jsons ){
+	$jsons[ 'us_states' ] = plugins_url( '/sputznik-siteorigin-widgets/assets/js/us_states.json' );
+	$jsons[ 'aus_states' ] = plugins_url( '/sputznik-siteorigin-widgets/assets/js/aus_states.json' );
+	return $jsons;
+} );
+
+
+
+
+
 
 function download_ajax_handler(){
 
