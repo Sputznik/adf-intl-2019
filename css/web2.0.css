@@ -482,7 +482,7 @@ a[href].sp-btn:hover{
 /* VIDEO POPUP */
 .video-popup{ position: relative; }
 .video-popup .video{font-size: 0;}
-.video-popup .video:before{
+.video-popup:before{
   content: '\25b6';
   position: absolute;
   left: 50%;
