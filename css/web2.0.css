@@ -277,6 +277,7 @@ span.content-type{ background: #08438c;}
 
 .article-header{ background: #08438cDD;}
 article.news .article-header{ background: #e7b715; }
+article.commentary .article-header{ background: #fff; color: #333; }
 
 /*
 .single-commentary .article-header{ background: #d9272dDD; }
