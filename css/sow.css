@@ -388,6 +388,10 @@ a.pp_close{
   overflow: hidden;
   background-color: transparent;
 }
+.grid-modals-container .inline-modal-dialog img{
+  margin: 0 auto;
+  display: block;
+}
 @media(max-width: 767px){
   .image-grid-container{
     grid-template-columns: repeat( 1, 1fr );
