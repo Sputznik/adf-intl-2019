@@ -11,6 +11,7 @@
   overflow: hidden;
   position: relative;
   max-height: 250px;
+  border: transparent solid 1px;
 }
 .inline-post-image{
   -webkit-transition: transform .35s ease-out;
@@ -34,7 +35,7 @@
   color: #fff;
   padding: 20px;
   position: absolute;
-  background: rgba(48,210,236,0.5);
+  background: #09438dCC;
   display: none;
 }
 .inline-post:hover .inline-post-desc{
