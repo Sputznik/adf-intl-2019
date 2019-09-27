@@ -493,6 +493,10 @@ a[href].sp-btn:hover{
   line-height: 1;
   color: #fff;
 }
+.video-popup:hover:before{
+  display: none;
+}
+
 .video-popup a{
 	padding-bottom: 0;
   border-bottom: 0;
