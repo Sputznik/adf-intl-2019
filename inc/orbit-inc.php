@@ -85,6 +85,10 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 					'type'	=> 'textarea',
 					'text'	=> 'Long Bio Description'
 				),
+				'request-interview' => array(
+					'type' => 'text',
+					'text' => 'Request Interview'
+				),
 			)
 		)
 	);

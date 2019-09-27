@@ -37,11 +37,14 @@ get_header(); ?>
 								</div>
 								<h5 class='uppercase text-muted'><?php _e( do_shortcode('[orbit_cf id="team-position"]') );?></h5>
 								<div class='excerpt text-muted'><?php the_excerpt();?></div>
-								<a class="sp-btn" href="#modal-interview" data-toggle="modal">Request An Interview</a>
+								<?php $request_interview_link = get_post_meta( $post->ID, 'request-interview', true ); if( !empty( $request_interview_link ) ):?>
+								<a class="sp-btn" href="<?php _e( $request_interview_link );?>">Request An Interview</a>
+							<?php endif; ?>
 								<?php
-									//
+									/*
 									global $sp_sow;
 									$sp_sow->modal( 'modal-interview', do_shortcode( '[gravityform id="36"]' ) );
+									*/
 								?>
 							</div>
 						</div>
