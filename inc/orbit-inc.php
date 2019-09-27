@@ -81,6 +81,10 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 					'type' => 'text',
 					'text' => 'Twitter Handle'
 				),
+				'long-bio'	=> array(
+					'type'	=> 'textarea',
+					'text'	=> 'Long Bio Description'
+				),
 			)
 		)
 	);
