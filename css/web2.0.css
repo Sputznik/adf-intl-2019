@@ -482,6 +482,17 @@ a[href].sp-btn:hover{
 /* VIDEO POPUP */
 .video-popup{ position: relative; }
 .video-popup .video{font-size: 0;}
+.video-popup .video:before{
+  content: '\25b6';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate( -50%, -50% );
+  font-size: 3em;
+  opacity: 0.7;
+  line-height: 1;
+  color: #fff;
+}
 .video-popup a{
 	padding-bottom: 0;
   border-bottom: 0;
