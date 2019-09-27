@@ -625,6 +625,13 @@ $type = get_post_type($post->ID);
 	?>
 	<div class="involved">
 		<div class="wrap group">
+			<?php
+
+				if( is_active_sidebar( 'impact' ) ){
+					dynamic_sidebar( 'impact' );
+				}
+
+			/*
 			<div class="vertical-center">
 				<?php the_field('cta_text', 'option'); ?>
 			</div>
@@ -643,6 +650,7 @@ $type = get_post_type($post->ID);
 				<?php endwhile; ?>
 			</div>
 			<?php endif; ?>
+			*/ ?>
 		</div>
 	</div>
 	<?php elseif($cta == 'custom') : ?>
