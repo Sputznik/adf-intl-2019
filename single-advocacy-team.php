@@ -25,7 +25,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="page-content">
-					<?php while ( have_posts() ) : the_post(); $staff_description = get_the_content();?>
+					<?php while ( have_posts() ) : the_post(); $staff_description = get_post_meta( $post->ID, 'long-bio', true );?>
 					<div class="row gray" style="padding:100px 0"></div>
 					<div class='row' style="margin-top:-200px;">
 						<div class='container col-13'>
@@ -50,7 +50,7 @@ get_header(); ?>
 					<?php if( $staff_description || $twitter_handle ): ?>
 					<div class='row gray'>
 						<div class='container <?php if( $twitter_handle ):?>col-31<?php endif;?>'>
-							<div class="col" style="white-space: pre-line;"><?php _e( get_post_meta( $post->ID, 'long-bio', true ) );?></div>
+							<div class="col" style="white-space: pre-line;"><?php _e( $staff_description );?></div>
 							<?php if( $twitter_handle ):?>
 								<div class="col">
 									<a class="twitter-timeline" data-height="500" href="https://twitter.com/<?php _e( $twitter_handle );?>?ref_src=twsrc%5Etfw">Tweets by <?php _e( $twitter_handle );?></a>
