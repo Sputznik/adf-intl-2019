@@ -50,7 +50,7 @@ get_header(); ?>
 					<?php if( $staff_description || $twitter_handle ): ?>
 					<div class='row gray'>
 						<div class='container <?php if( $twitter_handle ):?>col-31<?php endif;?>'>
-							<div class="col"><?php the_content();?></div>
+							<div class="col"><?php _e( get_post_meta( $post->ID, 'long-bio', true ) );?></div>
 							<?php if( $twitter_handle ):?>
 								<div class="col">
 									<a class="twitter-timeline" data-height="500" href="https://twitter.com/<?php _e( $twitter_handle );?>?ref_src=twsrc%5Etfw">Tweets by <?php _e( $twitter_handle );?></a>
