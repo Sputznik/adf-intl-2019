@@ -230,12 +230,12 @@ span.content-type{ background: #08438c;}
   float: none;
   position: relative;
 }
-.secondary-feature .feature-content{ background: #fff; width: 100%; }
+.secondary-feature .feature-content{ background: transparent; width: 100%; }
 .secondary-feature .feature-image{ max-height: 250px; overflow: hidden;}
 .secondary-feature .feature-content .text-muted{ font-weight: normal;}
 @media(min-width: 62.5em){
   .secondary-feature .feature-image{ width: 40%; }
-  .secondary-feature .feature-content{ width: 60%; }
+  .secondary-feature .feature-content{ width: 60%; padding-top: 0; }
 }
 
 /* 3 column grid */
