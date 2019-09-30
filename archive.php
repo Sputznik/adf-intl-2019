@@ -30,7 +30,7 @@ get_header(); ?>
 
 						// Check if the theme mod is default or lazy-loading
 						if( get_theme_mod( $type ) && get_theme_mod( $type ) == 'lazy-loading' ):?>
-							<div data-behaviour="orbit-lazy-loading" data-list="#news-oq-list" data-offset="300"></div>
+							<div data-behaviour="orbit-lazy-loading" data-list="#news-oq-list" data-offset="600"></div>
 						<?php else:
 							the_posts_navigation(array('prev_text' => __( 'More &raquo;' ), 'next_text' => __( '&laquo; Previous' ),));?>
 						<?php endif;?>
