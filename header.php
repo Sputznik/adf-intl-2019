@@ -64,14 +64,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li>
 							<a href = "<?php echo esc_url( site_url( 'campaign' ) ); ?>">
 								<?php include(get_template_directory().'/_svg/icon-gavel.php'); ?>
-								Campaigns
+								<?php _e( "Campaigns", 'adf-intl' );?>
 							</a>
 						</li>
 						<?php if( has_nav_menu( 'issues' ) ): ?>
 						<li class="with-sub">
 							<a href = "#">
 								<?php include(get_template_directory().'/_svg/icon-scales.php'); ?>
-								Issues
+								<?php _e( "Issues", 'adf-intl' );?>
 							</a>
 							<?php
 								wp_nav_menu( array(
@@ -85,7 +85,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li class="with-sub">
 							<a href = "#">
 								<?php include(get_template_directory().'/_svg/icon-globe.php'); ?>
-								Regions
+								<?php _e( "Regions", 'adf-intl' );?>
 							</a>
 							<?php
 								wp_nav_menu( array(
@@ -98,13 +98,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<li>
 							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>resource/">
 								<?php include(get_template_directory().'/_svg/icon-book.php'); ?>
-								Resources
+								<?php _e( "Resources", 'adf-intl' );?>
 							</a>
 						</li>
 						<li>
 							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>donate/">
 								<?php include(get_template_directory().'/_svg/icon-gift.php'); ?>
-								Donate
+								<?php _e( "Donate", 'adf-intl' );?>
 							</a>
 						</li>
 					</ul>
