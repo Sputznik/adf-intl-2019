@@ -48,7 +48,7 @@
 						</li>
 						<li>
 							<ul style="" class="list-unstyled">
-								<li>Follow Us</li>
+								<li><?php _e( "Follow Us", 'adf-intl' );?></li>
 								<li class="social">
 									<a href = "https://www.facebook.com/ADFInternational" target="_blank" class="facebook">
 										<img src="<?php bloginfo('template_directory'); ?>/_i/fb.png" />
@@ -67,7 +67,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="https://adfinternational.org/donate/" class="footer-donate-btn">Donate</a>
+									<a href="https://adfinternational.org/donate/" class="footer-donate-btn"><?php _e( "Donate", 'adf-intl' );?></a>
 								</li>
 							</ul>
 						</li>
