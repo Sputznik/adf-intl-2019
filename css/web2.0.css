@@ -21,6 +21,8 @@ body{
 }
 
 /* WPML IN HEADER */
+
+/* NOT SURE IF THIS IS NEEDED */
 .wpml-switcher .wpml-ls-legacy-list-horizontal{ padding: 2px;}
 .wpml-switcher .wpml-ls-legacy-list-horizontal a{ border-bottom: none; }
 .wpml-switcher, .search-bar{ margin-top: 30px; }
@@ -34,6 +36,15 @@ body{
   	color: #fff;
   	font-size: 0.875em;
 	}
+}
+/* NOT SURE IF THIS IS NEEDED */
+
+.wpml-ls-legacy-dropdown{ width: 140px; }
+.wpml-ls-legacy-dropdown a{
+  background-color: #262626;
+  border: none;
+  color: #fff;
+  padding: 10px;
 }
 /* WPML IN HEADER */
 
@@ -84,7 +95,7 @@ a.footer-donate-btn:focus{ outline: none; }
 }
 
 @media (min-width: 44em){
-  .menu > li > a { color: #fff; }
+  .menu > li > a { color: #fff; font-size: 1em; padding: 0.5em 0.75em; }
   .search-bar{ padding-right: 0; }
 }
 
@@ -733,11 +744,57 @@ body.search .secondary-feature .feature-content a{
   line-height: 1.3;
 }
 
-.article-display.resource-display .article-list a{
-  padding-top: 0;
+.article-display.resource-display .article-list a{ padding-top: 0; }
+.sow-headline a[href]{ border: none; }
+a[href].sp-floating-btn{
+	width: 90%;
+  max-width: 500px;
+  font-size: 30px;
+  padding: 5px 15px;
 }
+.single-advocacy-team .video-popup .video{
+	max-height: 185px;
+  overflow: hidden;
+}
+ul.social-icons{ text-align: center; }
+#team-big-round .col-2 .picture img{border-radius: 100%;}
+
+/* TEAM PAGE - MAYBE NOT NEEDED */
+.team-tabs .sow-tabs-tab-container{ text-align: center; }
+.team-tabs .sow-tabs-panel{ padding: 0 !important; padding-top: 30px !important; }
+.team-tabs h5.uppercase{ line-height: 1.3;}
+/* TEAM PAGE - MAYBE NOT NEEDED */
+
+.single-campaign .sow-video-wrapper .fitvids iframe{ max-width: 100%; }
+.single-campaign .card-container .card-body{ width: 250px; }
 
 /* QUICK FIXES */
+
+
+.training-program h3{ font-weight: bold; margin: 0 0 10px; }
+.training-program p{ font-family: "Roboto Condensed"; line-height: 1.5; }
+.training-program .sp-btn-parent.align-left{ margin: -20px 0 50px;}
+
+
+/* Testimonial Slider Section */
+.sow-slide-nav a{ border: none; }
+/* Testimonial Slider Section */
+
+/* IE FIXES */
+.so-widget-sow-image .sow-image-container .so-widget-image{ flex: 1; }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.article-featured-image img{ width: 100%; }
+  /* .card-container .card-inner.card_with_border .card-header{ transform: translate(-50%,-50%) !important;} */
+}
+/* IE FIXES */
+
+/*Affirm Dignity*/
+.lang-ver ul.list-unstyled > li { display: inline-block;}
+.lang-ver ul.list-unstyled > li > a{ border-bottom: none;}
+.charter-heading h1{ font-weight: 400;}
+.charter-heading h4{ color: #000; }
+.single-campaign #learn h1{ font-size: 40px;}
+/*Affirm Dignity*/
 
 
 /* CUSTOM NAV FOR LANDING PAGE */
