@@ -704,7 +704,7 @@ body.home .secondary-feature .feature-content p.text-muted, .dark-theme .seconda
   margin-right: 30px !important;
 }
 
-.article-images li{ border: #eee solid 1px;}
+.article-images li{ border: transparent solid 1px;}
 
 .newsletter{ text-align: left; margin-bottom: 0; max-width: none;}
 .newsletter .gform_wrapper .gform_footer{ background: #09438d !important; }
