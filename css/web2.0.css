@@ -180,7 +180,7 @@ h4{ font-size: 1.45em; }
 		padding-left: 0;
   	padding-right: 1em;
 	}
-  .secondary-feature{ padding: 0; }
+
 
   .article-list.two-list li{
     width: 50%;
@@ -250,6 +250,7 @@ span.content-type{ background: #08438c;}
 .secondary-feature .feature-image{ max-height: 250px; overflow: hidden;}
 .secondary-feature .feature-content .text-muted{ font-weight: normal;}
 @media(min-width: 62.5em){
+  .secondary-feature{ padding: 0; }
   .secondary-feature .feature-image{ width: 40%; }
   .secondary-feature .feature-content{ width: 60%; padding-top: 0; }
 }
