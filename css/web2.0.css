@@ -172,11 +172,11 @@ h4{ font-size: 1.45em; }
     width: 33.33%;
     padding: 0.75em 0.5em;
   }
-  .article-list.three-list li.article-list-item:nth-child(3n){
+  .article-list.three-list li:nth-child(3n){
 		padding-right: 0;
   	padding-left: 1em;
 	}
-	.article-list.three-list li.article-list-item:nth-child(3n+1){
+	.article-list.three-list li:nth-child(3n+1){
 		padding-left: 0;
   	padding-right: 1em;
 	}
