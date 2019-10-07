@@ -180,6 +180,7 @@ h4{ font-size: 1.45em; }
 		padding-left: 0;
   	padding-right: 1em;
 	}
+  .secondary-feature{ padding: 0; }
 
   .article-list.two-list li{
     width: 50%;
