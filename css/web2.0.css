@@ -181,10 +181,15 @@ h4{ font-size: 1.45em; }
   	padding-right: 1em;
 	}
 
-
-  .article-list.two-list li{
-    width: 50%;
-  }
+  .article-list.two-list li{ width: 50%; }
+  .article-list.two-list li:nth-child(2n){
+		padding-right: 0;
+  	padding-left: 1em;
+	}
+	.article-list.two-list li:nth-child(2n+1){
+		padding-left: 0;
+  	padding-right: 1em;
+	}
 }
 
 .article-list a:hover{ border-color: #09438d; }
