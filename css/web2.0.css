@@ -166,17 +166,21 @@ h4{ font-size: 1.45em; }
   width: 100%;
 }
 
-/*
-.article-list.three-list li p{
-  display: none !important;
-}
-*/
-
 @media all and (min-width: 60em) {
   .article-list.three-list li,
   .video-list.three-list li{
     width: 33.33%;
+    padding: 0.75em 0.5em;
   }
+  .article-list.three-list li.article-list-item:nth-child(3n){
+		padding-right: 0;
+  	padding-left: 1em;
+	}
+	.article-list.three-list li.article-list-item:nth-child(3n+1){
+		padding-left: 0;
+  	padding-right: 1em;
+	}
+
   .article-list.two-list li{
     width: 50%;
   }
