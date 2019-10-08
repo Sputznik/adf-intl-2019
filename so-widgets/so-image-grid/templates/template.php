@@ -1,6 +1,6 @@
 <?php $bg_image='';?>
 <div class="image-grid-container">
-
+  <div class="col-4">
   <?php foreach ( $instance['img_grid_repeater'] as $value) : $img_id = getUniqueID( $value ); ?>
   <?php
   $bg_image = wp_get_attachment_url( $value['image'] );
@@ -9,8 +9,11 @@
   }
   $title = $value['image_title'];
   ?>
-  <a data-toggle="modal" href="<?php _e( '#img-modal'.$img_id );?>" class="grid-img" style="background-image:url(<?php _e( $bg_image );?>);" title="<?php _e( $title );?>"></a>
-<?php endforeach;?>
+  <div class="col">
+    <a data-toggle="modal" href="<?php _e( '#img-modal'.$img_id );?>" class="grid-img" style="background-image:url(<?php _e( $bg_image );?>);" title="<?php _e( $title );?>"></a>
+  </div>
+  <?php endforeach;?>
+</div>
 <!-- Modal popup container-->
 <div class="grid-modals-container">
   <?php
@@ -25,7 +28,7 @@
         }
         $admin_url = admin_url( 'admin-ajax.php' ).'?action=download&f='.$img_url;
 
-  			$sp_sow->modal( 'img-modal'.$img_id, '<a class="grid_btn" href="'.$admin_url.'">Click here to download</a><img src="'.$img_url.'"/>' );
+  			$sp_sow->modal( 'img-modal'.$img_id, '<a target="_blank" class="grid_btn" href="'.$img_url.'" download>Click here to download</a><img src="'.$img_url.'"/>' );
   		}
   	}
   ?>
