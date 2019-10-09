@@ -537,7 +537,12 @@ a[href].sp-btn:hover{
 .video-popup .overlay-text a{
 	display: block;
   color: #333;
-  padding: 0px 5px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .video-popup .overlay-text h3{
   margin-top: 10px;
