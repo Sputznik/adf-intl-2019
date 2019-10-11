@@ -41,23 +41,16 @@
   if( 'statistics' == get_post_type() ){
     $icons['download'] = array(
       'icon'  => 'fa fa-download',
-      'url'   => wp_get_attachment_url( $post->ID )
+      'url'   => wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) )
     );
   }
-
-
-
-  _e('<ul class="list-inline social-icons">');
-  foreach( $icons as $key => $icon ){
-
-    $class = $key." social-fa-icon";
-
-    _e("<li>");
-    _e("<a class='".$class."' target='_blank' href='" . $icon['url'] . "'>");
-    _e("<i class='".$icon['icon']."'></i>");
-    _e("</a>");
-    _e("<li>");
-  }
-  _e('</ul>');
-
 ?>
+  <ul class="list-inline social-icons">
+  <?php foreach( $icons as $key => $icon ): $class = $key." social-fa-icon"; ?>
+    <li>
+      <a class='<?php _e( $class ); ?>' target='_blank' href='<?php _e( $icon['url'] );?>' <?php if( $key == 'download' ){_e("download")}?>>
+        <i class='<?php _e( $icon['icon'] );?>'></i>
+      </a>
+    <li>
+  }
+  </ul>
