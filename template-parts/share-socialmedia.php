@@ -38,6 +38,15 @@
     ),
   );
 
+  if( 'statistics' == get_post_type() ){
+    $icons['download'] = array(
+      'icon'  => 'fa fa-download',
+      'url'   => wp_get_attachment_url( $post->ID )
+    );
+  }
+
+
+
   _e('<ul class="list-inline social-icons">');
   foreach( $icons as $key => $icon ){
 
