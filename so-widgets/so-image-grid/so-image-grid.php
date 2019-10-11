@@ -9,7 +9,7 @@ Video URI:
 */
 class ADF_IMAGE_GRID extends SiteOrigin_Widget{
   function __construct(){
-    add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );
+    //add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );
     $form_options = array(
       'img_grid_repeater' => array(
         'type'      => 'repeater',
@@ -45,10 +45,12 @@ class ADF_IMAGE_GRID extends SiteOrigin_Widget{
       plugin_dir_path(__FILE__).'/so-widgets/so-image-grid'
     );
   }//construct function ends here
+  /*
   function assets(){
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'imageDownload', get_stylesheet_directory_uri().'/so-widgets/so-image-grid/assets/download.js', array( 'jquery' ), time(), true );
   }
+  */
   function get_template_name($instance){
     return 'template';
   }
