@@ -507,14 +507,16 @@ ul.social-icons{ text-align: center; }
 }
 .orbit-stat.three-list .orbit-excerpt{
   white-space: pre-wrap;
-  margin-bottom: 10px;
   margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   line-height: 1.2;
-  min-height: 40px;
+  height: 60%;
+  text-align: left;
+  top: auto;
+  bottom: 0;
 }
-.orbit-stat .orbit-article .orbit-article-thumbnail{ max-height: 300px; overflow: hidden; }
+.orbit-stat .orbit-article .orbit-article-thumbnail{ position: relative; }
 .orbit-stat a[href]{ border-bottom: none; }
 .orbit-stat a[href] img{ max-width: 40px; height: auto; }
 .orbit-stat .orbit-excerpt p{ color: #404040 !important; font-size: 0.875em !important; text-shadow: none !important; }
