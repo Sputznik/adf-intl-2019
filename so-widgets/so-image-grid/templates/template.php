@@ -11,7 +11,7 @@
   ?>
   <div class="col">
     <a data-toggle="modal" href="<?php _e( '#img-modal'.$img_id );?>" class="grid-img overlay-text-parent" style="background-image:url(<?php _e( $bg_image );?>);" title="<?php _e( $title );?>">
-      <div class="overlay-text"><?php _e( $title );?></div>
+      <div class="overlay-text narrow-text"><?php _e( $title );?></div>
     </a>
   </div>
   <?php endforeach;?>
