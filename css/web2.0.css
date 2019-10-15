@@ -534,8 +534,8 @@ ul.social-icons{ text-align: center; }
   background: transparent;
   z-index: 100;
 }
-.slick-prev{ left: -10px; }
-.slick-next{ right: -10px; }
+.slick-prev{ left: 5px; }
+.slick-next{ right: 5px; }
 .slick-prev:before, .slick-next:before{
   font-family: 'FontAwesome';
   font-size: 24px;
