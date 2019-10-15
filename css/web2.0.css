@@ -555,7 +555,7 @@ ul.social-icons{ text-align: center; }
 
 .slick-dots{
   position: absolute;
-  bottom: -25px;
+  bottom: 40px;
   width: 100%;
   display: block;
   padding: 0;
