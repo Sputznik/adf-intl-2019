@@ -12,6 +12,13 @@
           'slidesToShow' => 2,
           'slidesToScroll' => 2,
         )
+      ),
+      array(
+        'breakpoint' => 600,
+        'settings' => array(
+          'slidesToShow' => 1,
+          'slidesToScroll' => 1,
+        )
       )
     )
   );
