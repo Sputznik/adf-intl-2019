@@ -496,7 +496,7 @@ ul.social-icons{ text-align: center; }
 /*Meteor amount section*/
 
 /* Orbit STATISTICS  - PICTURES THAT CAN BE SHARED, EXAMPLE IN AFFIRM DIGNITY OR RESOURCES PAGE */
-
+[data-behaviour~="slick"]{ padding: 0 20px 30px; }
 [data-behaviour~="slick"] .article{ padding: 20px; }
 [data-behaviour~="slick"] ul.social-icons{ margin-top: 20px; margin-bottom: 0; }
 [data-behaviour~="slick"] .orbit-article-thumbnail img{ width: 100%; }
