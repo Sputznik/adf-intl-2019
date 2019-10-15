@@ -488,7 +488,7 @@ function my_pre_get_posts( $query ) {
 
 add_action('pre_get_posts', 'my_pre_get_posts');
 
-add_filter('show_admin_bar', '__return_false');
+//add_filter('show_admin_bar', '__return_false');
 
 /* ADD SOW FROM THE THEME */
 add_action('siteorigin_widgets_widget_folders', function( $folders ){
