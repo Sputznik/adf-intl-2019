@@ -245,6 +245,7 @@ a[href].sp-btn:hover{ color: #08438c; }
 /* Affirm Dignity Newsletter Form*/
 
 /* USED FOR VIDEO POPUP & IMAGE GRID WIDGETS */
+.overlay-text-parent{ position: relative; }
 .overlay-text{
 	position: absolute;
   width: 100%;
@@ -495,6 +496,117 @@ ul.social-icons{ text-align: center; }
 /*Meteor amount section*/
 
 /* Orbit STATISTICS  - PICTURES THAT CAN BE SHARED, EXAMPLE IN AFFIRM DIGNITY OR RESOURCES PAGE */
+
+[data-behaviour~="slick"] .article{ padding: 20px; }
+[data-behaviour~="slick"] ul.social-icons{ margin-top: 20px; margin-bottom: 0; }
+[data-behaviour~="slick"] .orbit-article-thumbnail img{ width: 100%; }
+[data-behaviour~="slick"] .orbit-excerpt{
+  white-space: pre-wrap;
+  margin-top: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  height: 60%;
+  text-align: left;
+  top: auto;
+  bottom: 0;
+  background: #000000DD;
+  color: #fff;
+  padding: 20px;
+}
+
+.slick-prev, .slick-next{
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 100;
+}
+.slick-prev{ left: -10px; }
+.slick-next{ right: -10px; }
+.slick-prev:before, .slick-next:before{
+  font-family: 'FontAwesome';
+  font-size: 24px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:before{ content: "\f0a8"; }
+.slick-next:before{ content: "\f0a9"; }
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots{
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button{
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:before{
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.25;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before{
+  opacity: 0.75;
+}
+
+
+/*
 .orbit-stat{ text-align: center; white-space: nowrap; overflow-y: auto;}
 .orbit-stat .social-icons{ margin-bottom: 0; margin-top: 10px; }
 .orbit-stat .orbit-article {
@@ -518,7 +630,6 @@ ul.social-icons{ text-align: center; }
   background: #000000DD;
   color: #fff;
   padding: 20px;
-  
 }
 .orbit-stat .orbit-article .orbit-article-thumbnail{ position: relative; }
 .orbit-stat a[href]{ border-bottom: none; }
@@ -528,4 +639,5 @@ ul.social-icons{ text-align: center; }
   .orbit-stat a[href] img{ max-width: 30px; }
   .orbit-stat .orbit-article{ padding: 10px; }
 }
+*/
 /* Orbit STATISTICS */

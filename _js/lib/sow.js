@@ -59,3 +59,7 @@ jQuery( "[data-behaviour~=sow-btn-cards]" ).each( function(){
   //alert('inside');
 
 } );
+
+
+
+jQuery( "[data-behaviour~=slick]" ).slick();

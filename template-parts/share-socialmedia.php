@@ -51,6 +51,6 @@
       <a class='<?php _e( $class ); ?>' target='_blank' href='<?php _e( $icon['url'] );?>' <?php if( $key == 'download' ){_e("download");}?>>
         <i class='<?php _e( $icon['icon'] );?>'></i>
       </a>
-    <li>
+    </li>
   <?php endforeach;?>
   </ul>
