@@ -395,7 +395,7 @@ h5.social-media-heading::before{
 @media( min-width:1600px ){
   .article-list.three-list li, .video-list.three-list li, .article-list.two-list li{ padding: 1.0em; }
   .three-list.space li{ padding: 0;}
-  .article-list .article-featured-image{ max-height: 300px; }
+  .article-list .article-featured-image{ max-height: 250px; }
   .article-content{ min-height: 320px; }
   .article-content h4{ font-size: 1.75em;line-height: 1.4; }
   .feature-content h2{ font-size: 2.3em; }
