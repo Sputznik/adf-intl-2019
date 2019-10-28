@@ -641,3 +641,17 @@ ul.social-icons{ text-align: center; }
 }
 */
 /* Orbit STATISTICS */
+
+/* Commentary style */
+.dark-theme .secondary-feature span.content-type,
+.dark-theme .commentary span.content-type{
+  background-color: #fff;
+  color: #333;
+}
+
+/* Blockquote style */
+.single .entry-content blockquote:before,
+.single .entry-content blockquote:after{
+  display: block;
+  height: 20px;
+}
