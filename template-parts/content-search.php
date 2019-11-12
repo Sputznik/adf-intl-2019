@@ -38,7 +38,7 @@
 		<span class="content-type"><?php echo get_post_type($post); ?></span>
 		<div class="feature-content">
 			<h3><?php the_title(); ?></h3>
-			<p><?php echo excerpt(60); ?></p>
+			<p><?php echo excerpt(40); ?></p>
 			<a href = "<?php the_permalink(); ?>">Read more</a>
 		</div>
 	</div>
