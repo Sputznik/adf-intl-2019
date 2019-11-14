@@ -30,8 +30,9 @@ body{ font-family: 'Roboto', sans-serif; max-width: none; }
   .wpml-switcher, .search-bar{ margin-top: 0px; }
 
 	.wpml-switcher{ float: right; }
+
 	.wpml-switcher .wpml-ls-legacy-list-horizontal a{
-  	color: #fff;
+  	/*color: #fff;*/
   	font-size: 0.875em;
 	}
 }
