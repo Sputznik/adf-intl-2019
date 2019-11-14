@@ -584,5 +584,5 @@ function wpml_modal_content(){
 	ob_start();
 	echo "Hello World";
 	do_action('icl_language_selector');
-	ob_get_clean();
+	return ob_get_clean();
 }
