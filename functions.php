@@ -582,7 +582,7 @@ add_action( 'wp_ajax_noprov_download', 'download_ajax_handler' );
 
 function wpml_modal_content(){
 	ob_start();
-	echo "Hello World";
+	echo "This is a sample heading to add some context";
 	do_action('icl_language_selector');
 	return ob_get_clean();
 }
