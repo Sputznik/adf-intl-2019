@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<a href="#wpml-modal" data-toggle="modal" class="uppercase no-margin">Switch Language</a>
 					<?php
 						global $sp_sow;
-						$sp_sow->modal( 'wpml-modal', 'Hello World' );
+						$sp_sow->modal( 'wpml-modal', wpml_modal_content() );
 					?>
 					<?php //do_action('icl_language_selector'); ?>
 				</div>

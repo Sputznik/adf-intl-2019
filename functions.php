@@ -550,7 +550,7 @@ add_filter( 'sputznik-sow-jsons', function( $jsons ){
 
 
 
-
+/*
 function download_ajax_handler(){
 
 	if( isset( $_GET['f'] ) ){
@@ -578,3 +578,11 @@ function download_ajax_handler(){
 }
 add_action( 'wp_ajax_download', 'download_ajax_handler' );
 add_action( 'wp_ajax_noprov_download', 'download_ajax_handler' );
+*/
+
+function wpml_modal_content(){
+	ob_start();
+	echo "Hello World";
+	do_action('icl_language_selector');
+	ob_get_clean();
+}
