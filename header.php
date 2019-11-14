@@ -140,7 +140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<?php get_search_form(); ?>
 				</div>
 				<div class="wpml-switcher">
-					<a href="#wpml-modal" class="uppercase no-margin">Switch Language</a>
+					<a href="#wpml-modal" data-toggle="modal" class="uppercase no-margin">Switch Language</a>
 					<?php
 						global $sp_sow;
 						$sp_sow->modal( 'wpml-modal', 'Hello World' );
