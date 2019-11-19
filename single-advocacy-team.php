@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<?php if ( is_active_sidebar( 'staff-header' ) ){ dynamic_sidebar( 'staff-header' ); } : ?>
+			<?php if ( is_active_sidebar( 'staff-header' ) ){ dynamic_sidebar( 'staff-header' ); } ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="page-content">
