@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<?php if ( is_active_sidebar( 'staff-header' ) ){ dynamic_sidebar( 'staff-header' ); } ?>
-
+				
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="page-content">
 					<?php while ( have_posts() ) : the_post(); $staff_description = get_post_meta( $post->ID, 'long-bio', true );?>

@@ -53,9 +53,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="site-branding">
 						<?php
 						if ( is_front_page() && is_home() ) : ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></h1>
+							<h1 class="site-title"><a href="<?php echo site_url(); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></h1>
 						<?php else : ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></p>
+							<p class="site-title"><a href="<?php echo site_url(); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/_i/logo.png" /><span class="assistive-text"><?php bloginfo( 'name' ); ?></span></a></p>
 						<?php
 						endif; ?>
 					</div><!-- .site-branding -->
