@@ -187,6 +187,15 @@ function adf_intl_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
+	register_sidebar( array(
+		'name'          => esc_html__( 'Staff Header', 'adf-intl' ),
+		'id'            => 'staff-header',
+		'description'   => esc_html__( 'Header for staff individual', 'adf-intl' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'adf_intl_widgets_init' );
 
