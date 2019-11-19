@@ -161,7 +161,7 @@ body.search .secondary-feature .feature-content p, body.search .secondary-featur
 @media(min-width: 62.5em){
   .secondary-feature{ padding: 0; }
   .secondary-feature .feature-image{ width: 40%; }
-  .secondary-feature .feature-content{ width: 60%; padding-top: 0; padding-bottom: 0; }
+  .secondary-feature .feature-content{ width: 60%; padding-top: 0 !important; padding-bottom: 0 !important; }
 }
 
 /* 3 column grid */
