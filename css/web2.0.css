@@ -169,8 +169,8 @@ body.search .secondary-feature .feature-content p, body.search .secondary-featur
 /* SINGLE POST TEMPLATE - NEWS, COMMENTARY */
 .single .article-header .entry-title{ font-family: "Merriweather"; font-size: 2.25em; margin-bottom: 15px; }
 .article-header{ background: #08438cDD;}
-article.news .article-header{ background: #e7b715dd; }
-article.commentary .article-header{ background: #333333dd; color: #fff; }
+article.news .article-header{ background: #e7b715ee; }
+article.commentary .article-header{ background: #333333ee; color: #fff; }
 .single-legal .article-header h5{ font-family: "Roboto", sans-serif; }
 .summary{ padding: 1.5em; background: #efefef; border: 1px solid #efefef; }
 .summary h2{ font-size: 1.2em; text-transform: none; letter-spacing: none; color: #555; font-family: "Merriweather", serif; }
