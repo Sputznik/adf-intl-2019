@@ -124,6 +124,7 @@ h4{ font-size: 1.45em; }
 .content-type{ background: #09438d; }
 .news span.content-type{ background: #e7b715; }
 .commentary span.content-type{ background: #333; color: #fff; }
+.campaign span.content-type{background-color: #fff; color: #333;}
 .secondary-feature span.content-type{ left: auto; right: 0;}
 
 .article-content strong, .feature-content strong{ color: #999; }
@@ -171,6 +172,7 @@ body.search .secondary-feature .feature-content p, body.search .secondary-featur
 .article-header{ background: #08438cDD;}
 article.news .article-header{ background: #e7b715ee; }
 article.commentary .article-header{ background: #333333ee; color: #fff; }
+article.campaign .article-header{ background: #ffffffee; color: #333; }
 .single-legal .article-header h5{ font-family: "Roboto", sans-serif; }
 .summary{ padding: 1.5em; background: #efefef; border: 1px solid #efefef; }
 .summary h2{ font-size: 1.2em; text-transform: none; letter-spacing: none; color: #555; font-family: "Merriweather", serif; }
