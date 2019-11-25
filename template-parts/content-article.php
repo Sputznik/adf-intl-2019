@@ -17,6 +17,12 @@
   }
 
   $post_type = get_post_type( $post );
+
+  $post_type_text = $post_type;
+  if( 'alliance-alert' == $post_type ){
+    $post_type_text = 'Alliance Alert';
+  }
+
 ?>
 <a href = "<?php the_permalink(); ?>" class="<?php _e( $post_type );?>">
   <div class='article-featured-image'><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }?></div>
