@@ -199,7 +199,8 @@ article.campaign .article-header{ background: #ffffffee; color: #333; }
 
 /* PAGES - DONATE, OLD SINGLE CAMPAIGN */
 body.page .full-image, .single-campaign .full-image{ max-height: 400px; overflow: hidden; }
-body.page .image-overlay, .single-campaign .image-overlay{ background: #ffffffaa; line-height: 1.35; color: #333; }
+/*body.page .image-overlay, .single-campaign .image-overlay{ background: #ffffffaa; line-height: 1.35; color: #333; }*/
+body.page .image-overlay{ background: #08437EEE; }
 body.page .image-overlay h2, .single-campaign .image-overlay h2{ margin-bottom: 15px; }
 /* PAGES - DONATE */
 
