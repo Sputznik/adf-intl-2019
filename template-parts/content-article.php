@@ -26,7 +26,7 @@
 ?>
 <a href = "<?php the_permalink(); ?>" class="<?php _e( $post_type );?>">
   <div class='article-featured-image'><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }?></div>
-  <span class="content-type"><?php _e( $post_type );?></span>
+  <span class="content-type"><?php _e( $post_type_text );?></span>
   <div class="article-content">
     <h4><?php echo $title; ?></h4>
     <?php if( $excerpt_length ):?>
