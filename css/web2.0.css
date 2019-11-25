@@ -3,6 +3,8 @@ body{ font-family: 'Roboto', sans-serif; max-width: none; }
 .btn, .form-container input[type="submit"]{ background-color: #08438c; border-color: #08438c; }
 .btn:hover, .form-container input[type="submit"]:hover{ background-color: #FFF; border-color: #08438c; color: #08438c; }
 
+#page{ position: relative; }
+
 @media( max-width:768px ){
   .header-top.group .container{ padding-right: 0;}
   .top-navigation{ font-size: 0.95em;}
@@ -135,7 +137,7 @@ h4{ font-size: 1.45em; }
 .col-4.team-list .team-excerpt,.col-4.team-list .link{ display: none;}
 .col-4.team-list h4{ margin:0; font-size: 1.3em;}
 .col-4.team-list .picture, .col-4.team-list .team-content{ max-height: 200px; max-width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;}
-.col-4.team-list .picture{ margin-bottom: 20px;  border-radius: 100px;}
+.col-4.team-list .picture{ margin-bottom: 20px;  border-radius: 100px; border: #ddd solid 1px; background: #fff;}
 
 
 
@@ -684,4 +686,16 @@ ul.social-icons{ text-align: center; }
   .orbit-article-list{
     width: 100%;
   }
+}
+
+
+/* FOOTER ON MOBILE */
+@media(max-width: 768px){
+	.prefooter .three-list{
+		display: flex;
+  	flex-wrap: wrap;
+	}
+  .prefooter .three-list li:nth-child(1){ width: 50%; }
+  .prefooter .three-list li:nth-child(2){ width: 50%; }
+  .prefooter .three-list li:nth-child(3){ width: 100%; }
 }
