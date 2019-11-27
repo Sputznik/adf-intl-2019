@@ -599,3 +599,22 @@ function wpml_modal_content(){
 function adf_video_popup($video_thumb, $video_link, $video_title, $video_desc = ''){
 	include( 'template-parts/content-video-popup.php' );
 }
+
+function adf_taxonomy_dropdown($slug, $label, $post_type){
+	$terms = get_terms( array(
+		'taxonomy' 		=> $slug,
+		'hide_empty' 	=> true,
+	) );
+	if($terms) : ?>
+		<div class="archive-dropdown">
+			<a href = "#" class="cat-dropdown"><?php _e( $label );?></a>
+			<ul>
+				<?php foreach ($terms as $term) : $term_link = get_term_link( $term , $slug ) . "?post_type=" . $post_type; ?>
+				<li>
+					<a href = "<?php echo $term_link; ?>"><?php echo $term->name; ?></a>
+				</li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+	<?php endif;
+}

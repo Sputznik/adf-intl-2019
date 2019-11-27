@@ -77,26 +77,7 @@ get_header(); ?>
 				<div class="wrap group">
 					<header class="resource-list-header group">
 						<h1 class="page-title">All Resources</h1>
-						<?php
-							$terms = get_terms(
-										array(
-											'taxonomy' => 'type',
-											'hide_empty' => true,
-										)
-									);
-							if($terms) :
-						?>
-						<div class="archive-dropdown">
-							<a href = "#" class="cat-dropdown">By Type</a>
-							<ul>
-								<?php foreach ($terms as $term) : ?>
-								<li>
-									<a href = "<?php echo get_term_link( $term , 'type'); ?>?post_type=resource"><?php echo $term->name; ?></a>
-								</li>
-								<?php endforeach; ?>
-							</ul>
-						</div>
-						<?php endif; ?>
+						<?php adf_taxonomy_dropdown( 'type', 'By Type', 'resource' );?>
 						<?php
 							$terms = get_terms(
 										array(
