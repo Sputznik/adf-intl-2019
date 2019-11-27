@@ -79,48 +79,8 @@ get_header(); ?>
 						<h1 class="page-title">All Resources</h1>
 						<?php adf_taxonomy_dropdown( 'type', 'By Type', 'resource' );?>
 						<?php adf_taxonomy_dropdown( 'issues', 'By Issue', 'resource' );?>
-						<?php
-							$terms = get_terms(
-										array(
-											'taxonomy' => 'issues',
-											'hide_empty' => true,
-										)
-									);
-							if($terms) :
-						?>
-						<div class="archive-dropdown">
-							<a href = "#" class="cat-dropdown">By Issue</a>
-							<ul>
-								<?php foreach ($terms as $term) : ?>
-								<li>
-									<a href = "<?php echo get_term_link( $term , 'issues'); ?>?post_type=resource"><?php echo $term->name; ?></a>
-								</li>
-								<?php endforeach; ?>
-							</ul>
-						</div>
-						<?php endif; ?>
-						<?php
-							$terms = get_terms(
-										array(
-											'taxonomy' => 'regions',
-											'hide_empty' => true,
-										)
-									);
-							if($terms) :
-						?>
-						<div class="archive-dropdown">
-							<a href = "#" class="cat-dropdown">By Region</a>
-							<ul>
-								<?php foreach ($terms as $term) : ?>
-								<li>
-									<a href = "<?php echo get_term_link( $term , 'regions'); ?>?post_type=resource"><?php echo $term->name; ?></a>
-								</li>
-								<?php endforeach; ?>
-							</ul>
-						</div>
-						<?php endif; ?>
+						<?php adf_taxonomy_dropdown( 'regions', 'By Region', 'resource' );?>
 						<div class="resource-search">
-
 							<form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform" class="search-form">
 							    <input type="text" name="s" placeholder="Search Resources" class="search-field"/>
 							    <input type="hidden" name="post_type" value="resource" />
