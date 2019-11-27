@@ -595,3 +595,7 @@ function wpml_modal_content(){
 	do_action('icl_language_selector');
 	return ob_get_clean();
 }
+
+function adf_video_popup($video_thumb, $video_link, $video_title, $video_desc = ''){
+	include( 'template-parts/content-video-popup.php' );
+}
