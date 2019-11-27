@@ -78,6 +78,7 @@ get_header(); ?>
 					<header class="resource-list-header group">
 						<h1 class="page-title">All Resources</h1>
 						<?php adf_taxonomy_dropdown( 'type', 'By Type', 'resource' );?>
+						<?php adf_taxonomy_dropdown( 'issues', 'By Issue', 'resource' );?>
 						<?php
 							$terms = get_terms(
 										array(
