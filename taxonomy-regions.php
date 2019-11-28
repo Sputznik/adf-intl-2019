@@ -132,7 +132,7 @@ get_header(); ?>
 					?>
 					<div class="article-display <?php echo $type.'-display'; ?>">
 						<header>
-							<h3>Recent <?php echo $type; ?></h3>
+							<h3>Recent <?php echo adf_post_type_label($type); ?></h3>
 							<a href = "<?php echo home_url( $wp->request.'/?post_type='.$type ); ?>">View All »</a>
 						</header>
 						<?php if($count == 1) : ?>
