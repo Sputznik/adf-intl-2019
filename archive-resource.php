@@ -61,7 +61,7 @@ get_header(); ?>
 										<h4><?php echo $title; ?></h4>
 
 										<p><?php if(strlen($title) > 63) {echo excerpt(16);} elseif(strlen($title) > 32){echo excerpt(20);} else {echo excerpt(30);} ?></p>
-										<strong class="link">Learn more</strong>
+										<strong class="link">LEARN MORE</strong>
 									</div>
 								</a>
 							</li>
@@ -105,7 +105,7 @@ get_header(); ?>
 							?>
 							<div class="resource-actions">
 								<a href = "<?php the_permalink(); ?>">
-									<span>Learn More</span>
+									<span>LEARN MORE</span>
 								</a>
 							</div>
 						</div>
