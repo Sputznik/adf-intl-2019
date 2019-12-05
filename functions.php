@@ -620,6 +620,7 @@ function adf_taxonomy_dropdown($slug, $label, $post_type){
 }
 
 function adf_post_type_label($type){
+	if($type == 'commentary'){ $type = 'Commentaries';}
 	if($type == 'campaign'){ $type = 'Campaigns';}
 	if($type == 'legal'){ $type = 'Legal Matters';}
 	if($type == 'resource'){ $type = 'Resources';}
