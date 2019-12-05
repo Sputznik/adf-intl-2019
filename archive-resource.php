@@ -31,7 +31,7 @@ get_header(); ?>
 					<div class="two-third">
 						<h5>Featured Resource</h5>
 						<?php the_field('feat_resc_content','option'); ?>
-						<a href = "<?php the_field('feat_resc_link','option'); ?>" class="btn" target="_BLANK"><?php the_field('feat_resc_btn','option'); ?></a>
+						<a href = "<?php the_field('feat_resc_link','option'); ?>" class="btn" target="_BLANK"><?php _e('READ MORE'); ?></a>
 					</div>
 				</div>
 				<?php if( have_rows('more_resources','option') ): ?>
