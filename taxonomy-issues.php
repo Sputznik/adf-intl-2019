@@ -93,9 +93,9 @@ get_header(); ?>
 									'post_type' 		=> $type,
 									'posts_per_page' 	=> 3,
 									'post__not_in' 		=> array($featured),
-									'meta_key'			=> 'action_date',
-									'orderby'			=> 'meta_value',
-									'order'				=> 'DESC',
+									//'meta_key'			=> 'action_date',
+									//'orderby'			=> 'meta_value',
+									//'order'				=> 'DESC',
 									'tax_query' => array(
 									    array(
 									        'taxonomy' => 'issues',
