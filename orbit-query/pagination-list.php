@@ -1,6 +1,2 @@
-<?php
-  the_posts_navigation( array(
-    'prev_text' => __( 'More &raquo;' ),
-    'next_text' => __( '&laquo; Previous' )
-  ) );
-?>
+<?php next_posts_link(  'next', $this->query->max_num_pages ); ?>
+<?php previous_posts_link('prev') ?>
