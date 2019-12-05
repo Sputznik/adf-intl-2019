@@ -484,6 +484,7 @@ function myfeed_request($qv) {
 }
 add_filter('request', 'myfeed_request');
 
+/*
 function my_pre_get_posts( $query ) {
 	// do not modify queries in the admin
 	if( is_admin() ) {
@@ -499,6 +500,7 @@ function my_pre_get_posts( $query ) {
 }
 
 add_action('pre_get_posts', 'my_pre_get_posts');
+*/
 
 //add_filter('show_admin_bar', '__return_false');
 
