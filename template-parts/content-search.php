@@ -39,7 +39,7 @@
 		<div class="feature-content">
 			<h3><?php the_title(); ?></h3>
 			<p class="narrow-text"><?php echo excerpt(30); ?></p>
-			<a href = "<?php the_permalink(); ?>">Read more</a>
+			<a href = "<?php the_permalink(); ?>">READ MORE</a>
 		</div>
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->
