@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<?php if ( is_active_sidebar( 'staff-header' ) ){ dynamic_sidebar( 'staff-header' ); } ?>
-				
+
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="page-content">
 					<?php while ( have_posts() ) : the_post(); $staff_description = get_post_meta( $post->ID, 'long-bio', true );?>
@@ -33,14 +33,15 @@ get_header(); ?>
 								</div>
 								<h5 class='uppercase text-muted'><?php _e( do_shortcode('[orbit_cf id="team-position"]') );?></h5>
 								<div class='excerpt text-muted'><?php the_excerpt();?></div>
-								<?php $request_interview_link = get_post_meta( $post->ID, 'request-interview', true ); if( !empty( $request_interview_link ) ):?>
-								<a class="sp-btn" href="<?php _e( $request_interview_link );?>">Request An Interview</a>
-							<?php endif; ?>
+
+								<?php /*get_post_meta( $post->ID, 'request-interview', true )*/ ?>
+
+								<?php $request_interview_link = "#modal-interview"; if( !empty( $request_interview_link ) ):?>
+								<a class="sp-btn" data-toggle="modal" href="<?php _e( $request_interview_link );?>">Request An Interview</a>
+								<?php endif; ?>
 								<?php
-									/*
 									global $sp_sow;
-									$sp_sow->modal( 'modal-interview', do_shortcode( '[gravityform id="36"]' ) );
-									*/
+									$sp_sow->modal( 'modal-interview', do_shortcode( '[gravityform id="32" title="false" description="false"]' ) );
 								?>
 							</div>
 						</div>
