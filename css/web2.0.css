@@ -124,9 +124,9 @@ h4{ font-size: 1.45em; }
 .article-list a.commentary:hover{ border-color: #333; }
 
 .content-type{ background: #09438d; }
-.news span.content-type{ background: #e7b715; }
-.commentary span.content-type{ background: #333; color: #fff; }
-.campaign span.content-type{background-color: #fff; color: #333;}
+a[href].news span.content-type{ background: #e7b715; }
+a[href].commentary span.content-type{ background: #333; color: #fff; }
+a[href].campaign span.content-type{background-color: #fff; color: #333;}
 .secondary-feature span.content-type{ left: auto; right: 0;}
 
 .article-content strong, .feature-content strong{ color: #999; }
