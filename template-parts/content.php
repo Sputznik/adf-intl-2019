@@ -361,6 +361,9 @@ $type = get_post_type($post->ID);
 							setup_postdata( $post );
 					?>
 					<li<?php if(get_post_type($post) == 'resource'){echo ' class="resource-box"';}?>>
+						<?php get_template_part( 'template-parts/content', 'article' );?>
+						<?php
+						/*
 						<a href = "<?php the_permalink(); ?>">
 							<?php
 								if ( has_post_thumbnail() ) {
@@ -375,6 +378,7 @@ $type = get_post_type($post->ID);
 								<strong class="link">Read more</strong>
 							</div>
 						</a>
+						*/ ?>
 					</li>
 				<?php wp_reset_postdata(); endif; endwhile;  ?>
 				</ul>
