@@ -362,23 +362,6 @@ $type = get_post_type($post->ID);
 					?>
 					<li<?php if(get_post_type($post) == 'resource'){echo ' class="resource-box"';}?>>
 						<?php get_template_part( 'template-parts/content', 'article' );?>
-						<?php
-						/*
-						<a href = "<?php the_permalink(); ?>">
-							<?php
-								if ( has_post_thumbnail() ) {
-									the_post_thumbnail('large');
-								}
-							?>
-							<span class="content-type"><?php echo get_post_type($post); ?></span>
-							<div class="article-content">
-								<?php $title = get_the_title(); ?>
-								<h4><?php echo $title; ?></h4>
-								<p><?php if(strlen($title) > 63) {echo excerpt(16);} elseif(strlen($title) > 32){echo excerpt(20);} else {echo excerpt(30);} ?></p>
-								<strong class="link">Read more</strong>
-							</div>
-						</a>
-						*/ ?>
 					</li>
 				<?php wp_reset_postdata(); endif; endwhile;  ?>
 				</ul>
