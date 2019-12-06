@@ -118,6 +118,16 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
   function get_common_fields( $screen ){
     $useable_units = array( 'px', 'vh' );
       return array(
+        'bg_image_position'  => array(
+          'type'      => 'select',
+          'label'     => __( 'Position of Background Image Vertically','siteorigin-widgets' ),
+          'default'   => 'center',
+          'options' => array(
+            'center'  => __( 'Center', 'siteorigin-widgets' ),
+            'top'     => __( 'Top', 'siteorigin-widgets' ),
+            'bottom'  => __( 'Bottom', 'siteorigin-widgets' )
+          )
+        ),
         'bg_image_height'  => array(
           'type' => 'multi-measurement',
           'label' => __( 'Background Image Height','siteorigin-widgets' ),
