@@ -33,6 +33,12 @@
     background-image: url( '<?php _e( $image_src );?>' );
     height          : <?php _e( $instance['settings']['desktop']['bg_image_height'] );?>;
   }
+
+  <?php if( isset( $instance['settings']['mobile']['bg_image_position'] ) ):?>
+  <?php _e( "#".$widget_id );?> .sow-bg-image{ background-position: <?php _e( $instance['settings']['mobile']['bg_image_position'] );?>;}
+  <?php endif;?>
+
+
   <?php _e( "#".$widget_id );?> .header-card{
     background-color: <?php _e( $card_bg ); ?>;
     color           : <?php _e( $instance['card']['color']);?>;
