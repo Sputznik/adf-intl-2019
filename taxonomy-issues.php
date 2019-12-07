@@ -41,6 +41,16 @@ get_header(); ?>
 					<ul class="three-list group">
 						<?php while ( have_rows('videos') ) : the_row(); ?>
 						<li>
+							<?php
+								$image = get_sub_field('video_thumbnail');
+								if( !empty($image) ){
+									$video_thumb = $image['url'];
+									$video_link = "https://youtu.be/" . get_sub_field('video_code');
+									$video_title = get_sub_field('video_title');
+									adf_video_popup($video_thumb, $video_link, $video_title);
+								}
+							?>
+							<?php /*
 							<!--a href = "#" data-video="<?php the_sub_field('video_code'); ?>"-->
 								<div class='video-lightbox'>
 								<?php
@@ -55,6 +65,7 @@ get_header(); ?>
 								</div>
 								<!--span><?php the_sub_field('video_title'); ?></span-->
 							<!--/a-->
+							*/ ?>
 						</li>
 						<?php endwhile; ?>
 					</ul>
