@@ -51,18 +51,6 @@ get_header(); ?>
 								}
 
 							?>
-							<?php /*
-							<a href = "#" data-video="<?php the_sub_field('video_code'); ?>">
-								<div>
-									<?php
-									$image = get_sub_field('video_thumbnail');
-									if( !empty($image) ): ?>
-										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-									<?php endif; ?>
-								</div>
-								<span><?php the_sub_field('video_title'); ?></span>
-							</a>
-							*/ ?>
 						</li>
 						<?php endwhile; ?>
 					</ul>

@@ -50,22 +50,6 @@ get_header(); ?>
 									adf_video_popup($video_thumb, $video_link, $video_title);
 								}
 							?>
-							<?php /*
-							<!--a href = "#" data-video="<?php the_sub_field('video_code'); ?>"-->
-								<div class='video-lightbox'>
-								<?php
-
-									$video_id = get_sub_field( 'video_code' );
-									$image = get_sub_field('video_thumbnail');
-
-									if( !empty($image) ){
-										_e( do_shortcode('[video_lightbox_youtube video_id="'.$video_id.'" width="640" height="480" anchor="'.$image['url'].'"]') );
-									}
-								?>
-								</div>
-								<!--span><?php the_sub_field('video_title'); ?></span-->
-							<!--/a-->
-							*/ ?>
 						</li>
 						<?php endwhile; ?>
 					</ul>

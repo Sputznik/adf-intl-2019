@@ -302,18 +302,6 @@ $type = get_post_type($post->ID);
 								adf_video_popup($video_thumb, $video_link, $video_title);
 							}
 						?>
-						<?php /*
-						<a href = "#" data-video="<?php the_sub_field('video_code'); ?>">
-							<div>
-								<?php
-								$image = get_sub_field('video_thumbnail');
-								if( !empty($image) ): ?>
-									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-								<?php endif; ?>
-							</div>
-							<span><?php the_sub_field('video_title'); ?></span>
-						</a>
-						*/ ?>
 					</li>
 					<?php endwhile; ?>
 				</ul>
@@ -553,32 +541,12 @@ $type = get_post_type($post->ID);
 						if ( $the_query->have_posts() ) :
 							while ( $the_query->have_posts() ) : $the_query->the_post();
 					?>
-					<li>
-						<a href = "<?php the_permalink(); ?>">
-							<?php
-								if ( has_post_thumbnail() ) {
-									the_post_thumbnail('large');
-								}
-							?>
-							<span class="content-type"><?php echo get_post_type($post); ?></span>
-							<div class="article-content">
-								<h4><?php the_title(); ?></h4>
-								<p><?php echo excerpt(30); ?></p>
-								<strong class="link">Read more</strong>
-							</div>
-						</a>
-					</li>
-				<?php 		endwhile;
-						endif;
-					endif;
-				?>
+					<li><?php get_template_part( 'template-parts/content', 'article' );?></li>
+				<?php endwhile; endif; endif; ?>
 				</ul>
 			</div>
 		</div><!--wrap-->
-		<?php
-					endif;
-				endif;
-			endif; ?>
+		<?php endif; endif; endif; ?>
 		<?php if($dropdowns) : ?>
 		<div class="sm-wrap">
 			<ul class="two-list group">
@@ -623,32 +591,7 @@ $type = get_post_type($post->ID);
 	?>
 	<div class="involved">
 		<div class="wrap group">
-			<?php
-
-				if( is_active_sidebar( 'impact' ) ){
-					dynamic_sidebar( 'impact' );
-				}
-
-			/*
-			<div class="vertical-center">
-				<?php the_field('cta_text', 'option'); ?>
-			</div>
-			<?php if( have_rows('cta_actions', 'option') ): ?>
-			<div class="involved-options">
-				<?php while( have_rows('cta_actions', 'option') ): the_row(); ?>
-				<a href = "<?php the_sub_field('cta_url'); ?>" class="involved-link <?php the_sub_field('cta_color'); ?>">
-					<?php
-					$image = get_sub_field('cta_icon');
-					if( !empty($image) ): ?>
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					<?php endif; ?>
-					<h4><?php the_sub_field('cta_title'); ?></h4>
-					<p><?php the_sub_field('cta_summary'); ?></p>
-				</a>
-				<?php endwhile; ?>
-			</div>
-			<?php endif; ?>
-			*/ ?>
+			<?php if( is_active_sidebar( 'impact' ) ){ dynamic_sidebar( 'impact' ); } ?>
 		</div>
 	</div>
 	<?php elseif($cta == 'custom') : ?>
