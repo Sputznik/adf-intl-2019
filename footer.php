@@ -22,8 +22,9 @@
 		<div class="container">
 			<div class="col-2">
 				<div class="col">
+					<?php $logo_url = apply_filters( 'adf_footer_logo',  get_bloginfo('template_directory')."/_i/logo-white.png" );?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="footer-logo">
-						<img src="<?php bloginfo('template_directory'); ?>/_i/logo-white.png" />
+						<img src="<?php _e( $logo_url );?>" />
 						<span class="assistive-text"><?php bloginfo( 'name' ); ?></span>
 					</a>
 					<p style="margin-bottom:20px;"><?php _e( "Faith-based legal advocacy organization that protects fundamental freedoms and promotes the inherent dignity of all people.", 'adf-intl' );?></p>
