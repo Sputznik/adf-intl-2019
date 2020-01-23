@@ -1,6 +1,6 @@
 <?php
 /*
-Widget Name: ADFI Card Widget
+Widget Name: ADFi Card Widget
 Description: Card widget
 Author: Stephen Anil, Sputznik
 Author URI: http://www.sputznik.com
@@ -67,7 +67,7 @@ class SP_CARD extends SiteOrigin_Widget{
     );
     parent::__construct(
       'so-card',
-      __('ADFI Card','siteorigin-widgets'),
+      __('ADFi Card','siteorigin-widgets'),
       array(
         'description' =>  __('Sample card widget','siteorigin-widgets'),
         'help'        =>  ''

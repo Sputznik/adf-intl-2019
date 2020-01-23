@@ -1,6 +1,6 @@
 <?php
 /*
-Widget Name: ADFI Simple Card Widget
+Widget Name: ADFi Simple Card Widget
 Description: Simple card widget with title and description
 Author: Stephen Anil, Sputznik
 Author URI: http://www.sputznik.com
@@ -45,7 +45,7 @@ class SP_SIMPLE_CARD extends SiteOrigin_Widget{
     );
     parent::__construct(
       'so-simple-card',
-      __('ADFI Simple Card','siteorigin-widgets'),
+      __('ADFi Simple Card','siteorigin-widgets'),
       array(
         'description' =>  __('Sample card widget','siteorigin-widgets'),
         'help'        =>  ''
