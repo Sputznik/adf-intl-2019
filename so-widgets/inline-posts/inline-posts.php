@@ -1,6 +1,6 @@
 <?php
 /*
-	Widget Name: Inline Posts
+	Widget Name: ADFI Inline Posts
 	Description: Inline posts that can be displayed in a grid
 	Author: Samuel V Thomas, Sputznik
 	Author URI: https://sputznik.com
@@ -16,7 +16,7 @@ class Inline_Posts extends SiteOrigin_Widget {
 			// The unique id for your widget.
 			'inline-posts',
 			// The name of the widget for display purposes.
-			__('Inline Posts', 'siteorigin-widgets'),
+			__('ADFI Inline Posts', 'siteorigin-widgets'),
 			// The $widget_options array, which is passed through to WP_Widget.
 			// It has a couple of extras like the optional help URL, which should link to your sites help or support page.
 			array(

@@ -1,7 +1,7 @@
 <?php
 /*
-Widget Name: ADF Headline
-Description: ADF Headline with subheading and decoration line beneath
+Widget Name: ADFI Headline
+Description: ADFI Headline with subheading and decoration line beneath
 Author: Samuel Thomas, Sputznik
 Author URI: https://www.sputznik.com
 Widget URI:
@@ -47,9 +47,9 @@ class ADF_SO_HEADLINE extends SiteOrigin_Widget{
 
     parent::__construct(
       'adf-headline',
-      __( 'ADF Headline', 'siteorigin-widgets' ),
+      __( 'ADFI Headline', 'siteorigin-widgets' ),
       array(
-        'description' =>  __( 'ADF Headline with subheading and decoration line beneath', 'siteorigin-widgets' ),
+        'description' =>  __( 'ADFI Headline with subheading and decoration line beneath', 'siteorigin-widgets' ),
         'help'        =>  ''
       ),
       array(),

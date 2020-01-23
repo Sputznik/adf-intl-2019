@@ -1,7 +1,7 @@
 <?php
 /*
-	Widget Name: ADF Share Icons
-	Description: ADF Share Icons
+	Widget Name: ADFI Share Icons
+	Description: ADFI Share Icons
 	Author: Sputznik
 	Author URI: https://sputznik.com
 	Widget URI:
@@ -16,11 +16,11 @@ class ADF_SO_SHARE extends SiteOrigin_Widget {
 			// The unique id for your widget.
 			'adf-share-icons',
 			// The name of the widget for display purposes.
-			__('ADF Share Icons', 'siteorigin-widgets'),
+			__('ADFI Share Icons', 'siteorigin-widgets'),
 			// The $widget_options array, which is passed through to WP_Widget.
 			// It has a couple of extras like the optional help URL, which should link to your sites help or support page.
 			array(
-				'description' => __('ADF Share Icons', 'siteorigin-widgets'),
+				'description' => __('ADFI Share Icons', 'siteorigin-widgets'),
 				'help'        => '',
 			),
 			//The $control_options array, which is passed through to WP_Widget

@@ -1,7 +1,7 @@
 <?php
 /*
-Widget Name: ADF Campaign Headline
-Description: ADF Headline with subheading and decoration line beneath
+Widget Name: ADFI Campaign Headline
+Description: ADFI Campaign Headline with subheading and decoration line beneath
 Author: Sputznik
 Author URI: https://www.sputznik.com
 Widget URI:
@@ -28,9 +28,9 @@ class ADF_SO_CAMPAIGN_HEADLINE extends SiteOrigin_Widget{
 
     parent::__construct(
       'adf-campaign-headline',
-      __( 'ADF Campaign Headline', 'siteorigin-widgets' ),
+      __( 'ADFI Campaign Headline', 'siteorigin-widgets' ),
       array(
-        'description' =>  __( 'ADF Campaign Headline with subheading and decoration line beneath', 'siteorigin-widgets' ),
+        'description' =>  __( 'ADFI Campaign Headline with subheading and decoration line beneath', 'siteorigin-widgets' ),
         'help'        =>  ''
       ),
       array(),
