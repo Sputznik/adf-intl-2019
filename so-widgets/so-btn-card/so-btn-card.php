@@ -1,6 +1,6 @@
 <?php
 /*
-Widget Name: ADF Card Widget with Button
+Widget Name: ADFi Card Widget with Button
 Description: Card widget with button
 Author: Stephen Anil, Sputznik
 Author URI: http://www.sputznik.com
@@ -55,7 +55,7 @@ class SP_BUTTON_CARD extends SiteOrigin_Widget{
     );
     parent::__construct(
       'so-btn-card',
-      __( 'ADF Card Widget with Button ','siteorigin-widgets'),
+      __( 'ADFi Card Widget with Button ','siteorigin-widgets'),
       array(
         'description' =>  __( 'Card Widget with Button','siteorigin-widgets' ),
         'help'        =>  ''

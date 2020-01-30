@@ -1,6 +1,6 @@
 <?php
 /*
-Widget Name: ADF Image Grid Widget
+Widget Name: ADFi Image Grid Widget
 Description: Image grid widget
 Author: Stephen Anil, Sputznik
 Author URI: http://www.sputznik.com
@@ -35,7 +35,7 @@ class ADF_IMAGE_GRID extends SiteOrigin_Widget{
     );
     parent::__construct(
       'so-image-grid',
-      __('ADF Image Grid','siteorigin-widgets'),
+      __('ADFi Image Grid','siteorigin-widgets'),
       array(
         'description' =>  __('Image grid widget','siteorigin-widgets'),
         'help'        =>  ''

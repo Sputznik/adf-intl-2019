@@ -1,6 +1,6 @@
 <?php
 /*
-Widget Name: ADF Video Popup Widget
+Widget Name: ADFi Video Popup Widget
 Description: Multiple video popup widget
 Author: Stephen Anil, Sputznik
 Author URI: http://www.sputznik.com
@@ -37,7 +37,7 @@ class SP_VIDEO_POPUP extends SiteOrigin_Widget{
     );
     parent::__construct(
       'so-video-popup',
-      __('ADF Video Popup','siteorigin-widgets'),
+      __('ADFi Video Popup','siteorigin-widgets'),
       array(
         'description' =>  __('Video popup widget','siteorigin-widgets'),
         'help'        =>  ''

@@ -1,6 +1,6 @@
 <?php
 /*
-Widget Name: ADF Card Widget
+Widget Name: ADFi Card Widget
 Description: Card widget
 Author: Stephen Anil, Sputznik
 Author URI: http://www.sputznik.com
@@ -27,7 +27,7 @@ class SP_CARD extends SiteOrigin_Widget{
             'type' => 'icon',
             'label' => __( 'Select an icon', 'siteorigin-widgets' ),
           ),
-          
+
           'card_link'  =>  array(
             'type'      => 'link',
             'label'     => __( 'Link', 'siteorigin-widgets' ),
@@ -67,7 +67,7 @@ class SP_CARD extends SiteOrigin_Widget{
     );
     parent::__construct(
       'so-card',
-      __('ADF Card','siteorigin-widgets'),
+      __('ADFi Card','siteorigin-widgets'),
       array(
         'description' =>  __('Sample card widget','siteorigin-widgets'),
         'help'        =>  ''

@@ -28,7 +28,9 @@ $type = get_post_type($post->ID);
 			if($type == 'legal') {
 				$action_date = get_field('action_date');
 				if($action_date) {
-					echo '<h5>Date of most recent action: '.$action_date.'</h5>';
+					echo '<h5>';
+					_e( 'Date of most recent action: ', 'adf-intl' );
+					echo $action_date.'</h5>';
 				}
 			}
 			?>
@@ -115,11 +117,15 @@ $type = get_post_type($post->ID);
 		<?php
 			$summary = get_field('summary');
 			if(is_singular('news') && !empty($summary)) {
-				echo '<div class="summary"><h2>Summary</h2>'.$summary.'</div>';
+				echo '<div class="summary"><h2>';
+				_e( 'Summary', 'adf-intl' );
+				echo '</h2>'.$summary.'</div>';
 			}
 
 			if( is_singular('news') ){
-				echo "<h5 class='social-media-heading uppercase'><span>Share</span></h5>";
+				echo "<h5 class='social-media-heading uppercase'><span>";
+				_e( 'Share', 'adf-intl' );
+				echo "</span></h5>";
 				get_template_part( 'template-parts/share', 'socialmedia' );
 			}
 
@@ -148,7 +154,7 @@ $type = get_post_type($post->ID);
 	<footer class="entry-footer">
 		<div class="sm-wrap">
 			<?php if( have_rows('related_images') ): ?>
-			<h4>Images for free use in print or online</h4>
+			<h4><?php _e( 'Images for free use in print or online', 'adf-intl' );?></h4>
 			<div class="img-list">
 				<?php
 					while ( have_rows('related_images') ) : the_row();
@@ -181,7 +187,7 @@ $type = get_post_type($post->ID);
 			}
 			if( !get_field('topic_list') ): ?>
 			<div class="topics">
-				<h5><span>Related</span></h5>
+				<h5><span><?php _e( 'Related', 'adf-intl' );?></span></h5>
 				<ul>
 				<?php
 					if( $region_terms ) {
@@ -447,7 +453,7 @@ $type = get_post_type($post->ID);
 		<div class="wrap group">
 			<div class="article-display">
 				<header>
-					<h3>Related Cases</h3>
+					<h3><?php _e( 'Related Cases', 'adf-intl' ); ?></h3>
 				</header>
 				<?php if($count == 'one') : ?>
 				<div class="secondary-feature group">
@@ -507,7 +513,7 @@ $type = get_post_type($post->ID);
 		<div class="wrap group">
 			<div class="article-display">
 				<header>
-					<h3>Additional Content</h3>
+					<h3><?php _e( 'Additional Content', 'adf-intl' );?></h3>
 				</header>
 				<ul class="article-list three-list always-two group">
 					<?php $i= 0; while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -553,7 +559,7 @@ $type = get_post_type($post->ID);
 				<?php $issues = get_field('issues', 'option');
 				if( $issues ): ?>
 				<li class="dropdown ">
-					<a href = "#" class="dd-trigger">Issues We Face <?php include(get_template_directory().'/_svg/icon-caret-down.php'); ?></a>
+					<a href = "#" class="dd-trigger"><?php _e( 'Issues We Face', 'adf-intl' );?> <?php include(get_template_directory().'/_svg/icon-caret-down.php'); ?></a>
 					<ul class="dropdown-list">
 						<?php foreach( $issues as $issue ): ?>
 						<li>
@@ -568,7 +574,7 @@ $type = get_post_type($post->ID);
 				$regions = get_field('regions', 'option');
 				if( $regions ): ?>
 				<li class="dropdown ">
-					<a href = "#" class="dd-trigger">Regions We Work In<?php include(get_template_directory().'/_svg/icon-caret-down.php'); ?></a>
+					<a href = "#" class="dd-trigger"><?php _e( 'Regions We Work In', 'adf-intl' );?><?php include(get_template_directory().'/_svg/icon-caret-down.php'); ?></a>
 					<ul class="dropdown-list">
 						<?php foreach( $regions as $region ): ?>
 						<li>

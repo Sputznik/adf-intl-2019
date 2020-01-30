@@ -1,7 +1,7 @@
 <?php
 /*
-Widget Name: ADF Hero Image
-Description: ADF Header background image with a some descriptive text
+Widget Name: ADFi Hero Image
+Description: ADFi Header background image with a some descriptive text
 Author: Stephen Anil, Sputznik
 Author URI: https://www.sputznik.com
 Widget URI:
@@ -104,7 +104,7 @@ class SP_HEADER_CARD extends SiteOrigin_Widget{
     );
     parent::__construct(
       'so-header-with-card',
-      __('ADF Hero Image','siteorigin-widgets'),
+      __('ADFi Hero Image','siteorigin-widgets'),
       array(
         'description' =>  __('Sample header widget','siteorigin-widgets'),
         'help'        =>  ''
