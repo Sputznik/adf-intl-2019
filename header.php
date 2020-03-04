@@ -104,7 +104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</a>
 						</li>
 						<li>
-							<a href = "<?php echo esc_url( home_url( '/' ) ); ?>donate/">
+							<a href = "<?php echo esc_url( site_url( 'donate' ) ); ?>">
 								<?php include(get_template_directory().'/_svg/icon-gift.php'); ?>
 								<?php _e( "Donate", 'adf-intl' );?>
 							</a>
