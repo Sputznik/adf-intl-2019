@@ -8,6 +8,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 			'name' 			     => 'Statistics',
 			'singular_name'  => 'Statistic',
 		),
+		'taxonomies' => array( 'post_tag' ),
 		'public'	   => true,
 		'supports'	 => array('title', 'excerpt', 'author', 'thumbnail')
 	);
