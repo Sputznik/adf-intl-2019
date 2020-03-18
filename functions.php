@@ -372,7 +372,7 @@ add_action( 'init', 'create_post_type' );
 function create_taxonomy() {
 	register_taxonomy(
 		'issues',
-		array('news','commentary','legal','campaign','resource', 'videos' ),
+		array('news','commentary','legal','campaign','resource', 'videos','statistics' ),
 		array(
 			'label' => __( 'Issues' ),
 			'hierarchical' => true,
@@ -380,7 +380,7 @@ function create_taxonomy() {
 	);
 	register_taxonomy(
 		'regions',
-		array('news','commentary','legal','campaign','resource', 'videos' ),
+		array('news','commentary','legal','campaign','resource', 'videos', 'statistics' ),
 		array(
 			'label' => __( 'Regions' ),
 			'hierarchical' => true,
