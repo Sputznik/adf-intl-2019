@@ -148,13 +148,13 @@ $type = get_post_type($post->ID);
 			) );
 			if($type == 'commentary' || $type == 'news' ):
 		?>
-		<div class="addthis_inline_share_toolbox"></div>
+		<!--div class="addthis_inline_share_toolbox"></div-->
 		<?php endif; ?>
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
 		<div class="sm-wrap">
 			<?php if( have_rows('related_images') ): ?>
-			<h4><?php _e( 'Images for free use in print or online', 'adf-intl' );?></h4>
+			<h4><?php _e( 'Images for free use in print or online in relation to this story only', 'adf-intl' );?></h4>
 			<div class="img-list">
 				<?php
 					while ( have_rows('related_images') ) : the_row();
