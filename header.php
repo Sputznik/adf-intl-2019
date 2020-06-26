@@ -142,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<?php get_search_form(); ?>
 				</div>
 				<div class="wpml-switcher">
-					<a href="#wpml-modal" data-toggle="modal" class="uppercase no-margin">Other Languages</a>
+					<a href="#wpml-modal" data-toggle="sow-modal" class="uppercase no-margin">Other Languages</a>
 					<?php
 						global $sp_sow;
 						$sp_sow->modal( 'wpml-modal', wpml_modal_content() );

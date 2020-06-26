@@ -18,7 +18,7 @@ body{ font-family: 'Roboto', sans-serif; max-width: none; }
 .wpml-switcher .wpml-ls-legacy-list-horizontal>ul{ text-align: center; }
 .wpml-switcher, .search-bar{ margin-top: 30px; }
 
-.wpml-switcher a[href][data-toggle~=modal]{
+.wpml-switcher a[href][data-toggle~=sow-modal]{
   color: #000;
   border: #000 solid 1px;
   padding: 5px 10px;
@@ -33,7 +33,7 @@ body{ font-family: 'Roboto', sans-serif; max-width: none; }
   .wpml-switcher, .search-bar{ margin-top: 0px; }
 
 	.wpml-switcher{ float: right; }
-  .wpml-switcher a[href][data-toggle~=modal]{ border-color: #fff; color: #fff;}
+  .wpml-switcher a[href][data-toggle~=sow-modal]{ border-color: #fff; color: #fff;}
 	.wpml-switcher .wpml-ls-legacy-list-horizontal a{
   	/*color: #fff;*/
   	font-size: 0.875em;
