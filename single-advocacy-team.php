@@ -37,7 +37,7 @@ get_header(); ?>
 								<?php /*get_post_meta( $post->ID, 'request-interview', true )*/ ?>
 
 								<?php $request_interview_link = "#modal-interview"; if( !empty( $request_interview_link ) ):?>
-								<a class="sp-btn" data-toggle="modal" href="<?php _e( $request_interview_link );?>">Request An Interview</a>
+								<a class="sp-btn request-interview" data-toggle="sow-modal" href="<?php _e( $request_interview_link );?>">Request An Interview</a>
 								<?php endif; ?>
 								<?php
 									global $sp_sow;
@@ -87,5 +87,5 @@ get_header(); ?>
 .staff-header h1{
 	font-size: 2.35em;
 }
-a[href].sp-btn{ margin-top: 20px; display: inline-block;}
+a[href].sp-btn.request-interview, a[href].sp-btn.request-interview:hover{ margin-top: 20px; display: inline-block; color: #fff; }
 </style>
