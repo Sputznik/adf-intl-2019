@@ -60,6 +60,20 @@ jQuery( "[data-behaviour~=sow-btn-cards]" ).each( function(){
 
 } );
 
+jQuery( 'a[href][data-toggle~=modal]' ).click( function( ev ){
+	ev.preventDefault();
+	var $button = jQuery( this );
+	var $modal = jQuery( $button.attr( 'href' ) );
+	$modal.addClass('show-modal');
+} );
+
+jQuery( document ).ready( function(){
+	//console.log( 'ready' );
+	jQuery( '#cookie-law-info-bar' ).hide();
+	jQuery( '#cookie-law-info-again' ).hide();
+	jQuery( "#cookie-law-info-bar" ).delay(5000).fadeIn(500);
+} );
+
 
 
 jQuery( "[data-behaviour~=slick]" ).slick();

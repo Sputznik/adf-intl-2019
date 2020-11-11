@@ -200,7 +200,7 @@ function toTop() {
 	jQuery(window).scroll(function () {
 	    if (!timeout) {
 	        timeout = setTimeout(function () {
-	            console.log('scroll');
+	            //console.log('scroll');
 	            clearTimeout(timeout);
 	            timeout = null;
 	            if (jQuery(window).scrollTop() >= target) {
